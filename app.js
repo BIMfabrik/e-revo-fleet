@@ -2,7 +2,7 @@ const IMG = {
   body: {
     blue: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_01.webp',
     red: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_01.webp',
-    violet: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/500x659/products/24619/76883/71076-3-116-E-Revo-PURPLE-3qtr-low__11622.1700584346.jpg?c=2'
+    violet: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_01.webp'
   },
   front: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_03.webp',
   side: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_04.webp',
@@ -11,7 +11,7 @@ const IMG = {
   top: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_06.webp',
   bottom: 'assets/e-revo-bottom.svg'
 };
-const REFERENCE_FILTER = {blue:'none', red:'hue-rotate(142deg) saturate(1.15)', violet:'hue-rotate(58deg) saturate(1.1)'};
+const REFERENCE_FILTER = {blue:'none', red:'hue-rotate(142deg) saturate(1.15)', violet:'none'};
 
 const PARTS = {
   body: {n:'7111', name:'Body / shell', note:'Clear 1/16 E‑Revo body. Painted body numbers depend on colour.'},

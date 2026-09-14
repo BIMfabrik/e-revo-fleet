@@ -165,15 +165,42 @@
     },
     {
       "id": "violet",
-      "name": "Violet",
-      "accent": "#7047d7",
-      "status": "ready",
-      "issues": [],
-      "upgrades": [],
+      "name": "Car 3",
+      "accent": "#4d6f9d",
+      "status": "attention",
+      "issues": [
+        {
+          "id": "car3-drivetrain-clicking-2026-09-14",
+          "name": "Drivetrain clicking / bad mechanical noise",
+          "component": "driveshaft",
+          "area": "Drivetrain / center shaft / transmission",
+          "status": "open",
+          "severity": "medium",
+          "reported": "2026-09-14",
+          "details": "Car is otherwise in very good condition, but the drivetrain clicks and sounds unhealthy. Open the chassis and inspect the center shaft, transmission gears, front/rear differentials, bearings and driveshaft interfaces for wear, damage, debris or excessive play before further hard use."
+        }
+      ],
+      "upgrades": [
+        {
+          "id": "car3-team-orion-esc",
+          "name": "Team Orion ESC",
+          "area": "Powertrain electronics",
+          "note": "Non-original Team Orion electronic speed controller. Exact Team Orion / Vortex model still to identify from a photo or label.",
+          "needsConfirmation": true
+        }
+      ],
       "model": "1/16 E-Revo VXL (71076-3 generation)",
       "powerSystem": "Velineon 380 / VXL-3m",
       "radio": "TQi / TSM",
-      "serviceHistory": []
+      "serviceHistory": [],
+      "configuration": {
+        "bodyColor": "Older blue car; shown in the app simply as Car 3.",
+        "servo": "Stock steering servo",
+        "esc": "Team Orion aftermarket ESC — exact model to confirm",
+        "radioPrevious": "Traxxas TQ 2.4 GHz High Output with Traxxas Link, likely transmitter #2238 (2-channel transmitter-only; 2209 was the complete 2-channel radio system). Has 50/50 and 70/30 throttle-neutral adjustment.",
+        "radioCurrent": "Traxxas TQ transmitter FCC model TRX1023 from another car; working and intended to be bound/paired to this car.",
+        "generalCondition": "Very clean and in very good overall condition apart from the drivetrain noise."
+      }
     }
   ],
   "shared": {
