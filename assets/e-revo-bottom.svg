@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-labelledby="title desc">
+<title id="title">1/16 E-Revo VXL bottom technical view</title>
+<desc id="desc">Technical underside schematic for locating chassis, skid plates, steering servo guards and suspension parts.</desc>
+<rect width="1000" height="700" fill="white"/>
+<g fill="#25282c" stroke="#111214" stroke-width="5">
+  <rect x="55" y="75" width="145" height="170" rx="48"/><rect x="55" y="455" width="145" height="170" rx="48"/>
+  <rect x="800" y="75" width="145" height="170" rx="48"/><rect x="800" y="455" width="145" height="170" rx="48"/>
+</g>
+<g fill="#373b40" stroke="#1b1d20" stroke-width="7">
+  <path d="M180 165 L310 245 L300 320 L170 240 Z"/><path d="M180 535 L310 455 L300 380 L170 460 Z"/>
+  <path d="M820 165 L690 245 L700 320 L830 240 Z"/><path d="M820 535 L690 455 L700 380 L830 460 Z"/>
+</g>
+<g stroke="#c83838" stroke-width="17" stroke-linecap="round" fill="none">
+  <path d="M175 215 L310 300"/><path d="M175 485 L310 400"/>
+  <path d="M825 215 L690 300"/><path d="M825 485 L690 400"/>
+</g>
+<path d="M40 300 Q20 350 40 400 L105 385 L105 315 Z" fill="#25282c" stroke="#111214" stroke-width="6"/>
+<path d="M960 285 L900 300 L900 400 L960 415 Z" fill="#25282c" stroke="#111214" stroke-width="6"/>
+<rect x="285" y="205" width="430" height="290" rx="42" fill="#3c4147" stroke="#181a1d" stroke-width="8"/>
+<rect x="310" y="225" width="360" height="250" rx="30" fill="#5d636a"/>
+<rect x="330" y="235" width="305" height="75" rx="18" fill="#949aa0" stroke="#44494e" stroke-width="4"/>
+<rect x="330" y="390" width="305" height="75" rx="18" fill="#949aa0" stroke="#44494e" stroke-width="4"/>
+<g fill="#6c7278" stroke="#34383d" stroke-width="4">
+  <rect x="350" y="247" width="18" height="14" rx="3"/><rect x="597" y="247" width="18" height="14" rx="3"/>
+  <rect x="350" y="439" width="18" height="14" rx="3"/><rect x="597" y="439" width="18" height="14" rx="3"/>
+</g>
+<path d="M410 315 L590 315 L620 350 L590 385 L410 385 L380 350 Z" fill="#202328" stroke="#111214" stroke-width="6"/>
+<rect x="445" y="325" width="110" height="50" rx="15" fill="#151719"/>
+<rect x="268" y="305" width="88" height="90" rx="16" fill="#22262a" stroke="#111214" stroke-width="6"/>
+<rect x="280" y="320" width="62" height="60" rx="10" fill="#555c63"/>
+<g stroke="#22262a" stroke-width="20" stroke-linecap="round"><path d="M220 350 H285"/><path d="M715 350 H780"/></g>
+<g fill="#1f2225" stroke="#0f1011" stroke-width="4"><circle cx="205" cy="350" r="28"/><circle cx="795" cy="350" r="28"/></g>
+<g fill="#111214"><circle cx="245" cy="255" r="9"/><circle cx="245" cy="445" r="9"/><circle cx="755" cy="255" r="9"/><circle cx="755" cy="445" r="9"/></g>
+<text x="500" y="645" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#91959a" letter-spacing="3">BOTTOM · TECHNICAL VIEW</text>
+<text x="58" y="350" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="800" fill="#ffffff" transform="rotate(-90 58 350)">FRONT</text>
+</svg>

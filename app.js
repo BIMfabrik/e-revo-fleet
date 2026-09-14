@@ -8,7 +8,8 @@ const IMG = {
   side: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_04.webp',
   rear: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_02.webp',
   chassis: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_05.webp',
-  top: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_06.webp'
+  top: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_06.webp',
+  bottom: 'assets/e-revo-bottom.svg'
 };
 const REFERENCE_FILTER = {blue:'none', red:'hue-rotate(142deg) saturate(1.15)', violet:'hue-rotate(58deg) saturate(1.1)'};
 
@@ -32,27 +33,40 @@ const PARTS = {
   pivotBall: {n:'7033', name:'Pivot balls & caps', note:'Pivot balls and caps at the axle carriers.'},
   frontBulkhead: {n:'7030X', name:'Front bulkhead', note:'Left/right front bulkhead halves.'},
   rearBulkhead: {n:'7029X', name:'Rear bulkhead', note:'Left/right rear bulkhead halves.'},
-  suspensionPins: {n:'7021', name:'Suspension pin set', note:'Front/rear suspension pins.'}
+  suspensionPins: {n:'7021', name:'Suspension pin set', note:'Front/rear suspension pins.'},
+  skidplate: {n:'7037', name:'Skidplate / servo guard set', note:'Front, rear and transmission skidplates plus steering-servo guards.'},
+  wing: {n:'7122', name:'Rear wing', note:'Black 1/16 E-Revo rear wing.'}
 };
 
 const HOTSPOTS = {
+  // Coordinates are calibrated per source image. Keep markers only where the part is actually visible.
   body: [
-    ['body',57,37], ['bumper',75,58], ['frontArms',72,68], ['carrier',81,69], ['rearArms',30,65], ['driveshaft',66,73]
+    ['body',50,43], ['bumper',68,59], ['frontArms',58,64], ['carrier',81,57], ['rearArms',30,50]
   ],
-  front: [['bumper',50,61], ['frontArms',46,70], ['carrier',68,71]],
-  side: [['body',50,39], ['frontArms',73,67], ['rearArms',28,66], ['driveshaft',59,69]],
-  rear: [['bumper',50,59], ['rearArms',45,70], ['carrier',31,71]],
+  front: [
+    ['bumper',50,58], ['frontArms',35,61], ['frontArms',65,61], ['carrier',29,56], ['carrier',71,56]
+  ],
+  side: [['body',50,46]],
+  rear: [
+    ['body',55,45], ['bumper',18,56], ['rearArms',30,56]
+  ],
   chassis: [
-    ['motor',49,38], ['esc',62,45], ['servo',65,63], ['shock',45,57], ['frontArms',74,66], ['rearArms',27,64], ['diff',67,58]
+    ['motor',50,40], ['esc',36,48], ['servo',53,55], ['chassis',48,54], ['shock',64,54],
+    ['frontArms',68,62], ['rearArms',32,42], ['diff',66,56]
   ],
   top: [
-    ['motor',49,38], ['esc',59,46], ['receiver',39,46], ['servo',62,58], ['chassis',50,52], ['shock',47,61], ['diff',69,54]
+    ['bumper',8,52], ['frontArms',19,37], ['frontArms',19,63], ['servo',27,41], ['shock',36,46], ['shock',36,54], ['esc',48,42],
+    ['motor',52,47], ['chassis',50,55], ['receiver',52,60], ['shock',67,46], ['shock',67,54], ['rearArms',78,37], ['rearArms',78,63], ['wing',90,52]
+  ],
+  bottom: [
+    ['bumper',6,50], ['frontArms',24,35], ['frontArms',24,65], ['servo',31,50], ['skidplate',50,50],
+    ['chassis',50,43], ['rearArms',76,35], ['rearArms',76,65]
   ]
 };
 
 const VIEWS = [
-  {id:'body', label:'3/4'}, {id:'front', label:'Front'}, {id:'side', label:'Side'},
-  {id:'rear', label:'Rear'}, {id:'chassis', label:'Chassis'}, {id:'top', label:'Top'},
+  {id:'body', label:'3D / ¾'}, {id:'front', label:'Front'}, {id:'side', label:'Side'},
+  {id:'rear', label:'Rear 3D'}, {id:'chassis', label:'Chassis 3D'}, {id:'top', label:'Top'}, {id:'bottom', label:'Bottom'},
   {id:'xChassis', label:'EXP Chassis', exploded:'chassis'},
   {id:'xFront', label:'EXP Front', exploded:'front'},
   {id:'xRear', label:'EXP Rear', exploded:'rear'},
