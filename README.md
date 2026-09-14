@@ -26,7 +26,7 @@ ChatGPT can update `data/fleet.json`, commit the change, and GitHub Pages will p
 
 ## Parts reference
 
-Part numbers currently mapped to hotspots are taken from the current Traxxas 1/16 E‑Revo 71054‑8 parts list. The interface links part numbers to Planet‑RC search and to the official Traxxas parts PDF.
+All three cars are configured as the older Traxxas 1/16 E‑Revo VXL / 71076‑3 generation with Velineon 380 brushless motor, VXL‑3m ESC, TQi radio and TSM. Part numbers mapped to hotspots use the 71076‑3 parts list. The interface links part numbers to Planet‑RC search and the 71076‑3 parts reference.
 
 ## Next deployment
 

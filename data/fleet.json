@@ -13,7 +13,10 @@
         "transmitters": [],
         "chargers": [],
         "other": []
-      }
+      },
+      "model": "1/16 E-Revo VXL (71076-3 generation)",
+      "powerSystem": "Velineon 380 / VXL-3m",
+      "radio": "TQi / TSM"
     },
     {
       "id": "red",
@@ -39,7 +42,10 @@
         "transmitters": [],
         "chargers": [],
         "other": []
-      }
+      },
+      "model": "1/16 E-Revo VXL (71076-3 generation)",
+      "powerSystem": "Velineon 380 / VXL-3m",
+      "radio": "TQi / TSM"
     },
     {
       "id": "violet",
@@ -54,7 +60,10 @@
         "transmitters": [],
         "chargers": [],
         "other": []
-      }
+      },
+      "model": "1/16 E-Revo VXL (71076-3 generation)",
+      "powerSystem": "Velineon 380 / VXL-3m",
+      "radio": "TQi / TSM"
     }
   ]
 }

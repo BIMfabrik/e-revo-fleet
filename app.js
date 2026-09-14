@@ -1,31 +1,40 @@
 const IMG = {
   body: {
-    blue: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/1280x1280/products/24615/76844/71054-8-116-E-Revo-BLUE-3qtr-low__76407.1700582770.jpg?c=2',
-    red: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/500x659/products/24618/76868/71054-8-116-E-Revo-RED-3qtr-low__44194.1700583880.jpg?c=2',
+    blue: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_01.webp',
+    red: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_01.webp',
     violet: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/500x659/products/24619/76883/71076-3-116-E-Revo-PURPLE-3qtr-low__11622.1700584346.jpg?c=2'
   },
-  front: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/1280x1280/products/24615/76845/71054-8-116-E-Revo-BLUE-Front__53811.1700582772.jpg?c=2',
-  side: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/1280x1280/products/24615/76847/71054-8-116-E-Revo-BLUE-Side__73574.1700582773.jpg?c=2',
-  rear: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/1280x1280/products/24615/76849/71054-8-116-E-Revo-BLUE-3qtr-rear__12431.1700582776.jpg?c=2',
-  chassis: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/1280x1280/products/24615/76850/71054-8-116-E-Revo-3qtr-Chassis__62912.1700582779.jpg?c=2',
-  top: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/1280x1280/products/24615/76846/7105-E-Revo-Top-Chassis__43976.1700582782.jpg?c=2'
+  front: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_03.webp',
+  side: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_04.webp',
+  rear: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_02.webp',
+  chassis: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_05.webp',
+  top: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_06.webp',
+  frontAssembly: 'https://www.rcscrapyard.net/manuals/traxxas/71074-1/71074-1-001.jpg',
+  rearAssembly: 'https://www.rcscrapyard.net/manuals/traxxas/71074-1/71074-1-004.jpg'
 };
 const REFERENCE_FILTER = {blue:'none', red:'hue-rotate(142deg) saturate(1.15)', violet:'hue-rotate(58deg) saturate(1.1)'};
 
 const PARTS = {
   body: {n:'7111', name:'Body / shell', note:'Clear 1/16 E‑Revo body. Painted body numbers depend on colour.'},
   bumper: {n:'7135', name:'Front / rear bumper set', note:'Front and rear bumpers.'},
-  frontArms: {n:'7131', name:'Front suspension arm set', note:'Upper and lower left/right front arms.'},
-  rearArms: {n:'7132', name:'Rear suspension arm set', note:'Upper and lower left/right rear arms.'},
+  frontArms: {n:'7131', name:'Front suspension arm set', note:'Upper and lower left/right front arms.', common:true},
+  rearArms: {n:'7132', name:'Rear suspension arm set', note:'Upper and lower left/right rear arms.', common:true},
   carrier: {n:'7034', name:'Axle carriers', note:'Left and right axle carriers.'},
   driveshaft: {n:'7151', name:'Driveshaft assembly', note:'Complete left/right driveshaft assembly.'},
   shock: {n:'7061', name:'GTR composite shocks', note:'Assembled shocks, supplied without springs.'},
-  motor: {n:'3785', name:'Titan 12T 550 motor', note:'Stock brushed motor for model 71054‑8.'},
-  esc: {n:'3024R', name:'XL‑2.5 ESC', note:'Waterproof electronic speed control with low-voltage detection.'},
-  servo: {n:'2080A', name:'Micro waterproof servo', note:'Stock steering servo family.'},
-  receiver: {n:'6519', name:'TQ 2.4 GHz receiver', note:'Micro 3-channel receiver.'},
+  motor: {n:'3371', name:'Velineon 380 brushless motor', note:'Stock 4000 kV brushless motor for the older 1/16 E‑Revo VXL / 71076‑3 generation.'},
+  esc: {n:'3375', name:'VXL‑3m ESC', note:'Waterproof brushless ESC with LiPo Low-Voltage Detection and three drive profiles.'},
+  servo: {n:'2080', name:'Micro waterproof steering servo', note:'Stock digital waterproof steering servo on the 71076‑3 generation.'},
+  receiver: {n:'6533', name:'TQi receiver with TSM', note:'5-channel TQi receiver with telemetry ports and Traxxas Stability Management (TSM).'},
   diff: {n:'7078', name:'Differential assembly', note:'Front/rear differential assembly.'},
-  chassis: {n:'7022', name:'Monocoque chassis', note:'Main chassis tub.'}
+  chassis: {n:'7022', name:'Monocoque chassis', note:'Main chassis tub.'},
+  pushrod: {n:'7118', name:'Push rods', note:'Composite push rods used front and rear. Aluminum upgrade: 7118X.'},
+  rocker: {n:'7158', name:'Progressive-2 rocker arms', note:'Rocker-arm set for the inboard suspension.'},
+  toeLink: {n:'7138', name:'Toe links', note:'Composite front/rear toe links. Aluminum upgrade: 7138X.'},
+  pivotBall: {n:'7033', name:'Pivot balls & caps', note:'Pivot balls and caps at the axle carriers.'},
+  frontBulkhead: {n:'7030X', name:'Front bulkhead', note:'Left/right front bulkhead halves.'},
+  rearBulkhead: {n:'7029X', name:'Rear bulkhead', note:'Left/right rear bulkhead halves.'},
+  suspensionPins: {n:'7021', name:'Suspension pin set', note:'Front/rear suspension pins.'}
 };
 
 const HOTSPOTS = {
@@ -40,12 +49,21 @@ const HOTSPOTS = {
   ],
   top: [
     ['motor',49,38], ['esc',59,46], ['receiver',39,46], ['servo',62,58], ['chassis',50,52], ['shock',47,61], ['diff',69,54]
+  ],
+  frontAssembly: [
+    ['frontArms',34,42], ['frontArms',49,72], ['carrier',20,29], ['carrier',80,60],
+    ['pushrod',40,17], ['rocker',47,18], ['toeLink',57,72], ['frontBulkhead',47,50], ['suspensionPins',37,52], ['driveshaft',27,38]
+  ],
+  rearAssembly: [
+    ['rearArms',31,51], ['rearArms',56,78], ['carrier',17,31], ['carrier',81,76],
+    ['pushrod',40,17], ['rocker',48,18], ['toeLink',52,72], ['rearBulkhead',45,56], ['suspensionPins',36,58], ['driveshaft',27,48]
   ]
 };
 
 const VIEWS = [
   {id:'body', label:'3/4'}, {id:'front', label:'Front'}, {id:'side', label:'Side'},
-  {id:'rear', label:'Rear'}, {id:'chassis', label:'Chassis'}, {id:'top', label:'Top'}
+  {id:'rear', label:'Rear'}, {id:'chassis', label:'Chassis'}, {id:'top', label:'Top'},
+  {id:'frontAssembly', label:'Front assy'}, {id:'rearAssembly', label:'Rear assy'}
 ];
 
 const fallbackFleet = {cars:[
@@ -71,6 +89,8 @@ function issuesForPart(car,key,part){
   return (car.issues||[]).filter(x=>x.component===key || (x.part && String(x.part)===String(part?.n)));
 }
 function bestViewForComponent(key){
+  const preferred={frontArms:'frontAssembly',rearArms:'rearAssembly',pushrod:'frontAssembly',rocker:'frontAssembly',toeLink:'rearAssembly',pivotBall:'frontAssembly',frontBulkhead:'frontAssembly',rearBulkhead:'rearAssembly',suspensionPins:'frontAssembly'};
+  if(preferred[key]) return preferred[key];
   return VIEWS.find(v=>(HOTSPOTS[v.id]||[]).some(([partKey])=>partKey===key))?.id || 'chassis';
 }
 function planetLink(n){ return `https://planet-rc.ch/search?sSearch=${encodeURIComponent(n)}`; }
@@ -104,7 +124,7 @@ function render(){
   document.querySelector('[data-panel="issues"]').classList.toggle('has-items',hasIssues);
   $('#viewSwitch').innerHTML=VIEWS.map(v=>{
     const thumb=v.id==='body'?IMG.body[carId]:IMG[v.id];
-    const filter=['front','side','rear'].includes(v.id)?REFERENCE_FILTER[carId]:'none';
+    const filter=(['front','side','rear'].includes(v.id) || (v.id==='body' && carId==='red'))?REFERENCE_FILTER[carId]:'none';
     return `<button class="view-btn ${v.id===view?'active':''}" data-view="${v.id}"><img src="${thumb}" alt="" style="filter:${filter}"><span>${v.label}</span></button>`;
   }).join('');
   renderImage();
@@ -114,7 +134,9 @@ function renderImage(){
   const img=$('#carImage'), stage=$('#imageStage');
   stage.classList.add('loading');
   const src=view==='body'?IMG.body[carId]:IMG[view];
-  img.style.filter=['front','side','rear'].includes(view)?REFERENCE_FILTER[carId]:'none';
+  const technical=['frontAssembly','rearAssembly'].includes(view);
+  stage.classList.toggle('technical-view',technical);
+  img.style.filter=(['front','side','rear'].includes(view) || (view==='body' && carId==='red'))?REFERENCE_FILTER[carId]:'none';
   img.onload=()=>stage.classList.remove('loading');
   img.onerror=()=>stage.classList.remove('loading');
   img.src=src;
@@ -161,7 +183,7 @@ function panelPart(key){
   const car=currentCar(), p=PARTS[key], qty=stockFor(car,p.n), partIssues=issuesForPart(car,key,p);
   const issueHtml=partIssues.length?`<div class="component-issues">${partIssues.map(x=>`<div class="component-issue"><span>OPEN ISSUE</span><strong>${esc(x.name||'Issue')}</strong><p>${esc(x.details||x.note||'')}</p></div>`).join('')}</div>`:'';
   openDrawer(p.name,`${car.name} · part`,`
-    <div class="drawer-section"><div class="part-number">TRAXXAS ${esc(p.n)}</div><h3 class="part-title">${esc(p.name)}</h3><p class="empty">${esc(p.note)}</p><div class="part-meta"><span class="tag ${qty?'good':''}">${qty?`${qty} in stock`:'No spare recorded'}</span>${partIssues.length?'<span class="tag bad">Open issue</span>':''}</div>${issueHtml}<div class="drawer-actions"><a class="action primary" href="${planetLink(p.n)}" target="_blank" rel="noopener">Find at Planet‑RC</a><a class="action" href="https://traxxas.com/media/productattach/C-71054-8/3/71054-8_parts.pdf" target="_blank" rel="noopener">Parts PDF</a></div></div>
+    <div class="drawer-section"><div class="part-number">TRAXXAS ${esc(p.n)}</div><h3 class="part-title">${esc(p.name)}</h3><p class="empty">${esc(p.note)}</p><div class="part-meta"><span class="tag ${qty?'good':''}">${qty?`${qty} in stock`:'No spare recorded'}</span>${p.common?'<span class="tag wear">Frequent breakage</span>':''}${partIssues.length?'<span class="tag bad">Open issue</span>':''}</div>${issueHtml}<div class="drawer-actions"><a class="action primary" href="${planetLink(p.n)}" target="_blank" rel="noopener">Find at Planet‑RC</a><a class="action" href="https://www.astramodel.cz/manualy/7/71076-3_parts.pdf" target="_blank" rel="noopener">71076‑3 parts PDF</a></div></div>
     <div class="drawer-section"><h3>ChatGPT command</h3><div class="chat-command">“${esc(car.name)} car: ${esc(p.name)} (${esc(p.n)}) is broken.”</div></div>`);
 }
 
@@ -182,7 +204,7 @@ function openWorkflow(id){
 function panelAbout(){
   openDrawer('Garage','E‑Revo fleet',`
     <div class="drawer-section"><h3>How this is managed</h3><p class="empty">The visible garage stays deliberately minimal. Maintenance, spare stock, upgrades and gear live in <b>data/fleet.json</b>. Tell ChatGPT what changed and it can update that file and commit it.</p></div>
-    <div class="drawer-section"><h3>Vehicle reference</h3><p class="source-note">Part numbers are based on the Traxxas 1/16 E‑Revo 71054‑8 parts list. Product imagery is loaded from existing retailer product media and is not stored in this repository. The violet hero image is a purple 1/16 E‑Revo product view used as a visual stand‑in until your own photo is added.</p></div>`);
+    <div class="drawer-section"><h3>Vehicle reference</h3><p class="source-note">The fleet is configured as the older Traxxas 1/16 E‑Revo VXL / 71076‑3 generation: Velineon 380, VXL‑3m, TQi and TSM. Part numbers are based on the 71076‑3 parts list. Product imagery is loaded from existing retailer product media and is not stored in this repository. The violet hero image is a purple 1/16 E‑Revo product view used as a visual stand‑in until your own photo is added.</p></div>`);
 }
 
 document.addEventListener('click',e=>{

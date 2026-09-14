@@ -4,67 +4,85 @@
       "id": "lipo-protection-on",
       "title": "LiPo protection ON",
       "category": "Battery safety",
-      "scope": "XL-2.5 \u00b7 2S LiPo",
+      "scope": "VXL-3m · LiPo",
       "summary": "Enable Low-Voltage Detection before using a LiPo battery.",
-      "warning": "Never use a LiPo battery while Low-Voltage Detection is disabled. On the XL-2.5, solid red means disabled; solid green means active.",
+      "warning": "Never use a LiPo battery while Low-Voltage Detection is disabled. Solid green means LiPo protection ON; solid red means it is OFF.",
       "steps": [
-        "Turn on the transmitter and leave the throttle at neutral.",
-        "Connect the charged 2S LiPo battery and press EZ-Set once to turn the XL-2.5 on.",
-        "Check the ESC LED. If it is already solid green, protection is already active and you are done.",
-        "If the LED is solid red, press and hold the EZ-Set button. The LED will turn off.",
-        "Keep holding for about 10 seconds.",
-        "Release when the motor beeps twice and the ESC LED turns solid green."
+        "Turn on the TQi transmitter and leave the throttle at neutral.",
+        "Connect the charged LiPo battery and switch the VXL-3m on.",
+        "Check the ESC LED. If it is already solid green, Low-Voltage Detection is active and you are done.",
+        "If the LED is solid red, press and hold EZ-Set for about 10 seconds.",
+        "The LED will switch off and then light green; the motor emits a rising musical tone.",
+        "Release the button. Low-Voltage Detection is now active."
       ],
-      "result": "Solid GREEN ESC LED = Low-Voltage Detection active (LiPo setting).",
-      "source": "https://traxxas.com/media/productattach/C-71054-8/2/71054-8-om-en-r00.pdf"
+      "result": "Solid GREEN VXL-3m LED = Low-Voltage Detection active (LiPo setting).",
+      "source": "https://www.astramodel.cz/manualy/7/71076-3-OM-EN-R04.pdf"
     },
     {
       "id": "nimh-mode",
       "title": "NiMH mode / LiPo protection OFF",
       "category": "Battery setup",
-      "scope": "XL-2.5 \u00b7 NiMH only",
+      "scope": "VXL-3m · NiMH only",
       "summary": "Disable Low-Voltage Detection when returning to NiMH.",
       "warning": "Only disable Low-Voltage Detection for NiMH use. Do not drive a LiPo battery in this mode.",
       "steps": [
-        "Turn on the transmitter and switch the XL-2.5 on.",
+        "Turn on the transmitter and switch the VXL-3m on.",
         "Confirm the ESC LED is solid green.",
-        "Press and hold EZ-Set. The LED will turn off.",
-        "Keep holding for about 10 seconds.",
-        "Release when the motor beeps three times and the LED turns solid red."
+        "Press and hold EZ-Set for about 10 seconds.",
+        "The LED will switch off and then light red; the motor emits a falling musical tone.",
+        "Release the button. Low-Voltage Detection is now disabled."
       ],
-      "result": "Solid RED ESC LED = Low-Voltage Detection disabled (NiMH setting).",
-      "source": "https://traxxas.com/media/productattach/C-71054-8/2/71054-8-om-en-r00.pdf"
+      "result": "Solid RED VXL-3m LED = Low-Voltage Detection disabled (NiMH setting).",
+      "source": "https://www.astramodel.cz/manualy/7/71076-3-OM-EN-R04.pdf"
     },
     {
       "id": "training-mode",
       "title": "Training mode 50%",
       "category": "Driving mode",
-      "scope": "XL-2.5 \u00b7 Profile 3",
+      "scope": "VXL-3m · Profile 3",
       "summary": "Limit forward and reverse power to 50% while keeping full braking.",
       "steps": [
-        "Connect a charged battery and turn on the transmitter.",
-        "Leave the XL-2.5 switched off.",
-        "Press and hold EZ-Set. The LED goes solid green, then solid red, then starts blinking red.",
-        "Keep holding through the blink sequence and release immediately after THREE red blinks.",
-        "Wait for the ESC to finish the mode change."
+        "Connect a charged battery and turn on the TQi transmitter.",
+        "Leave the VXL-3m switched off.",
+        "Press and hold EZ-Set. The LED turns solid green, then solid red, then begins blinking red.",
+        "Release EZ-Set immediately after THREE red blinks.",
+        "The ESC stores Profile 3 and is ready to drive."
       ],
       "result": "Profile 3: 50% forward, 100% brakes, 50% reverse. Final LED remains green for LiPo mode or red for NiMH mode.",
-      "source": "https://traxxas.com/media/productattach/C-71054-8/2/71054-8-om-en-r00.pdf"
+      "source": "https://www.astramodel.cz/manualy/7/71076-3-OM-EN-R04.pdf"
     },
     {
       "id": "sport-mode",
       "title": "Return to full power",
       "category": "Driving mode",
-      "scope": "XL-2.5 \u00b7 Profile 1",
+      "scope": "VXL-3m · Profile 1",
       "summary": "Switch back from Training mode to normal Sport mode.",
       "steps": [
-        "Connect a charged battery and turn on the transmitter.",
-        "Leave the XL-2.5 switched off.",
+        "Connect a charged battery and turn on the TQi transmitter.",
+        "Leave the VXL-3m switched off.",
         "Press and hold EZ-Set until the red profile blink sequence begins.",
-        "Release after ONE red blink."
+        "Release EZ-Set after ONE red blink.",
+        "The ESC stores Profile 1 and returns to full-power Sport mode."
       ],
       "result": "Profile 1: 100% forward, 100% brakes, 100% reverse.",
-      "source": "https://traxxas.com/media/productattach/C-71054-8/2/71054-8-om-en-r00.pdf"
+      "source": "https://www.astramodel.cz/manualy/7/71076-3-OM-EN-R04.pdf"
+    },
+    {
+      "id": "tsm-adjust",
+      "title": "Set TSM traction/stability assist",
+      "category": "Traction control",
+      "scope": "TQi · TSM",
+      "summary": "Adjust how strongly Traxxas Stability Management corrects the car on low-grip surfaces.",
+      "steps": [
+        "Use the Multi-Function knob on the TQi transmitter; from the factory it controls TSM.",
+        "Start at the recommended 12:00 position.",
+        "Turn clockwise for more assistance on loose dirt, smooth concrete, ice or snow.",
+        "Turn counterclockwise for less assistance and a looser, more slide-friendly feel.",
+        "Turn fully counterclockwise to the stop to switch TSM completely off."
+      ],
+      "warning": "Turn TSM completely off before adjusting steering trim. TSM is automatically inactive while driving or braking in reverse.",
+      "result": "12:00 = recommended baseline; clockwise = more assistance; fully counterclockwise = TSM off.",
+      "source": "https://www.astramodel.cz/manualy/7/71076-3-OM-EN-R04.pdf"
     }
   ]
 }
