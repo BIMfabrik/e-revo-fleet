@@ -1,10 +1,16 @@
 const IMG = {
-  blue: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/1280x1280/products/24615/76844/71054-8-116-E-Revo-BLUE-3qtr-low__76407.1700582770.jpg?c=2',
-  red: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/1280x1280/products/24618/76868/71054-8-116-E-Revo-RED-3qtr-low__44194.1700583880.jpg?c=2',
-  violet: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/1280x1280/products/24619/76883/71076-3-116-E-Revo-PURPLE-3qtr-low__11622.1700584346.jpg?c=2',
+  body: {
+    blue: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/1280x1280/products/24615/76844/71054-8-116-E-Revo-BLUE-3qtr-low__76407.1700582770.jpg?c=2',
+    red: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/500x659/products/24618/76868/71054-8-116-E-Revo-RED-3qtr-low__44194.1700583880.jpg?c=2',
+    violet: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/500x659/products/24619/76883/71076-3-116-E-Revo-PURPLE-3qtr-low__11622.1700584346.jpg?c=2'
+  },
+  front: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/1280x1280/products/24615/76845/71054-8-116-E-Revo-BLUE-Front__53811.1700582772.jpg?c=2',
+  side: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/1280x1280/products/24615/76847/71054-8-116-E-Revo-BLUE-Side__73574.1700582773.jpg?c=2',
+  rear: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/1280x1280/products/24615/76849/71054-8-116-E-Revo-BLUE-3qtr-rear__12431.1700582776.jpg?c=2',
   chassis: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/1280x1280/products/24615/76850/71054-8-116-E-Revo-3qtr-Chassis__62912.1700582779.jpg?c=2',
   top: 'https://cdn11.bigcommerce.com/s-sdwy6qdoez/images/stencil/1280x1280/products/24615/76846/7105-E-Revo-Top-Chassis__43976.1700582782.jpg?c=2'
 };
+const REFERENCE_FILTER = {blue:'none', red:'hue-rotate(142deg) saturate(1.15)', violet:'hue-rotate(58deg) saturate(1.1)'};
 
 const PARTS = {
   body: {n:'7111', name:'Body / shell', note:'Clear 1/16 E‑Revo body. Painted body numbers depend on colour.'},
@@ -26,6 +32,9 @@ const HOTSPOTS = {
   body: [
     ['body',57,37], ['bumper',75,58], ['frontArms',72,68], ['carrier',81,69], ['rearArms',30,65], ['driveshaft',66,73]
   ],
+  front: [['bumper',50,61], ['frontArms',46,70], ['carrier',68,71]],
+  side: [['body',50,39], ['frontArms',73,67], ['rearArms',28,66], ['driveshaft',59,69]],
+  rear: [['bumper',50,59], ['rearArms',45,70], ['carrier',31,71]],
   chassis: [
     ['motor',49,38], ['esc',62,45], ['servo',65,63], ['shock',45,57], ['frontArms',74,66], ['rearArms',27,64], ['diff',67,58]
   ],
@@ -35,7 +44,8 @@ const HOTSPOTS = {
 };
 
 const VIEWS = [
-  {id:'body', label:'Body'}, {id:'chassis', label:'Chassis'}, {id:'top', label:'Top'}
+  {id:'body', label:'3/4'}, {id:'front', label:'Front'}, {id:'side', label:'Side'},
+  {id:'rear', label:'Rear'}, {id:'chassis', label:'Chassis'}, {id:'top', label:'Top'}
 ];
 
 const fallbackFleet = {cars:[
@@ -47,6 +57,7 @@ const fallbackFleet = {cars:[
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 let fleet = fallbackFleet;
+let workflows = [];
 let carId = 'blue';
 let view = 'body';
 
@@ -66,9 +77,13 @@ function planetLink(n){ return `https://planet-rc.ch/search?sSearch=${encodeURIC
 
 async function loadFleet(){
   try{
-    const r = await fetch(`data/fleet.json?v=${Date.now()}`,{cache:'no-store'});
-    if(r.ok) fleet = await r.json();
-  }catch(e){ console.warn('Using fallback fleet data',e); }
+    const [fleetRes, workflowRes] = await Promise.all([
+      fetch(`data/fleet.json?v=${Date.now()}`,{cache:'no-store'}),
+      fetch(`data/workflows.json?v=${Date.now()}`,{cache:'no-store'})
+    ]);
+    if(fleetRes.ok) fleet = await fleetRes.json();
+    if(workflowRes.ok) workflows = (await workflowRes.json()).workflows || [];
+  }catch(e){ console.warn('Using fallback data',e); }
   render();
 }
 
@@ -85,15 +100,21 @@ function render(){
   $('#spareCount').textContent=(car.spares||[]).reduce((n,x)=>n+Number(x.qty||1),0);
   $('#upgradeCount').textContent=(car.upgrades||[]).length;
   $('#gearCount').textContent=countGear(car);
+  $('#workflowCount').textContent=workflows.length || '';
   document.querySelector('[data-panel="issues"]').classList.toggle('has-items',hasIssues);
-  $('#viewSwitch').innerHTML=VIEWS.map(v=>`<button class="view-btn ${v.id===view?'active':''}" data-view="${v.id}">${v.label}</button>`).join('');
+  $('#viewSwitch').innerHTML=VIEWS.map(v=>{
+    const thumb=v.id==='body'?IMG.body[carId]:IMG[v.id];
+    const filter=['front','side','rear'].includes(v.id)?REFERENCE_FILTER[carId]:'none';
+    return `<button class="view-btn ${v.id===view?'active':''}" data-view="${v.id}"><img src="${thumb}" alt="" style="filter:${filter}"><span>${v.label}</span></button>`;
+  }).join('');
   renderImage();
 }
 
 function renderImage(){
   const img=$('#carImage'), stage=$('#imageStage');
   stage.classList.add('loading');
-  const src=view==='body'?IMG[carId]:IMG[view];
+  const src=view==='body'?IMG.body[carId]:IMG[view];
+  img.style.filter=['front','side','rear'].includes(view)?REFERENCE_FILTER[carId]:'none';
   img.onload=()=>stage.classList.remove('loading');
   img.onerror=()=>stage.classList.remove('loading');
   img.src=src;
@@ -143,6 +164,21 @@ function panelPart(key){
     <div class="drawer-section"><div class="part-number">TRAXXAS ${esc(p.n)}</div><h3 class="part-title">${esc(p.name)}</h3><p class="empty">${esc(p.note)}</p><div class="part-meta"><span class="tag ${qty?'good':''}">${qty?`${qty} in stock`:'No spare recorded'}</span>${partIssues.length?'<span class="tag bad">Open issue</span>':''}</div>${issueHtml}<div class="drawer-actions"><a class="action primary" href="${planetLink(p.n)}" target="_blank" rel="noopener">Find at Planet‑RC</a><a class="action" href="https://traxxas.com/media/productattach/C-71054-8/3/71054-8_parts.pdf" target="_blank" rel="noopener">Parts PDF</a></div></div>
     <div class="drawer-section"><h3>ChatGPT command</h3><div class="chat-command">“${esc(car.name)} car: ${esc(p.name)} (${esc(p.n)}) is broken.”</div></div>`);
 }
+
+function panelWorkflows(){
+  if(!workflows.length){ openDrawer('Workflows','garage procedures','<div class="empty">No workflows loaded.</div>'); return; }
+  const rows=workflows.map(w=>`<button class="workflow-row" data-workflow="${esc(w.id)}"><div><span>${esc(w.category||'Procedure')}</span><strong>${esc(w.title)}</strong><p>${esc(w.summary||'')}</p></div><b>→</b></button>`).join('');
+  openDrawer('Workflows','garage procedures',`<div class="workflow-list">${rows}</div>`);
+}
+function openWorkflow(id){
+  const w=workflows.find(x=>x.id===id); if(!w) return;
+  const steps=(w.steps||[]).map((step,i)=>`<div class="workflow-step"><i>${i+1}</i><div>${esc(step)}</div></div>`).join('');
+  const warning=w.warning?`<div class="workflow-warning"><strong>Important</strong><p>${esc(w.warning)}</p></div>`:'';
+  const result=w.result?`<div class="workflow-result"><span>Expected result</span><strong>${esc(w.result)}</strong></div>`:'';
+  const source=w.source?`<div class="drawer-actions"><a class="action" href="${esc(w.source)}" target="_blank" rel="noopener">Open Traxxas manual</a></div>`:'';
+  openDrawer(w.title,`${w.category||'Procedure'} · ${w.scope||'1/16 E-Revo'}`,`${warning}<div class="workflow-steps">${steps}</div>${result}${source}`);
+}
+
 function panelAbout(){
   openDrawer('Garage','E‑Revo fleet',`
     <div class="drawer-section"><h3>How this is managed</h3><p class="empty">The visible garage stays deliberately minimal. Maintenance, spare stock, upgrades and gear live in <b>data/fleet.json</b>. Tell ChatGPT what changed and it can update that file and commit it.</p></div>
@@ -152,9 +188,10 @@ function panelAbout(){
 document.addEventListener('click',e=>{
   const car=e.target.closest('[data-car]'); if(car){carId=car.dataset.car;view='body';render();closeDrawer();return;}
   const locate=e.target.closest('[data-show-component]'); if(locate){const key=locate.dataset.showComponent;view=bestViewForComponent(key);render();closeDrawer();setTimeout(()=>panelPart(key),280);return;}
+  const wf=e.target.closest('[data-workflow]'); if(wf){openWorkflow(wf.dataset.workflow);return;}
   const v=e.target.closest('[data-view]'); if(v){view=v.dataset.view;render();return;}
   const h=e.target.closest('[data-part]'); if(h){panelPart(h.dataset.part);return;}
-  const p=e.target.closest('[data-panel]'); if(p){({issues:panelIssues,spares:panelSpares,upgrades:panelUpgrades,gear:panelGear})[p.dataset.panel]?.();return;}
+  const p=e.target.closest('[data-panel]'); if(p){({issues:panelIssues,spares:panelSpares,upgrades:panelUpgrades,gear:panelGear,workflows:panelWorkflows})[p.dataset.panel]?.();return;}
 });
 $('#menuBtn').addEventListener('click',panelAbout);
 $('#closeDrawer').addEventListener('click',closeDrawer);
