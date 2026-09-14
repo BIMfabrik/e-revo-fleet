@@ -265,9 +265,9 @@
       {
         "part": "7131",
         "name": "Front suspension arm set",
-        "qty": 1,
+        "qty": 2,
         "unit": "pack",
-        "note": "Traxxas pack; upper + lower, left + right front arms. Photo batch 1."
+        "note": "Two separate Traxxas packs photographed across stock batches 1 and 2; each pack is the front suspension arm set (upper/lower, left/right)."
       },
       {
         "part": "7034",
@@ -314,9 +314,59 @@
       {
         "part": "7138",
         "name": "Red composite toe links",
+        "qty": 2,
+        "unit": "pack",
+        "note": "Two separate Traxxas packs photographed across stock batches 1 and 2; each pack contains 4 red composite toe links + 8 hollow balls."
+      },
+      {
+        "part": "7015",
+        "name": "Body mounts, front & rear + body mount posts",
         "qty": 1,
         "unit": "pack",
-        "note": "Traxxas pack; 4 toe links + 8 hollow balls. Photo batch 1."
+        "note": "Confirmed Traxxas 7015 package. Photo batch 2."
+      },
+      {
+        "part": "7079",
+        "name": "Differential ring gear + pinion gear",
+        "qty": 1,
+        "unit": "pack",
+        "note": "Confirmed Traxxas 7079 package. Photo batch 2."
+      },
+      {
+        "part": "7542",
+        "name": "LaTrax body clips (12)",
+        "qty": 1,
+        "unit": "pack",
+        "note": "LaTrax body clips, 12-pack. Stored as general RC stock; compatibility with the 1/16 E-Revo not assumed."
+      },
+      {
+        "part": "7057",
+        "name": "Differential / transmission yokes + screw pins",
+        "qty": 1,
+        "unit": "pack",
+        "note": "Confirmed Traxxas 7057 package; 2 yokes + 2 screw pins. Photo batch 2."
+      },
+      {
+        "part": "7015?",
+        "name": "Body-mount hardware set (likely 7015)",
+        "qty": 1,
+        "unit": "bag",
+        "note": "Unlabelled/repacked set from photo batch 2. Shape appears consistent with 1/16 body-mount hardware, likely Traxxas 7015; exact identity to confirm.",
+        "needsConfirmation": true
+      },
+      {
+        "part": "7150",
+        "name": "Half shafts, left or right",
+        "qty": 1,
+        "unit": "pack",
+        "note": "Confirmed Traxxas 7150 package; internal/external splined half shafts and metal U-joints. Photo batch 2."
+      },
+      {
+        "part": "7184",
+        "name": "Wheelie bar, assembled",
+        "qty": 1,
+        "unit": "assembly",
+        "note": "Loose assembled 1/16 E-Revo wheelie bar identified by shape as Traxxas 7184. Photo batch 2."
       }
     ],
     "gear": {
