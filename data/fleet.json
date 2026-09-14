@@ -1,0 +1,34 @@
+{
+  "cars": [
+    {
+      "id": "blue",
+      "name": "Blue",
+      "accent": "#1667d9",
+      "status": "ready",
+      "issues": [],
+      "upgrades": [],
+      "spares": [],
+      "gear": {"batteries": [], "transmitters": [], "chargers": [], "other": []}
+    },
+    {
+      "id": "red",
+      "name": "Red",
+      "accent": "#d51f2f",
+      "status": "ready",
+      "issues": [],
+      "upgrades": [],
+      "spares": [],
+      "gear": {"batteries": [], "transmitters": [], "chargers": [], "other": []}
+    },
+    {
+      "id": "violet",
+      "name": "Violet",
+      "accent": "#7047d7",
+      "status": "ready",
+      "issues": [],
+      "upgrades": [],
+      "spares": [],
+      "gear": {"batteries": [], "transmitters": [], "chargers": [], "other": []}
+    }
+  ]
+}

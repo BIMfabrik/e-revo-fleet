@@ -3,146 +3,55 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="theme-color" content="#f5f7fb" />
-  <title>E‑Revo Fleet</title>
+  <meta name="theme-color" content="#ffffff" />
+  <title>E‑Revo Garage</title>
+  <link rel="preconnect" href="https://cdn11.bigcommerce.com" crossorigin>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div>
-      <div class="eyebrow">TRAXXAS 1/16 · GARAGE</div>
-      <h1>E‑Revo Fleet</h1>
-    </div>
-    <div class="top-actions">
-      <button class="ghost" id="exportBtn">Export</button>
-      <label class="ghost file-btn">Import<input id="importInput" type="file" accept="application/json" /></label>
-    </div>
-  </header>
+  <div id="app" class="app">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="E-Revo Garage home">
+        <span class="brand-mark">E</span>
+        <span><b>REVO</b><small>GARAGE</small></span>
+      </a>
+      <nav id="carSwitch" class="car-switch" aria-label="Cars"></nav>
+      <button id="menuBtn" class="icon-btn" aria-label="Garage information">•••</button>
+    </header>
 
-  <main class="shell">
-    <section class="car-switcher" id="carSwitcher" aria-label="Choose car"></section>
+    <main class="garage">
+      <section class="car-heading" aria-live="polite">
+        <div class="eyebrow">1/16 E‑REVO · <span id="carIndex">01</span></div>
+        <h1 id="carName">Blue</h1>
+        <div id="carStatus" class="status-line"><span class="status-dot"></span><span>Ready</span></div>
+      </section>
 
-    <section class="hero-grid">
-      <article class="viewer-card panel">
-        <div class="panel-head">
-          <div>
-            <span class="status-dot" id="statusDot"></span>
-            <strong id="carTitle">Blue E‑Revo</strong>
-            <span class="muted" id="carSubtitle">Model 71054‑8</span>
-          </div>
-          <div class="view-toggle" id="viewToggle">
-            <button data-view="body" class="active">Body</button>
-            <button data-view="chassis">Chassis</button>
-            <button data-view="top">Top</button>
-            <button data-view="bottom">Bottom</button>
-            <button data-view="exploded">Exploded</button>
-          </div>
+      <section class="viewer" aria-label="Vehicle viewer">
+        <div id="imageStage" class="image-stage">
+          <img id="carImage" alt="Traxxas 1/16 E-Revo" draggable="false" referrerpolicy="no-referrer" />
+          <div id="hotspots" class="hotspots"></div>
         </div>
+        <nav id="viewSwitch" class="view-switch" aria-label="Vehicle views"></nav>
+        <div class="viewer-note"><span class="crosshair">＋</span> Select a marked area to inspect</div>
+      </section>
 
-        <div class="viewer-stage" id="viewerStage">
-          <div class="hint">Tap a highlighted assembly</div>
-          <svg id="carSvg" class="car-svg view-body" viewBox="0 0 920 520" role="img" aria-label="Interactive top-down E-Revo technical illustration">
-            <defs>
-              <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
-                <feDropShadow dx="0" dy="12" stdDeviation="12" flood-opacity=".14" />
-              </filter>
-              <linearGradient id="bodyGloss" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0" stop-color="white" stop-opacity=".35" />
-                <stop offset=".55" stop-color="white" stop-opacity="0" />
-                <stop offset="1" stop-color="black" stop-opacity=".16" />
-              </linearGradient>
-            </defs>
+      <nav class="dock" aria-label="Garage sections">
+        <button data-panel="issues"><span class="dock-icon">!</span><span>Issues</span><em id="issueCount">0</em></button>
+        <button data-panel="spares"><span class="dock-icon">◇</span><span>Spares</span><em id="spareCount">0</em></button>
+        <button data-panel="upgrades"><span class="dock-icon">↑</span><span>Upgrades</span><em id="upgradeCount">0</em></button>
+        <button data-panel="gear"><span class="dock-icon">⌁</span><span>Gear</span><em id="gearCount">0</em></button>
+      </nav>
+    </main>
 
-            <g class="wheel wheel-fl" transform="translate(178 108) rotate(-8)"><rect x="-38" y="-72" width="76" height="144" rx="34"/><path d="M-20-54v108M0-62v124M20-54v108"/></g>
-            <g class="wheel wheel-fr" transform="translate(742 108) rotate(8)"><rect x="-38" y="-72" width="76" height="144" rx="34"/><path d="M-20-54v108M0-62v124M20-54v108"/></g>
-            <g class="wheel wheel-rl" transform="translate(178 410) rotate(8)"><rect x="-38" y="-72" width="76" height="144" rx="34"/><path d="M-20-54v108M0-62v124M20-54v108"/></g>
-            <g class="wheel wheel-rr" transform="translate(742 410) rotate(-8)"><rect x="-38" y="-72" width="76" height="144" rx="34"/><path d="M-20-54v108M0-62v124M20-54v108"/></g>
-
-            <g class="assembly suspension front" data-part="7131">
-              <path d="M245 142 L330 182 L330 214 L234 188 Z"/><path d="M675 142 L590 182 L590 214 L686 188 Z"/>
-              <path d="M245 90 L338 154 L322 180 L230 132 Z"/><path d="M675 90 L582 154 L598 180 L690 132 Z"/>
-            </g>
-            <g class="assembly suspension rear" data-part="7132">
-              <path d="M245 378 L330 338 L330 306 L234 332 Z"/><path d="M675 378 L590 338 L590 306 L686 332 Z"/>
-              <path d="M245 430 L338 366 L322 340 L230 388 Z"/><path d="M675 430 L582 366 L598 340 L690 388 Z"/>
-            </g>
-
-            <g class="assembly axle front-axle" data-part="7034"><circle cx="247" cy="144" r="23"/><circle cx="673" cy="144" r="23"/></g>
-            <g class="assembly axle rear-axle" data-part="7034"><circle cx="247" cy="376" r="23"/><circle cx="673" cy="376" r="23"/></g>
-            <g class="assembly driveshaft" data-part="7151"><path d="M265 144 L382 202 M655 144 L538 202 M265 376 L382 318 M655 376 L538 318"/></g>
-
-            <g class="chassis" filter="url(#shadow)"><path d="M345 78 H575 L625 146 V374 L575 442 H345 L295 374 V146 Z"/></g>
-            <g class="assembly diff diff-front" data-part="7078"><rect x="410" y="125" width="100" height="58" rx="18"/><circle cx="460" cy="154" r="21"/></g>
-            <g class="assembly diff diff-rear" data-part="7078"><rect x="410" y="337" width="100" height="58" rx="18"/><circle cx="460" cy="366" r="21"/></g>
-            <g class="assembly motor" data-part="3975"><rect x="483" y="207" width="72" height="110" rx="24"/><path d="M500 220h38M500 238h38M500 256h38M500 274h38M500 292h38"/></g>
-            <g class="assembly steering" data-part="7043"><path d="M377 189 h90 v42 h-90 z"/><circle cx="400" cy="210" r="13"/><path d="M365 210h-54M467 210h62"/></g>
-            <g class="assembly servo" data-part="2080"><rect x="362" y="236" width="76" height="68" rx="10"/><circle cx="400" cy="250" r="10"/></g>
-            <g class="assembly battery" data-part="battery"><rect x="319" y="253" width="33" height="112" rx="8"/><rect x="568" y="253" width="33" height="112" rx="8"/></g>
-            <g class="assembly electronics" data-part="3024R"><rect x="458" y="326" width="85" height="64" rx="12"/><circle cx="481" cy="348" r="8"/><circle cx="516" cy="348" r="8"/></g>
-            <g class="assembly shocks" data-part="7061"><path d="M338 165l48 62M582 165l-48 62M338 355l48-62M582 355l-48-62"/></g>
-
-            <g class="body-shell" filter="url(#shadow)">
-              <path class="body-color" d="M357 82 Q460 38 563 82 L618 153 L591 214 L606 278 L575 390 Q460 456 345 390 L314 278 L329 214 L302 153 Z"/>
-              <path fill="url(#bodyGloss)" d="M358 94 Q458 55 552 92 L588 149 Q469 116 337 159 Z"/>
-              <path class="window" d="M372 115 Q460 84 548 115 L575 163 Q460 136 345 163 Z"/>
-              <path class="window" d="M363 324 Q460 355 557 324 L548 373 Q460 417 372 373 Z"/>
-              <path class="stripe" d="M330 208 Q460 164 590 208 L582 235 Q460 198 338 235 Z"/>
-              <path class="stripe" d="M342 282 Q460 324 578 282 L570 309 Q460 350 350 309 Z"/>
-              <text x="460" y="269" text-anchor="middle">E‑REVO</text>
-            </g>
-          </svg>
-        </div>
-
-        <div class="viewer-footer">
-          <div class="mini-stat"><span>Condition</span><strong id="conditionText">Ready</strong></div>
-          <div class="mini-stat"><span>Open repairs</span><strong id="repairCount">0</strong></div>
-          <div class="mini-stat"><span>Upgrades</span><strong id="upgradeCount">0</strong></div>
-          <a class="ghost small" target="_blank" rel="noreferrer" href="https://traxxas.com/media/productattach/C-71054-8/3/71054-8_parts.pdf">Official parts PDF ↗</a>
-        </div>
-      </article>
-
-      <aside class="detail-card panel" id="partDetail">
-        <div class="empty-detail"><div class="part-orb">+</div><h2>Select a part</h2><p>Tap an assembly on the car or choose a part below.</p></div>
-      </aside>
-    </section>
-
-    <section class="dash-grid">
-      <article class="panel span-2">
-        <div class="section-head"><div><div class="eyebrow">SERVICE</div><h2>Maintenance</h2></div><button class="primary" id="newRepairBtn">+ Add issue</button></div>
-        <div id="maintenanceList" class="maintenance-list"></div>
-      </article>
-
-      <article class="panel">
-        <div class="section-head"><div><div class="eyebrow">GARAGE STOCK</div><h2>Spare parts</h2></div><span class="count-chip" id="stockTotal">0 items</span></div>
-        <div id="stockList" class="stock-list"></div>
-      </article>
-
-      <article class="panel">
-        <div class="section-head"><div><div class="eyebrow">POWER</div><h2>Batteries & radio</h2></div><button class="ghost small" id="addAccessoryBtn">+ Add</button></div>
-        <div id="accessoryList" class="accessory-list"></div>
-      </article>
-
-      <article class="panel span-2">
-        <div class="section-head"><div><div class="eyebrow">PARTS MAP</div><h2>Common assemblies</h2></div><input id="partSearch" class="search" placeholder="Search part or number…" /></div>
-        <div id="partsGrid" class="parts-grid"></div>
-      </article>
-
-      <article class="panel span-3">
-        <div class="section-head"><div><div class="eyebrow">CONFIGURATION</div><h2>Upgrades by car</h2></div><button class="ghost small" id="addUpgradeBtn">+ Add upgrade</button></div>
-        <div id="upgradeList" class="upgrade-list"></div>
-      </article>
-    </section>
-  </main>
-
-  <dialog id="quickDialog">
-    <form method="dialog" id="quickForm">
-      <div class="dialog-head"><h2 id="dialogTitle">Add</h2><button value="cancel" class="icon-btn" aria-label="Close">×</button></div>
-      <div id="dialogFields"></div>
-      <div class="dialog-actions"><button value="cancel" class="ghost">Cancel</button><button value="default" class="primary" id="dialogSave">Save</button></div>
-    </form>
-  </dialog>
-
-  <footer>Local-first prototype · Data stays in this browser unless you export it.</footer>
+    <div id="scrim" class="scrim" hidden></div>
+    <aside id="drawer" class="drawer" aria-hidden="true">
+      <div class="drawer-head">
+        <div><div id="drawerEyebrow" class="eyebrow">GARAGE</div><h2 id="drawerTitle">Details</h2></div>
+        <button id="closeDrawer" class="icon-btn close-btn" aria-label="Close">×</button>
+      </div>
+      <div id="drawerBody" class="drawer-body"></div>
+    </aside>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>

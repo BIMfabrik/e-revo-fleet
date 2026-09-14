@@ -1,32 +1,33 @@
-# E‑Revo Fleet
+# E‑Revo Garage
 
-Visual maintenance, spare-parts inventory and upgrade tracker for three Traxxas 1/16 E‑Revo cars.
+A visual garage for three Traxxas 1/16 E‑Revo cars: **Blue**, **Red**, and **Violet**.
 
-## Current prototype
+Live site: https://bimfabrik.github.io/e-revo-fleet/
 
-- Blue, red and violet car profiles
-- Interactive technical car illustration with Body / Chassis / Top / Bottom / Exploded views
-- Clickable major assemblies linked to Traxxas part numbers
-- Maintenance issues per car with repair status
-- Spare-parts stock and “can fix now” indication
-- Batteries, transmitters, chargers and other accessories per car
-- Upgrade history per car
-- RCPlanet search links and manually recorded CHF prices
-- Browser persistence using `localStorage`
-- JSON import/export for backup or moving data between devices
-- Mobile-responsive GitHub Pages UI
+## Design
 
-## Data model
+The home screen is intentionally sparse: one large vehicle, three car selectors, three visual views, and a few subtle part hotspots. Maintenance, spare stock, upgrades, and batteries/radio gear stay hidden in slide-in drawers until requested.
 
-The initial catalog is based on the Traxxas 1/16 E‑Revo model 71054‑8 parts list. The app deliberately does not invent live shop prices: RCPlanet prices can be recorded manually until a reliable shop lookup is implemented.
+Product/chassis imagery is loaded from existing public retailer product media and is not committed to this repository. The violet image is a purple 1/16 E‑Revo visual stand-in until a photo of the actual vehicle is supplied.
 
-## Persistence
+## ChatGPT-managed fleet data
 
-GitHub Pages is static and cannot safely commit changes back to this repository without authentication. Phase 1 therefore stores fleet state in the browser and supports JSON backup/restore. A later backend can synchronize state across devices.
+The actual fleet state is in [`data/fleet.json`](data/fleet.json). This is deliberately simple so changes can be made directly through ChatGPT/GitHub without editing the UI.
 
-## Next phases
+Examples:
 
-1. Replace the schematic with photos / photogrammetry / a real 3D GLB model of the three cars.
-2. Import the complete Traxxas exploded-parts hierarchy and hotspot map.
-3. Add reliable RCPlanet product lookup and live CHF prices if the shop exposes a usable endpoint.
-4. Add shared authenticated persistence (for example Supabase) while keeping GitHub Pages as the frontend.
+- `Blue car: front-right axle carrier 7034 is broken.`
+- `Add 2 × 7151 driveshaft assemblies to spare stock.`
+- `Red car now has aluminum push rods 7118X.`
+- `Violet car uses this LiPo battery and this transmitter.`
+- `The blue car is fixed; remove the open 7034 issue and consume one spare.`
+
+ChatGPT can update `data/fleet.json`, commit the change, and GitHub Pages will publish the new state.
+
+## Parts reference
+
+Part numbers currently mapped to hotspots are taken from the current Traxxas 1/16 E‑Revo 71054‑8 parts list. The interface links part numbers to Planet‑RC search and to the official Traxxas parts PDF.
+
+## Next deployment
+
+GitHub Pages is only the prototype host. The same static front end can later be deployed on BlackBerg with a small authenticated API/database for persistent edits, stock changes, maintenance history, and live shop-price refreshes.
