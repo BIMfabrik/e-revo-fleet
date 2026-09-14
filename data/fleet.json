@@ -4,8 +4,19 @@
       "id": "blue",
       "name": "Blue",
       "accent": "#1667d9",
-      "status": "ready",
-      "issues": [],
+      "status": "attention",
+      "issues": [
+        {
+          "id": "blue-low-rear-ride-height-2026-09-14",
+          "name": "Rear ride height too low",
+          "component": "shock",
+          "area": "Rear suspension / shocks",
+          "status": "open",
+          "severity": "low",
+          "reported": "2026-09-14",
+          "details": "Rear of the car sits a little too low. Check rear spring preload/spacers, spring condition, shock oil level and possible oil leakage, then adjust preload only as needed to restore correct ride height."
+        }
+      ],
       "upgrades": [],
       "spares": [],
       "gear": {
@@ -33,6 +44,16 @@
           "severity": "medium",
           "reported": "2026-09-14",
           "details": "Connector in the power path between the motor and battery is weak and slides out. Inspect the motor/ESC/battery connection, secure it properly, and replace the connector or terminal if it cannot hold firmly."
+        },
+        {
+          "id": "red-low-rear-ride-height-2026-09-14",
+          "name": "Rear ride height too low",
+          "component": "shock",
+          "area": "Rear suspension / shocks",
+          "status": "open",
+          "severity": "low",
+          "reported": "2026-09-14",
+          "details": "Rear of the car sits a little too low. Check rear spring preload/spacers, spring condition, shock oil level and possible oil leakage, then adjust preload only as needed to restore correct ride height."
         }
       ],
       "upgrades": [],
