@@ -35,3 +35,8 @@ GitHub Pages is only the prototype host. The same static front end can later be 
 ## Complete exploded views
 
 The garage includes the full older 1/16 E-Revo VXL exploded-view family: chassis, front, rear, driveshaft and transmission. The clickable regions are imported from the source exploded-view maps and normalized to the rendered image, so they remain aligned across desktop and mobile layouts. The current dataset contains 366 mapped part locations.
+
+
+## Data model
+
+The three vehicle records contain car-specific issues and upgrades. Shared spares, batteries, chargers, transmitters and other equipment live once under `shared` in `data/fleet.json`; workflows are shared in `data/workflows.json`.

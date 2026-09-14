@@ -18,13 +18,6 @@
         }
       ],
       "upgrades": [],
-      "spares": [],
-      "gear": {
-        "batteries": [],
-        "transmitters": [],
-        "chargers": [],
-        "other": []
-      },
       "model": "1/16 E-Revo VXL (71076-3 generation)",
       "powerSystem": "Velineon 380 / VXL-3m",
       "radio": "TQi / TSM"
@@ -57,13 +50,6 @@
         }
       ],
       "upgrades": [],
-      "spares": [],
-      "gear": {
-        "batteries": [],
-        "transmitters": [],
-        "chargers": [],
-        "other": []
-      },
       "model": "1/16 E-Revo VXL (71076-3 generation)",
       "powerSystem": "Velineon 380 / VXL-3m",
       "radio": "TQi / TSM"
@@ -75,16 +61,18 @@
       "status": "ready",
       "issues": [],
       "upgrades": [],
-      "spares": [],
-      "gear": {
-        "batteries": [],
-        "transmitters": [],
-        "chargers": [],
-        "other": []
-      },
       "model": "1/16 E-Revo VXL (71076-3 generation)",
       "powerSystem": "Velineon 380 / VXL-3m",
       "radio": "TQi / TSM"
     }
-  ]
+  ],
+  "shared": {
+    "spares": [],
+    "gear": {
+      "batteries": [],
+      "transmitters": [],
+      "chargers": [],
+      "other": []
+    }
+  }
 }

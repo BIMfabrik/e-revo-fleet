@@ -15,7 +15,7 @@
         <span class="brand-mark">E</span>
         <span><b>REVO</b><small>GARAGE</small></span>
       </a>
-      <nav id="carSwitch" class="car-switch" aria-label="Cars"></nav>
+      <nav id="carSwitch" class="car-switch" aria-label="Cars and shared garage"></nav>
       <button id="menuBtn" class="icon-btn" aria-label="Garage information">•••</button>
     </header>
 
@@ -26,7 +26,7 @@
         <div id="carStatus" class="status-line"><span class="status-dot"></span><span>Ready</span></div>
       </section>
 
-      <section class="viewer" aria-label="Vehicle viewer">
+      <section id="vehicleViewer" class="viewer" aria-label="Vehicle viewer">
         <div id="imageStage" class="image-stage">
           <img id="carImage" alt="Traxxas 1/16 E-Revo" draggable="false" referrerpolicy="no-referrer" />
           <div id="hotspots" class="hotspots"></div>
@@ -35,12 +35,20 @@
         <div class="viewer-note"><span class="crosshair">＋</span> Select a marked area to inspect</div>
       </section>
 
-      <nav class="dock" aria-label="Garage sections">
+      <section id="sharedHub" class="shared-hub" hidden aria-label="Shared garage">
+        <div class="shared-intro"><div class="eyebrow">SHARED GARAGE</div><h1>Everything else.</h1><p>Spares, batteries, charging gear, radio equipment and procedures shared by all three cars.</p></div>
+        <div class="shared-grid">
+          <button data-panel="spares" class="shared-card"><span>01</span><strong>Spares</strong><em id="sharedSpareCount">0 parts</em></button>
+          <button data-shared-gear="batteries" class="shared-card"><span>02</span><strong>Batteries</strong><em id="batteryCount">0 packs</em></button>
+          <button data-shared-gear="chargers" class="shared-card"><span>03</span><strong>Chargers</strong><em id="chargerCount">0 units</em></button>
+          <button data-panel="gear" class="shared-card"><span>04</span><strong>Radio & gear</strong><em id="sharedGearCount">0 items</em></button>
+          <button data-panel="workflows" class="shared-card shared-card-wide"><span>05</span><strong>Workflows</strong><em id="sharedWorkflowCount">0 procedures</em></button>
+        </div>
+      </section>
+
+      <nav id="dock" class="dock" aria-label="Vehicle sections">
         <button data-panel="issues"><span class="dock-icon">!</span><span>Issues</span><em id="issueCount">0</em></button>
-        <button data-panel="spares"><span class="dock-icon">◇</span><span>Spares</span><em id="spareCount">0</em></button>
         <button data-panel="upgrades"><span class="dock-icon">↑</span><span>Upgrades</span><em id="upgradeCount">0</em></button>
-        <button data-panel="gear"><span class="dock-icon">⌁</span><span>Gear</span><em id="gearCount">0</em></button>
-        <button data-panel="workflows"><span class="dock-icon">→</span><span>Workflows</span><em id="workflowCount"></em></button>
       </nav>
     </main>
 
