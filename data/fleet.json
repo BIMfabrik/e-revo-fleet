@@ -7,21 +7,76 @@
       "status": "attention",
       "issues": [
         {
+          "id": "blue-broken-axle-carrier-2026-09-14",
+          "name": "Broken axle carrier / wheel hub",
+          "component": "carrier",
+          "part": "7034",
+          "area": "Wheel hub / suspension",
+          "status": "open",
+          "severity": "medium",
+          "reported": "2026-09-14",
+          "details": "One axle carrier / wheel hub (described as the “cursor”) is broken and needs replacement. Exact corner is still to confirm before ordering."
+        },
+        {
+          "id": "blue-broken-rear-wing-2026-09-14",
+          "name": "Rear wing broken",
+          "component": "wing",
+          "part": "7122",
+          "area": "Body / rear wing",
+          "status": "open",
+          "severity": "low",
+          "reported": "2026-09-14",
+          "details": "Rear wing is broken and should be replaced."
+        },
+        {
           "id": "blue-low-rear-ride-height-2026-09-14",
           "name": "Rear ride height too low",
           "component": "shock",
           "area": "Rear suspension / shocks",
           "status": "open",
-          "severity": "low",
+          "severity": "medium",
           "reported": "2026-09-14",
-          "details": "Rear of the car sits a little too low. Check rear spring preload/spacers, spring condition, shock oil level and possible oil leakage, then adjust preload only as needed to restore correct ride height."
+          "details": "Rear wheels sit very low. Check spring preload, spring condition, shock oil/leaks and free movement before adjusting ride height."
+        },
+        {
+          "id": "blue-rear-wheel-alignment-2026-09-14",
+          "name": "Rear wheel alignment off",
+          "component": "toeLink",
+          "area": "Rear suspension / alignment",
+          "status": "open",
+          "severity": "medium",
+          "reported": "2026-09-14",
+          "details": "Rear wheels are not aligned correctly. Check rear toe/camber, pivot balls, links and carriers after ride height is corrected."
+        },
+        {
+          "id": "blue-lighting-wiring-2026-09-14",
+          "name": "Lighting broken / wiring too tight",
+          "component": "lighting",
+          "area": "Lighting / electrical wiring",
+          "status": "open",
+          "severity": "medium",
+          "reported": "2026-09-14",
+          "details": "Electrical lighting is completely non-functional. LED leads are very short/tight and look too fragile for reliable use. Rework the lighting wiring with proper slack, strain relief and connection checks."
         }
       ],
-      "upgrades": [],
+      "upgrades": [
+        {
+          "id": "blue-aftermarket-front-arms",
+          "name": "Aftermarket front suspension arms",
+          "area": "Front suspension",
+          "note": "Non-stock front suspension arms. Brand/model to identify from photos before recording the exact replacement part.",
+          "needsConfirmation": true
+        }
+      ],
       "model": "1/16 E-Revo VXL (71076-3 generation)",
       "powerSystem": "Velineon 380 / VXL-3m",
       "radio": "TQi / TSM",
-      "serviceHistory": []
+      "serviceHistory": [],
+      "configuration": {
+        "servo": "Stock steering servo",
+        "lighting": "Aftermarket lighting installed but currently broken",
+        "generalCondition": "Mechanically tough car aside from the recorded faults."
+      }
     },
     {
       "id": "red",
