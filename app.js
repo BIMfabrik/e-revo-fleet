@@ -212,7 +212,11 @@ function closeDrawer(){
 
 function itemRows(items, kind){
   if(!items?.length) return `<div class="empty">Nothing recorded yet.</div>`;
-  return `<div class="list">${items.map(x=>`<div class="list-row"><div><strong>${esc(x.name||x.part||x.title||kind)}</strong><p>${esc(x.note||x.details||(x.part?`Part ${x.part}`:''))}</p></div>${x.qty?`<div class="qty">×${esc(x.qty)}</div>`:''}</div>`).join('')}</div>`;
+  return `<div class="list">${items.map(x=>{
+    const photos=(x.images||[]).map(src=>`<a class="stock-photo" href="${esc(src)}" target="_blank" rel="noopener"><img src="${esc(src)}" alt="${esc(x.name||x.part||kind)}"></a>`).join('');
+    const part=x.part?`<span class="stock-part">${esc(x.part)}</span>`:'';
+    return `<div class="list-row stock-row">${photos?`<div class="stock-photos">${photos}</div>`:'<div class="stock-photo-placeholder"></div>'}<div class="stock-copy"><strong>${esc(x.name||x.part||x.title||kind)}</strong><p>${part}${part&&x.note?' · ':''}${esc(x.note||x.details||'')}</p>${x.needsConfirmation?'<small class="stock-confirm">TO CONFIRM</small>':''}</div>${x.qty?`<div class="qty">×${esc(x.qty)}</div>`:''}</div>`;
+  }).join('')}</div>`;
 }
 
 function panelIssues(){
@@ -222,7 +226,7 @@ function panelIssues(){
 }
 function panelSpares(){
   const shared=sharedGarage();
-  openDrawer('Spares','Shared garage · inventory',`${itemRows(shared.spares,'Spare part')}<div class="drawer-section"><h3>Update through ChatGPT</h3><div class="chat-command">“Add 2× Traxxas 7151 driveshafts to shared spare stock.”</div></div>`);
+  openDrawer('Spares','Shared garage · inventory',`${itemRows(shared.spares,'Spare part')}<div class="drawer-section"><h3>Update through ChatGPT</h3><div class="chat-command">“Send me part photos. Add each photo as one shared stock item; if unclear, keep it To confirm with its photo.”</div></div>`);
 }
 
 function panelService(){

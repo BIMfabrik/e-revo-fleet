@@ -55,3 +55,7 @@ button,a{font:inherit}button{color:inherit}.app{min-height:100vh;overflow:hidden
 
 /* Compact maintenance log */
 .service-table-wrap{overflow-x:auto}.service-table{width:100%;border-collapse:collapse;font-size:11px}.service-table th{text-align:left;padding:0 10px 9px 0;color:#96999e;font-size:8px;letter-spacing:.13em;text-transform:uppercase;font-weight:850;border-bottom:1px solid #e9eaec}.service-table td{padding:12px 10px 12px 0;border-bottom:1px solid #f0f0f1;vertical-align:top;color:#45494f}.service-table td:nth-child(1){white-space:nowrap;color:#777b81}.service-table td:nth-child(2){white-space:nowrap;font-weight:800;color:#111214}.service-table td:nth-child(3){font-weight:650;color:#2e3135}
+
+/* Photo-first shared spare inventory */
+.stock-row{grid-template-columns:auto minmax(0,1fr) auto;align-items:center}.stock-photos{display:flex;gap:5px;flex-wrap:wrap;max-width:94px}.stock-photo{width:42px;height:42px;border-radius:8px;overflow:hidden;border:1px solid #e5e7ea;background:#f7f7f8;display:block}.stock-photo img{width:100%;height:100%;object-fit:cover;display:block}.stock-photo-placeholder{width:0}.stock-copy{min-width:0}.stock-part{font-weight:850;color:#22252a}.stock-confirm{display:inline-block;margin-top:6px;font-size:8px;font-weight:850;letter-spacing:.12em;color:#9a6415}.stock-row .qty{align-self:center;font-weight:800}.stock-photo:hover{border-color:#aeb2b8;transform:scale(1.04)}
+@media(max-width:500px){.stock-photos{max-width:44px}.stock-photo{width:40px;height:40px}}
