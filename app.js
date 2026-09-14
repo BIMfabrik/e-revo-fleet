@@ -88,6 +88,7 @@ const $$ = s => [...document.querySelectorAll(s)];
 let fleet = fallbackFleet;
 let workflows = [];
 let exploded = {views:{}};
+let backendAvailable = false;
 let carId = 'blue';
 let topMode = 'car';
 let view = 'body';
@@ -122,14 +123,17 @@ function planetLink(n){ return `https://planet-rc.ch/search?sSearch=${encodeURIC
 
 async function loadFleet(){
   try{
-    const [fleetRes, workflowRes, explodedRes] = await Promise.all([
-      fetch(`data/fleet.json?v=${Date.now()}`,{cache:'no-store'}),
+    const [workflowRes, explodedRes] = await Promise.all([
       fetch(`data/workflows.json?v=${Date.now()}`,{cache:'no-store'}),
       fetch(`data/exploded.json?v=${Date.now()}`,{cache:'no-store'})
     ]);
-    if(fleetRes.ok) fleet = await fleetRes.json();
     if(workflowRes.ok) workflows = (await workflowRes.json()).workflows || [];
     if(explodedRes.ok) exploded = await explodedRes.json();
+    try{
+      const apiRes=await fetch(`api/fleet?v=${Date.now()}`,{cache:'no-store'});
+      if(apiRes.ok && (apiRes.headers.get('content-type')||'').includes('application/json')){fleet=await apiRes.json();backendAvailable=true;}
+    }catch(_e){}
+    if(!backendAvailable){const fleetRes=await fetch(`data/fleet.json?v=${Date.now()}`,{cache:'no-store'});if(fleetRes.ok) fleet=await fleetRes.json();}
   }catch(e){ console.warn('Using fallback data',e); }
   render();
 }
@@ -219,6 +223,17 @@ function itemRows(items, kind){
   }).join('')}</div>`;
 }
 
+
+function quickSpareForm(){
+  if(!backendAvailable) return `<div class="source-note">Photo upload is available on the BlackBerg version of the garage.</div>`;
+  return `<form id="quickSpareForm" class="quick-spare-form"><div class="quick-spare-fields"><input name="part" placeholder="Part no. (optional)" autocomplete="off"><input name="name" placeholder="Name (optional)" autocomplete="off"></div><label class="photo-picker"><input name="photo" type="file" accept="image/*" capture="environment" required><span>Take / choose photo</span></label><button class="action primary" type="submit">Add to stock</button><div id="spareUploadStatus" class="source-note">One photo = one stock item. Leave part number blank to confirm it later.</div></form>`;
+}
+function resizePhoto(file){return new Promise((resolve,reject)=>{const r=new FileReader();r.onerror=reject;r.onload=()=>{const img=new Image();img.onerror=reject;img.onload=()=>{const max=1400,scale=Math.min(1,max/Math.max(img.width,img.height));const c=document.createElement('canvas');c.width=Math.round(img.width*scale);c.height=Math.round(img.height*scale);const ctx=c.getContext('2d');ctx.fillStyle='#fff';ctx.fillRect(0,0,c.width,c.height);ctx.drawImage(img,0,0,c.width,c.height);resolve(c.toDataURL('image/jpeg',.82));};img.src=r.result;};r.readAsDataURL(file);});}
+async function saveQuickSpare(form){
+  const status=form.querySelector('#spareUploadStatus'),file=form.elements.photo.files?.[0];if(!file)return;status.textContent='Saving photo…';
+  try{const imageDataUrl=await resizePhoto(file);const rawPart=form.elements.part.value.trim();const payload={part:rawPart||'?',name:form.elements.name.value.trim(),qty:1,needsConfirmation:!rawPart,originalName:file.name,imageDataUrl};const res=await fetch('api/spares',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});if(!res.ok)throw new Error((await res.json().catch(()=>({}))).error||`HTTP ${res.status}`);const out=await res.json();fleet=out.fleet;render();panelSpares();}catch(err){status.textContent=`Could not save: ${err.message}`;}
+}
+
 function panelIssues(){
   const car=currentCar(), items=car.issues||[];
   const body=items.length?`<div class="issue-list">${items.map(x=>`<button class="issue-row" ${x.component?`data-show-component="${esc(x.component)}"`:''}><div><span class="issue-state">OPEN</span><strong>${esc(x.name||'Issue')}</strong><p>${esc(x.details||x.note||'')}</p><small>${esc(x.area||'Maintenance')}${x.reported?` · ${esc(x.reported)}`:''}</small></div>${x.component?'<span class="locate">Show on car →</span>':''}</button>`).join('')}</div>`:`<div class="clean-state"><span class="clean-check">✓</span><div>No open damage recorded.</div></div>`;
@@ -226,7 +241,7 @@ function panelIssues(){
 }
 function panelSpares(){
   const shared=sharedGarage();
-  openDrawer('Spares','Shared garage · inventory',`${itemRows(shared.spares,'Spare part')}<div class="drawer-section"><h3>Update through ChatGPT</h3><div class="chat-command">“Send me part photos. Add each photo as one shared stock item; if unclear, keep it To confirm with its photo.”</div></div>`);
+  openDrawer('Spares','Shared garage · inventory',`<div class="drawer-section"><h3>Quick add from photo</h3>${quickSpareForm()}</div><div class="drawer-section"><h3>Stock</h3>${itemRows(shared.spares,'Spare part')}</div>`);
 }
 
 function panelService(){
@@ -276,6 +291,8 @@ function openWorkflow(id){
   openDrawer(w.title,`${w.category||'Procedure'} · ${w.scope||'1/16 E-Revo'}`,`${warning}<div class="workflow-steps">${steps}</div>${result}${source}`);
 }
 
+
+document.addEventListener('submit',e=>{const form=e.target.closest('#quickSpareForm');if(form){e.preventDefault();saveQuickSpare(form);}});
 
 document.addEventListener('click',e=>{
   const car=e.target.closest('[data-car]'); if(car){topMode='car';carId=car.dataset.car;view='body';render();closeDrawer();return;}
