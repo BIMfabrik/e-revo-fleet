@@ -213,7 +213,7 @@ function panelSpares(){
 
 function panelService(){
   const c=currentCar(), items=[...(c.serviceHistory||[])].sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
-  const body=items.length?`<div class="list">${items.map(x=>`<div class="list-row service-row"><div><strong>${esc(x.title||'Service')}</strong><p>${esc(x.details||'')}</p><small>${esc(x.date||'')}${x.part?` · Part ${esc(x.part)}`:''}${x.needsConfirmation?' · TO CONFIRM':''}</small></div></div>`).join('')}</div>`:`<div class="empty">No completed maintenance recorded for this car yet.</div>`;
+  const body=items.length?`<div class="service-table-wrap"><table class="service-table"><thead><tr><th>Date</th><th>Part No.</th><th>Part name</th></tr></thead><tbody>${items.map(x=>`<tr><td>${esc(x.date||'—')}</td><td>${esc(x.part||'—')}${x.needsConfirmation?' ?':''}</td><td>${esc(x.partName||x.title||'Service')}</td></tr>`).join('')}</tbody></table></div>`:`<div class="empty">No completed maintenance recorded for this car yet.</div>`;
   openDrawer('Service history',`${c.name} · completed work`,body);
 }
 

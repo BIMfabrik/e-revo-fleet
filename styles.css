@@ -52,3 +52,6 @@ button,a{font:inherit}button{color:inherit}.app{min-height:100vh;overflow:hidden
 @media(max-width:600px){.shared-hub{padding:36px 18px 90px}.shared-intro h1{font-size:56px}.shared-intro p{font-size:12px}.shared-grid{gap:8px}.shared-card{min-height:128px;padding:16px;border-radius:16px}.shared-card strong{font-size:17px}}
 
 .service-row small{display:block;margin-top:8px;color:#9a9da2;font-size:9px;font-weight:700;letter-spacing:.05em}.service-row{align-items:start}
+
+/* Compact maintenance log */
+.service-table-wrap{overflow-x:auto}.service-table{width:100%;border-collapse:collapse;font-size:11px}.service-table th{text-align:left;padding:0 10px 9px 0;color:#96999e;font-size:8px;letter-spacing:.13em;text-transform:uppercase;font-weight:850;border-bottom:1px solid #e9eaec}.service-table td{padding:12px 10px 12px 0;border-bottom:1px solid #f0f0f1;vertical-align:top;color:#45494f}.service-table td:nth-child(1){white-space:nowrap;color:#777b81}.service-table td:nth-child(2){white-space:nowrap;font-weight:800;color:#111214}.service-table td:nth-child(3){font-weight:650;color:#2e3135}
