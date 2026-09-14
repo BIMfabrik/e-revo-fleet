@@ -25,8 +25,8 @@
     },
     {
       "id": "red",
-      "name": "Red",
-      "accent": "#d51f2f",
+      "name": "Orange",
+      "accent": "#e97818",
       "status": "attention",
       "issues": [
         {
@@ -40,17 +40,49 @@
           "details": "Connector in the power path between the motor and battery is weak and slides out. Inspect the motor/ESC/battery connection, secure it properly, and replace the connector or terminal if it cannot hold firmly."
         },
         {
-          "id": "red-low-rear-ride-height-2026-09-14",
-          "name": "Rear ride height too low",
+          "id": "orange-rear-high-stiff-2026-09-14",
+          "name": "Rear suspension sits high / limited play",
           "component": "shock",
           "area": "Rear suspension / shocks",
           "status": "open",
           "severity": "low",
           "reported": "2026-09-14",
-          "details": "Rear of the car sits a little too low. Check rear spring preload/spacers, spring condition, shock oil level and possible oil leakage, then adjust preload only as needed to restore correct ride height."
+          "details": "Rear of Car 2 currently sits high and has little suspension play. Check spring preload, shock movement/oil, binding in the rear arms/links and whether the aftermarket setup is limiting droop."
+        },
+        {
+          "id": "orange-servo-receiver-lead-2026-09-14",
+          "name": "Short servo/receiver lead needs rework",
+          "component": "servo",
+          "area": "Steering electronics / receiver wiring",
+          "status": "open",
+          "severity": "medium",
+          "reported": "2026-09-14",
+          "details": "Aftermarket servo has a very short/tight connection to the receiver. Connection is rough and should be redone properly; possible intermittent electrical contact should be checked."
         }
       ],
-      "upgrades": [],
+      "upgrades": [
+        {
+          "id": "orange-red-aluminum-carriers",
+          "name": "Red aluminum axle carriers / wheel hubs",
+          "area": "Front + rear hubs",
+          "note": "Aftermarket red metal carriers/hubs where the wheels attach, fitted front and rear. Exact manufacturer and part numbers still to confirm.",
+          "needsConfirmation": true
+        },
+        {
+          "id": "orange-aftermarket-wheels",
+          "name": "Larger aftermarket wheels / tires",
+          "area": "Wheels & tires",
+          "note": "Slightly larger aftermarket set, described as Ruiz VA. Performs very well. Exact brand/model and dimensions to confirm.",
+          "needsConfirmation": true
+        },
+        {
+          "id": "orange-aftermarket-servo",
+          "name": "Aftermarket steering servo",
+          "area": "Steering",
+          "note": "Non-stock steering servo. Exact make/model to confirm. Current receiver lead is very short and needs a cleaner connection.",
+          "needsConfirmation": true
+        }
+      ],
       "model": "1/16 E-Revo VXL (71076-3 generation)",
       "powerSystem": "Velineon 380 / VXL-3m",
       "radio": "TQi / TSM",
