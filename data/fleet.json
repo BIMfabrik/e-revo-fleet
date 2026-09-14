@@ -190,8 +190,8 @@
         }
       ],
       "model": "1/16 E-Revo VXL (71076-3 generation)",
-      "powerSystem": "Velineon 380 / VXL-3m",
-      "radio": "TQi / TSM",
+      "powerSystem": "Velineon 380 / Team Orion ESC (model to confirm)",
+      "radio": "Traxxas TQ / TRX1023 transmitter",
       "serviceHistory": [],
       "configuration": {
         "bodyColor": "Older blue car; shown in the app simply as Car 3.",
