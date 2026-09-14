@@ -1,0 +1,3710 @@
+{
+  "model": "Traxxas 1/16 E-Revo VXL (7107/71076-3 family)",
+  "views": {
+    "chassis": {
+      "label": "Chassis",
+      "image": "https://www.astramodel.cz/eviews/traxxas-7107-e-revo-vxl-16/chassis.jpg?h=e158786ede943ae5f66711d7df2e57dd",
+      "width": 790,
+      "height": 564,
+      "source": "https://www.astramodel.cz/en/eview/traxxas-7107-e-revo-vxl-16/chassis.html",
+      "hotspots": [
+        {
+          "part": "7082",
+          "code": "TRA7082",
+          "title": "Traxxas Gear set, differential/ differential output shafts (2)/ hardware",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-gear-set-differential-differential-output-shafts-2-hardware-p23737.html",
+          "x": 217.7,
+          "y": 348.9,
+          "w": 16.6,
+          "h": 6.3
+        },
+        {
+          "part": "7082",
+          "code": "TRA7082",
+          "title": "Traxxas Gear set, differential/ differential output shafts (2)/ hardware",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-gear-set-differential-differential-output-shafts-2-hardware-p23737.html",
+          "x": 271.9,
+          "y": 378.2,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7082",
+          "code": "TRA7082",
+          "title": "Traxxas Gear set, differential/ differential output shafts (2)/ hardware",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-gear-set-differential-differential-output-shafts-2-hardware-p23737.html",
+          "x": 183.6,
+          "y": 403.8,
+          "w": 16.6,
+          "h": 6.0
+        },
+        {
+          "part": "7078",
+          "code": "TRA7078",
+          "title": "Traxxas Differential assembly, complete",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-differential-assembly-complete-p23734.html",
+          "x": 183.6,
+          "y": 396.0,
+          "w": 16.6,
+          "h": 6.8
+        },
+        {
+          "part": "7082",
+          "code": "TRA7082",
+          "title": "Traxxas Gear set, differential/ differential output shafts (2)/ hardware",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-gear-set-differential-differential-output-shafts-2-hardware-p23737.html",
+          "x": 158.5,
+          "y": 320.0,
+          "w": 17.6,
+          "h": 6.3
+        },
+        {
+          "part": "7078",
+          "code": "TRA7078",
+          "title": "Traxxas Differential assembly, complete",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-differential-assembly-complete-p23734.html",
+          "x": 106.3,
+          "y": 275.4,
+          "w": 17.6,
+          "h": 7.3
+        },
+        {
+          "part": "7080",
+          "code": "TRA7080",
+          "title": "Traxxas Cover plates, differential (front or rear)/ gaskets (2)/ o-rings (2)/ 2x14mm BCS (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-cover-plates-differential-front-or-rear-gaskets-2-o-rings-2-2x14mm-bcs-4-p23736.html",
+          "x": 106.3,
+          "y": 283.6,
+          "w": 17.6,
+          "h": 5.5
+        },
+        {
+          "part": "7080",
+          "code": "TRA7080",
+          "title": "Traxxas Cover plates, differential (front or rear)/ gaskets (2)/ o-rings (2)/ 2x14mm BCS (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-cover-plates-differential-front-or-rear-gaskets-2-o-rings-2-2x14mm-bcs-4-p23736.html",
+          "x": 349.1,
+          "y": 489.5,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "2578",
+          "code": "TRA2578",
+          "title": "Traxxas Screws, M3x12mm button-head (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m3x12mm-button-head-hex-drive-6-p24978.html",
+          "x": 392.2,
+          "y": 73.7,
+          "w": 28.6,
+          "h": 14.5
+        },
+        {
+          "part": "2578",
+          "code": "TRA2578",
+          "title": "Traxxas Screws, M3x12mm button-head (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m3x12mm-button-head-hex-drive-6-p24978.html",
+          "x": 465.0,
+          "y": 85.3,
+          "w": 28.6,
+          "h": 14.5
+        },
+        {
+          "part": "2575",
+          "code": "TRA2575",
+          "title": "Traxxas Screws, M3x6mm button-head (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m3x6mm-button-head-hex-drive-6-p24975.html",
+          "x": 559.8,
+          "y": 40.6,
+          "w": 25.6,
+          "h": 15.5
+        },
+        {
+          "part": "3965",
+          "code": "TRA3965",
+          "title": "Traxxas Screws, M2.5x8mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m2-5x8mm-cap-head-machine-6-p25057.html",
+          "x": 640.5,
+          "y": 66.7,
+          "w": 27.6,
+          "h": 14.5
+        },
+        {
+          "part": "2743",
+          "code": "TRA2743",
+          "title": "Traxxas Set (grub) screws, 3mm hardened (12)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-set-grub-screws-3mm-hardened-12-p25008.html",
+          "x": 691.7,
+          "y": 98.8,
+          "w": 20.6,
+          "h": 15.5
+        },
+        {
+          "part": "1926",
+          "code": "TRA1926",
+          "title": "Traxxas Antenna caps, vinyl (2)/ antenna spool",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-antenna-caps-vinyl-2-antenna-spool-p22823.html",
+          "x": 733.3,
+          "y": 175.1,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "1726",
+          "code": "TRA1726",
+          "title": "Traxxas Antenna, tube (1)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-antenna-tube-1-p22819.html",
+          "x": 744.9,
+          "y": 231.2,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "3965",
+          "code": "TRA3965",
+          "title": "Traxxas Screws, M2.5x8mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m2-5x8mm-cap-head-machine-6-p25057.html",
+          "x": 606.9,
+          "y": 156.0,
+          "w": 27.6,
+          "h": 15.5
+        },
+        {
+          "part": "2218X",
+          "code": "TRA2218X",
+          "title": "Traxxas Receiver, micro TQ 2.4 GHz with Traxxas Link (5-channel)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-receiver-micro-tq-2-4-ghz-with-traxxas-link-5-channel-p24691.html",
+          "x": 699.7,
+          "y": 214.7,
+          "w": 20.6,
+          "h": 7.0
+        },
+        {
+          "part": "2576",
+          "code": "TRA2576",
+          "title": "Traxxas Screws, M3x8mm button-head (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m3x8mm-button-head-hex-drive-6-p24976.html",
+          "x": 556.8,
+          "y": 471.0,
+          "w": 25.6,
+          "h": 14.5
+        },
+        {
+          "part": "2577",
+          "code": "TRA2577",
+          "title": "Traxxas Screws, M3x10mm button-head (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m3x10mm-button-head-hex-drive-6-p24977.html",
+          "x": 511.1,
+          "y": 482.0,
+          "w": 30.1,
+          "h": 14.5
+        },
+        {
+          "part": "2579",
+          "code": "TRA2579",
+          "title": "Traxxas Screws, M3x15mm button-head (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m3x15mm-button-head-hex-drive-6-p24979.html",
+          "x": 410.8,
+          "y": 504.1,
+          "w": 28.6,
+          "h": 14.5
+        },
+        {
+          "part": "7025",
+          "code": "TRA7025",
+          "title": "Traxxas Seal kit, receiver box",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-seal-kit-receiver-box-p23715.html",
+          "x": 700.7,
+          "y": 133.9,
+          "w": 26.6,
+          "h": 14.5
+        },
+        {
+          "part": "7025",
+          "code": "TRA7025",
+          "title": "Traxxas Seal kit, receiver box",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-seal-kit-receiver-box-p23715.html",
+          "x": 602.2,
+          "y": 263.3,
+          "w": 43.6,
+          "h": 8.0
+        },
+        {
+          "part": "7024X",
+          "code": "TRA7024X",
+          "title": "Traxxas Box, receiver (sealed)/ wire cover/ foam pads, upper & lower/ silicone grease",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-box-receiver-sealed-wire-cover-foam-pads-upper-lower-silicone-grease-p23714.html",
+          "x": 696.5,
+          "y": 280.4,
+          "w": 20.6,
+          "h": 8.0
+        },
+        {
+          "part": "7024X",
+          "code": "TRA7024X",
+          "title": "Traxxas Box, receiver (sealed)/ wire cover/ foam pads, upper & lower/ silicone grease",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-box-receiver-sealed-wire-cover-foam-pads-upper-lower-silicone-grease-p23714.html",
+          "x": 601.9,
+          "y": 254.3,
+          "w": 20.6,
+          "h": 8.0
+        },
+        {
+          "part": "7024X",
+          "code": "TRA7024X",
+          "title": "Traxxas Box, receiver (sealed)/ wire cover/ foam pads, upper & lower/ silicone grease",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-box-receiver-sealed-wire-cover-foam-pads-upper-lower-silicone-grease-p23714.html",
+          "x": 599.4,
+          "y": 129.9,
+          "w": 20.6,
+          "h": 8.0
+        },
+        {
+          "part": "7024X",
+          "code": "TRA7024X",
+          "title": "Traxxas Box, receiver (sealed)/ wire cover/ foam pads, upper & lower/ silicone grease",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-box-receiver-sealed-wire-cover-foam-pads-upper-lower-silicone-grease-p23714.html",
+          "x": 700.7,
+          "y": 124.9,
+          "w": 20.6,
+          "h": 8.0
+        },
+        {
+          "part": "7026",
+          "code": "TRA7026",
+          "title": "Traxxas Door, battery compartment (1)/ vents, battery compartment (1 pair)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-door-battery-compartment-1-vents-battery-compartment-1-pair-p23716.html",
+          "x": 550.7,
+          "y": 63.7,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7026",
+          "code": "TRA7026",
+          "title": "Traxxas Door, battery compartment (1)/ vents, battery compartment (1 pair)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-door-battery-compartment-1-vents-battery-compartment-1-pair-p23716.html",
+          "x": 504.6,
+          "y": 126.1,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7026",
+          "code": "TRA7026",
+          "title": "Traxxas Door, battery compartment (1)/ vents, battery compartment (1 pair)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-door-battery-compartment-1-vents-battery-compartment-1-pair-p23716.html",
+          "x": 453.7,
+          "y": 114.4,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "3375",
+          "code": "TRA3375",
+          "title": "Traxxas VXL-3m Electronic Speed Control, waterproof (brushless)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-vxl-3m-electronic-speed-control-waterproof-brushless-p22922.html",
+          "x": 413.8,
+          "y": 242.3,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7026",
+          "code": "TRA7026",
+          "title": "Traxxas Door, battery compartment (1)/ vents, battery compartment (1 pair)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-door-battery-compartment-1-vents-battery-compartment-1-pair-p23716.html",
+          "x": 357.6,
+          "y": 180.1,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7022",
+          "code": "TRA7022",
+          "title": "Traxxas Chassis",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-chassis-p23712.html",
+          "x": 383.7,
+          "y": 297.4,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7026",
+          "code": "TRA7026",
+          "title": "Traxxas Door, battery compartment (1)/ vents, battery compartment (1 pair)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-door-battery-compartment-1-vents-battery-compartment-1-pair-p23716.html",
+          "x": 600.9,
+          "y": 341.3,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7037",
+          "code": "TRA7037",
+          "title": "Traxxas Skidplate set, front (1)/ rear (1)/ transmission (1)/ servo guards (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-skidplate-set-front-1-rear-1-transmission-1-servo-guards-2-p24928.html",
+          "x": 536.2,
+          "y": 367.2,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7037",
+          "code": "TRA7037",
+          "title": "Traxxas Skidplate set, front (1)/ rear (1)/ transmission (1)/ servo guards (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-skidplate-set-front-1-rear-1-transmission-1-servo-guards-2-p24928.html",
+          "x": 395.3,
+          "y": 465.7,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7043",
+          "code": "TRA7043",
+          "title": "Traxxas Steering arm (upper & lower)/ steering link/ servo horn/ servo saver",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-steering-arm-upper-lower-steering-link-servo-horn-servo-saver-p23721.html",
+          "x": 386.0,
+          "y": 420.8,
+          "w": 17.3,
+          "h": 7.0
+        },
+        {
+          "part": "7043",
+          "code": "TRA7043",
+          "title": "Traxxas Steering arm (upper & lower)/ steering link/ servo horn/ servo saver",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-steering-arm-upper-lower-steering-link-servo-horn-servo-saver-p23721.html",
+          "x": 390.0,
+          "y": 375.4,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "2080",
+          "code": "TRA2080",
+          "title": "Traxxas Servo 2080, waterproof",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-servo-2080-waterproof-p24854.html",
+          "x": 376.4,
+          "y": 347.3,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "2575",
+          "code": "TRA2575",
+          "title": "Traxxas Screws, M3x6mm button-head (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m3x6mm-button-head-hex-drive-6-p24975.html",
+          "x": 375.2,
+          "y": 400.3,
+          "w": 25.6,
+          "h": 15.5
+        },
+        {
+          "part": "7078",
+          "code": "TRA7078",
+          "title": "Traxxas Differential assembly, complete",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-differential-assembly-complete-p23734.html",
+          "x": 349.1,
+          "y": 481.5,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7020",
+          "code": "TRA7020",
+          "title": "Traxxas Ball bearings, blue rubber sealed (8x12x3.5mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-8x12x3-5mm-2-p24265.html",
+          "x": 279.4,
+          "y": 453.7,
+          "w": 25.6,
+          "h": 15.5
+        },
+        {
+          "part": "7019",
+          "code": "TRA7019",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x8x3mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x8x3mm-2-p24264.html",
+          "x": 127.9,
+          "y": 441.1,
+          "w": 21.6,
+          "h": 14.5
+        },
+        {
+          "part": "7079",
+          "code": "TRA7079",
+          "title": "Traxxas Ring gear, differential/ pinion gear, differential",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ring-gear-differential-pinion-gear-differential-p23735.html",
+          "x": 182.6,
+          "y": 344.1,
+          "w": 16.6,
+          "h": 6.8
+        },
+        {
+          "part": "7079",
+          "code": "TRA7079",
+          "title": "Traxxas Ring gear, differential/ pinion gear, differential",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ring-gear-differential-pinion-gear-differential-p23735.html",
+          "x": 124.9,
+          "y": 395.3,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7078",
+          "code": "TRA7078",
+          "title": "Traxxas Differential assembly, complete",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-differential-assembly-complete-p23734.html",
+          "x": 182.6,
+          "y": 336.8,
+          "w": 16.6,
+          "h": 6.5
+        },
+        {
+          "part": "7078",
+          "code": "TRA7078",
+          "title": "Traxxas Differential assembly, complete",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-differential-assembly-complete-p23734.html",
+          "x": 216.7,
+          "y": 341.1,
+          "w": 17.6,
+          "h": 6.3
+        },
+        {
+          "part": "7078",
+          "code": "TRA7078",
+          "title": "Traxxas Differential assembly, complete",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-differential-assembly-complete-p23734.html",
+          "x": 273.4,
+          "y": 370.2,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7078",
+          "code": "TRA7078",
+          "title": "Traxxas Differential assembly, complete",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-differential-assembly-complete-p23734.html",
+          "x": 159.5,
+          "y": 313.2,
+          "w": 16.6,
+          "h": 6.0
+        },
+        {
+          "part": "7020",
+          "code": "TRA7020",
+          "title": "Traxxas Ball bearings, blue rubber sealed (8x12x3.5mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-8x12x3-5mm-2-p24265.html",
+          "x": 30.1,
+          "y": 302.5,
+          "w": 24.6,
+          "h": 14.5
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 310.5,
+          "y": 475.8,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 70.7,
+          "y": 447.9,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 26.1,
+          "y": 262.8,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 64.7,
+          "y": 389.7,
+          "w": 20.6,
+          "h": 14.5
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 319.0,
+          "y": 410.8,
+          "w": 20.6,
+          "h": 14.5
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 54.2,
+          "y": 260.3,
+          "w": 20.6,
+          "h": 14.5
+        }
+      ]
+    },
+    "front": {
+      "label": "Front",
+      "image": "https://www.astramodel.cz/eviews/traxxas-7107-e-revo-vxl-16/front.jpg?h=7a5dc3aadaf6fe279a82c3969d825cfc",
+      "width": 790,
+      "height": 564,
+      "source": "https://www.astramodel.cz/en/eview/traxxas-7107-e-revo-vxl-16/front.html",
+      "hotspots": [
+        {
+          "part": "5123",
+          "code": "TRA5123",
+          "title": "Traxxas Bellcrank bushings (plastic) (4x7x2.5mm) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bellcrank-bushings-plastic-4x7x2-5mm-4-p23320.html",
+          "x": 337.6,
+          "y": 52.4,
+          "w": 16.6,
+          "h": 6.8
+        },
+        {
+          "part": "7118X",
+          "code": "TRA7118X",
+          "title": "Traxxas Push rods, aluminum (red-anodized) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-push-rods-aluminum-red-anodized-4-p24708.html",
+          "x": 277.6,
+          "y": 90.0,
+          "w": 32.1,
+          "h": 7.3
+        },
+        {
+          "part": "7118",
+          "code": "TRA7118",
+          "title": "Traxxas Push rod (molded composite) (red) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-push-rod-molded-composite-red-4-p24707.html",
+          "x": 497.6,
+          "y": 156.2,
+          "w": 16.6,
+          "h": 6.0
+        },
+        {
+          "part": "7154X",
+          "code": "TRA7154X",
+          "title": "Traxxas Wheel hubs, hex, aluminum (blue-anodized) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheel-hubs-hex-aluminum-blue-anodized-4-p24341.html",
+          "x": 69.7,
+          "y": 128.7,
+          "w": 32.1,
+          "h": 7.3
+        },
+        {
+          "part": "7151X",
+          "code": "TRA7151X",
+          "title": "Traxxas Driveshaft, 1/16 E-Revo (steel constant-velocity) (assembled) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-driveshaft-1-16-e-revo-steel-constant-velocity-assembled-4-p23744.html",
+          "x": 163.5,
+          "y": 192.1,
+          "w": 32.1,
+          "h": 7.0
+        },
+        {
+          "part": "7138X",
+          "code": "TRA7138X",
+          "title": "Traxxas Toe links, aluminum (red-anodized) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-toe-links-aluminum-red-anodized-4-p25172.html",
+          "x": 286.9,
+          "y": 376.7,
+          "w": 32.1,
+          "h": 7.0
+        },
+        {
+          "part": "7138X",
+          "code": "TRA7138X",
+          "title": "Traxxas Toe links, aluminum (red-anodized) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-toe-links-aluminum-red-anodized-4-p25172.html",
+          "x": 373.2,
+          "y": 365.7,
+          "w": 32.1,
+          "h": 6.0
+        },
+        {
+          "part": "7118X",
+          "code": "TRA7118X",
+          "title": "Traxxas Push rods, aluminum (red-anodized) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-push-rods-aluminum-red-anodized-4-p24708.html",
+          "x": 505.6,
+          "y": 203.9,
+          "w": 32.1,
+          "h": 6.3
+        },
+        {
+          "part": "7173",
+          "code": "TRA7173",
+          "title": "Traxxas Tires 2.2",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-tires-2-2-response-pro-foam-inserts-2-p24580.html",
+          "x": 571.3,
+          "y": 230.2,
+          "w": 28.6,
+          "h": 7.0
+        },
+        {
+          "part": "7175",
+          "code": "TRA7175",
+          "title": "Traxxas Tires & wheels 2.2",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-tires-wheels-2-2-dished-white-wheels-response-pro-2-2-tires-2-p24160.html",
+          "x": 653.1,
+          "y": 226.7,
+          "w": 28.6,
+          "h": 9.0
+        },
+        {
+          "part": "7151X",
+          "code": "TRA7151X",
+          "title": "Traxxas Driveshaft, 1/16 E-Revo (steel constant-velocity) (assembled) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-driveshaft-1-16-e-revo-steel-constant-velocity-assembled-4-p23744.html",
+          "x": 533.7,
+          "y": 345.3,
+          "w": 32.1,
+          "h": 6.8
+        },
+        {
+          "part": "7171",
+          "code": "TRA7171",
+          "title": "Traxxas Wheels 2.2",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheels-2-2-dished-white-2-p23902.html",
+          "x": 681.2,
+          "y": 299.9,
+          "w": 28.6,
+          "h": 8.0
+        },
+        {
+          "part": "1747R",
+          "code": "TRA1747R",
+          "title": "Traxxas Nuts, M4 aluminum, flanged, serrated (blue) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-nuts-m4-aluminum-flanged-serrated-blue-4-p24310.html",
+          "x": 724.8,
+          "y": 377.7,
+          "w": 33.1,
+          "h": 7.0
+        },
+        {
+          "part": "7154X",
+          "code": "TRA7154X",
+          "title": "Traxxas Wheel hubs, hex, aluminum (blue-anodized) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheel-hubs-hex-aluminum-blue-anodized-4-p24341.html",
+          "x": 672.6,
+          "y": 410.0,
+          "w": 32.1,
+          "h": 7.0
+        },
+        {
+          "part": "5124",
+          "code": "TRA5124",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x7x2.5mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x7x2-5mm-2-p24258.html",
+          "x": 297.9,
+          "y": 146.5,
+          "w": 28.6,
+          "h": 7.0
+        },
+        {
+          "part": "5123",
+          "code": "TRA5123",
+          "title": "Traxxas Bellcrank bushings (plastic) (4x7x2.5mm) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bellcrank-bushings-plastic-4x7x2-5mm-4-p23320.html",
+          "x": 297.9,
+          "y": 138.4,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7151",
+          "code": "TRA7151",
+          "title": "Traxxas Driveshaft assembly (1) left or right/ 3x10mm screw pin (1)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-driveshaft-assembly-1-left-or-right-3x10mm-screw-pin-1-p23743.html",
+          "x": 163.5,
+          "y": 184.1,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7174A",
+          "code": "TRA7174A",
+          "title": "Traxxas Tires & wheels 2.2",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-tires-wheels-2-2-gemini-black-chrome-wheels-talon-tires-2-p24159.html",
+          "x": 653.1,
+          "y": 217.7,
+          "w": 20.6,
+          "h": 8.0
+        },
+        {
+          "part": "7172A",
+          "code": "TRA7172A",
+          "title": "Traxxas Wheels 2.2",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheels-2-2-gemini-black-chrome-2-p23903.html",
+          "x": 681.2,
+          "y": 291.9,
+          "w": 20.6,
+          "h": 7.0
+        },
+        {
+          "part": "7170",
+          "code": "TRA7170",
+          "title": "Traxxas Tires 2.2",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-tires-2-2-talon-2-foam-inserts-2-p24579.html",
+          "x": 571.3,
+          "y": 222.2,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7015",
+          "code": "TRA7015",
+          "title": "Traxxas Body mounts, front & rear/ body mount posts, front & rear",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-body-mounts-front-rear-body-mount-posts-front-rear-p23711.html",
+          "x": 197.1,
+          "y": 257.3,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7135",
+          "code": "TRA7135",
+          "title": "Traxxas Bumpers, front (1)/ rear (1)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bumpers-front-1-rear-1-p24420.html",
+          "x": 185.6,
+          "y": 379.7,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7015",
+          "code": "TRA7015",
+          "title": "Traxxas Body mounts, front & rear/ body mount posts, front & rear",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-body-mounts-front-rear-body-mount-posts-front-rear-p23711.html",
+          "x": 209.7,
+          "y": 368.2,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7138",
+          "code": "TRA7138",
+          "title": "Traxxas Toe link, front & rear (molded composite) (red) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-toe-link-front-rear-molded-composite-red-4-p25171.html",
+          "x": 286.9,
+          "y": 368.7,
+          "w": 17.6,
+          "h": 6.8
+        },
+        {
+          "part": "7015",
+          "code": "TRA7015",
+          "title": "Traxxas Body mounts, front & rear/ body mount posts, front & rear",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-body-mounts-front-rear-body-mount-posts-front-rear-p23711.html",
+          "x": 256.3,
+          "y": 316.0,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7021",
+          "code": "TRA7021",
+          "title": "Traxxas Suspension pin set (front or rear), 2x46mm (2), 2x14mm (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-pin-set-front-or-rear-2x46mm-2-2x14mm-4-p23829.html",
+          "x": 250.3,
+          "y": 297.9,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7037",
+          "code": "TRA7037",
+          "title": "Traxxas Skidplate set, front (1)/ rear (1)/ transmission (1)/ servo guards (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-skidplate-set-front-1-rear-1-transmission-1-servo-guards-2-p24928.html",
+          "x": 404.8,
+          "y": 473.0,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7021",
+          "code": "TRA7021",
+          "title": "Traxxas Suspension pin set (front or rear), 2x46mm (2), 2x14mm (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-pin-set-front-or-rear-2x46mm-2-2x14mm-4-p23829.html",
+          "x": 375.2,
+          "y": 235.7,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7079",
+          "code": "TRA7079",
+          "title": "Traxxas Ring gear, differential/ pinion gear, differential",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ring-gear-differential-pinion-gear-differential-p23735.html",
+          "x": 399.3,
+          "y": 246.8,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7043",
+          "code": "TRA7043",
+          "title": "Traxxas Steering arm (upper & lower)/ steering link/ servo horn/ servo saver",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-steering-arm-upper-lower-steering-link-servo-horn-servo-saver-p23721.html",
+          "x": 407.8,
+          "y": 124.9,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7022",
+          "code": "TRA7022",
+          "title": "Traxxas Chassis",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-chassis-p23712.html",
+          "x": 343.1,
+          "y": 177.1,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7030X",
+          "code": "TRA7030X",
+          "title": "Traxxas Bulkhead, front (left & right halves)/ 3x10mm BCS (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bulkhead-front-left-right-halves-3x10mm-bcs-4-p23801.html",
+          "x": 333.6,
+          "y": 200.1,
+          "w": 19.6,
+          "h": 8.0
+        },
+        {
+          "part": "7030X",
+          "code": "TRA7030X",
+          "title": "Traxxas Bulkhead, front (left & right halves)/ 3x10mm BCS (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bulkhead-front-left-right-halves-3x10mm-bcs-4-p23801.html",
+          "x": 399.3,
+          "y": 294.9,
+          "w": 31.1,
+          "h": 15.5
+        },
+        {
+          "part": "7030X",
+          "code": "TRA7030X",
+          "title": "Traxxas Bulkhead, front (left & right halves)/ 3x10mm BCS (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bulkhead-front-left-right-halves-3x10mm-bcs-4-p23801.html",
+          "x": 342.1,
+          "y": 280.9,
+          "w": 20.6,
+          "h": 7.0
+        },
+        {
+          "part": "7028",
+          "code": "TRA7028",
+          "title": "Traxxas Hollow balls (20)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-hollow-balls-20-p23717.html",
+          "x": 497.6,
+          "y": 148.0,
+          "w": 16.6,
+          "h": 7.3
+        },
+        {
+          "part": "7118",
+          "code": "TRA7118",
+          "title": "Traxxas Push rod (molded composite) (red) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-push-rod-molded-composite-red-4-p24707.html",
+          "x": 505.6,
+          "y": 195.9,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7155",
+          "code": "TRA7155",
+          "title": "Traxxas Rocker arm post, steel (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-rocker-arm-post-steel-4-p23747.html",
+          "x": 523.7,
+          "y": 70.7,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7158",
+          "code": "TRA7158",
+          "title": "Traxxas Rocker arm set, progressive-2/ plastic bushings (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-rocker-arm-set-progressive-2-plastic-bushings-8-p25178.html",
+          "x": 448.4,
+          "y": 112.4,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7158",
+          "code": "TRA7158",
+          "title": "Traxxas Rocker arm set, progressive-2/ plastic bushings (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-rocker-arm-set-progressive-2-plastic-bushings-8-p25178.html",
+          "x": 428.4,
+          "y": 141.4,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7028",
+          "code": "TRA7028",
+          "title": "Traxxas Hollow balls (20)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-hollow-balls-20-p23717.html",
+          "x": 454.4,
+          "y": 216.7,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7131",
+          "code": "TRA7131",
+          "title": "Traxxas Suspension arm set, front",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-arm-set-front-p24749.html",
+          "x": 457.9,
+          "y": 301.5,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7021",
+          "code": "TRA7021",
+          "title": "Traxxas Suspension pin set (front or rear), 2x46mm (2), 2x14mm (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-pin-set-front-or-rear-2x46mm-2-2x14mm-4-p23829.html",
+          "x": 448.4,
+          "y": 263.8,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7131",
+          "code": "TRA7131",
+          "title": "Traxxas Suspension arm set, front",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-arm-set-front-p24749.html",
+          "x": 426.3,
+          "y": 340.1,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7043",
+          "code": "TRA7043",
+          "title": "Traxxas Steering arm (upper & lower)/ steering link/ servo horn/ servo saver",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-steering-arm-upper-lower-steering-link-servo-horn-servo-saver-p23721.html",
+          "x": 372.2,
+          "y": 303.5,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7043",
+          "code": "TRA7043",
+          "title": "Traxxas Steering arm (upper & lower)/ steering link/ servo horn/ servo saver",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-steering-arm-upper-lower-steering-link-servo-horn-servo-saver-p23721.html",
+          "x": 333.6,
+          "y": 338.6,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7043",
+          "code": "TRA7043",
+          "title": "Traxxas Steering arm (upper & lower)/ steering link/ servo horn/ servo saver",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-steering-arm-upper-lower-steering-link-servo-horn-servo-saver-p23721.html",
+          "x": 316.0,
+          "y": 394.7,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7043",
+          "code": "TRA7043",
+          "title": "Traxxas Steering arm (upper & lower)/ steering link/ servo horn/ servo saver",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-steering-arm-upper-lower-steering-link-servo-horn-servo-saver-p23721.html",
+          "x": 400.5,
+          "y": 422.3,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7138",
+          "code": "TRA7138",
+          "title": "Traxxas Toe link, front & rear (molded composite) (red) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-toe-link-front-rear-molded-composite-red-4-p25171.html",
+          "x": 373.2,
+          "y": 357.6,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7021",
+          "code": "TRA7021",
+          "title": "Traxxas Suspension pin set (front or rear), 2x46mm (2), 2x14mm (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-pin-set-front-or-rear-2x46mm-2-2x14mm-4-p23829.html",
+          "x": 310.5,
+          "y": 293.4,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7078",
+          "code": "TRA7078",
+          "title": "Traxxas Differential assembly, complete",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-differential-assembly-complete-p23734.html",
+          "x": 322.0,
+          "y": 270.4,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7023",
+          "code": "TRA7023",
+          "title": "Traxxas Bulkhead tie bars, front & rear (blue-anodized aluminum)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bulkhead-tie-bars-front-rear-blue-anodized-aluminum-p23799.html",
+          "x": 295.9,
+          "y": 281.9,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7021",
+          "code": "TRA7021",
+          "title": "Traxxas Suspension pin set (front or rear), 2x46mm (2), 2x14mm (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-pin-set-front-or-rear-2x46mm-2-2x14mm-4-p23829.html",
+          "x": 295.9,
+          "y": 254.3,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7151",
+          "code": "TRA7151",
+          "title": "Traxxas Driveshaft assembly (1) left or right/ 3x10mm screw pin (1)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-driveshaft-assembly-1-left-or-right-3x10mm-screw-pin-1-p23743.html",
+          "x": 533.7,
+          "y": 337.6,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7131",
+          "code": "TRA7131",
+          "title": "Traxxas Suspension arm set, front",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-arm-set-front-p24749.html",
+          "x": 206.2,
+          "y": 192.9,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7155",
+          "code": "TRA7155",
+          "title": "Traxxas Rocker arm post, steel (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-rocker-arm-post-steel-4-p23747.html",
+          "x": 309.5,
+          "y": 47.7,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7118",
+          "code": "TRA7118",
+          "title": "Traxxas Push rod (molded composite) (red) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-push-rod-molded-composite-red-4-p24707.html",
+          "x": 277.4,
+          "y": 83.0,
+          "w": 17.6,
+          "h": 6.3
+        },
+        {
+          "part": "7158",
+          "code": "TRA7158",
+          "title": "Traxxas Rocker arm set, progressive-2/ plastic bushings (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-rocker-arm-set-progressive-2-plastic-bushings-8-p25178.html",
+          "x": 343.1,
+          "y": 84.0,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7158",
+          "code": "TRA7158",
+          "title": "Traxxas Rocker arm set, progressive-2/ plastic bushings (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-rocker-arm-set-progressive-2-plastic-bushings-8-p25178.html",
+          "x": 352.6,
+          "y": 125.9,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7131",
+          "code": "TRA7131",
+          "title": "Traxxas Suspension arm set, front",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-arm-set-front-p24749.html",
+          "x": 264.8,
+          "y": 134.4,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7020",
+          "code": "TRA7020",
+          "title": "Traxxas Ball bearings, blue rubber sealed (8x12x3.5mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-8x12x3-5mm-2-p24265.html",
+          "x": 163.5,
+          "y": 99.8,
+          "w": 25.6,
+          "h": 14.5
+        },
+        {
+          "part": "7034",
+          "code": "TRA7034",
+          "title": "Traxxas Traxxas: Axle carriers, front/left (2 each)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-traxxas-axle-carriers-front-left-2-each-p25093.html",
+          "x": 195.1,
+          "y": 107.3,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "1747R",
+          "code": "TRA1747R",
+          "title": "Traxxas Nuts, M4 aluminum, flanged, serrated (blue) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-nuts-m4-aluminum-flanged-serrated-blue-4-p24310.html",
+          "x": 48.7,
+          "y": 84.3,
+          "w": 20.6,
+          "h": 7.0
+        },
+        {
+          "part": "3647",
+          "code": "TRA3647",
+          "title": "Traxxas Nuts, 4mm flanged nylon locking (steel, serrated) (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-nuts-4mm-flanged-nylon-locking-steel-serrated-8-p24316.html",
+          "x": 48.7,
+          "y": 68.0,
+          "w": 18.6,
+          "h": 15.5
+        },
+        {
+          "part": "7154",
+          "code": "TRA7154",
+          "title": "Traxxas Wheel hubs, hex (4)/ axle pins (1.5x8mm) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheel-hubs-hex-4-axle-pins-1-5x8mm-4-p24340.html",
+          "x": 69.7,
+          "y": 120.9,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7033",
+          "code": "TRA7033",
+          "title": "Traxxas Pivot balls (4)/ pivot ball caps (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-pivot-balls-4-pivot-ball-caps-4-p23719.html",
+          "x": 144.0,
+          "y": 83.3,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7033X",
+          "code": "TRA7033X",
+          "title": "Traxxas Aluminum caps, pivot ball (threaded aluminum, hard-anodized, PTFE-coating) (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-aluminum-caps-pivot-ball-threaded-aluminum-hard-anodized-ptfe-coating-8-p23720.html",
+          "x": 80.3,
+          "y": 147.0,
+          "w": 32.1,
+          "h": 8.0
+        },
+        {
+          "part": "7033X",
+          "code": "TRA7033X",
+          "title": "Traxxas Aluminum caps, pivot ball (threaded aluminum, hard-anodized, PTFE-coating) (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-aluminum-caps-pivot-ball-threaded-aluminum-hard-anodized-ptfe-coating-8-p23720.html",
+          "x": 661.8,
+          "y": 387.7,
+          "w": 30.3,
+          "h": 7.0
+        },
+        {
+          "part": "7033X",
+          "code": "TRA7033X",
+          "title": "Traxxas Aluminum caps, pivot ball (threaded aluminum, hard-anodized, PTFE-coating) (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-aluminum-caps-pivot-ball-threaded-aluminum-hard-anodized-ptfe-coating-8-p23720.html",
+          "x": 633.0,
+          "y": 458.5,
+          "w": 33.1,
+          "h": 8.0
+        },
+        {
+          "part": "7033X",
+          "code": "TRA7033X",
+          "title": "Traxxas Aluminum caps, pivot ball (threaded aluminum, hard-anodized, PTFE-coating) (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-aluminum-caps-pivot-ball-threaded-aluminum-hard-anodized-ptfe-coating-8-p23720.html",
+          "x": 108.3,
+          "y": 76.7,
+          "w": 32.1,
+          "h": 8.0
+        },
+        {
+          "part": "7033",
+          "code": "TRA7033",
+          "title": "Traxxas Pivot balls (4)/ pivot ball caps (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-pivot-balls-4-pivot-ball-caps-4-p23719.html",
+          "x": 108.3,
+          "y": 158.5,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "3236",
+          "code": "TRA3236",
+          "title": "Traxxas Screws, 2.5x12mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x12mm-cap-head-machine-6-p25037.html",
+          "x": 264.8,
+          "y": 502.6,
+          "w": 27.6,
+          "h": 14.5
+        },
+        {
+          "part": "3236",
+          "code": "TRA3236",
+          "title": "Traxxas Screws, 2.5x12mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x12mm-cap-head-machine-6-p25037.html",
+          "x": 415.8,
+          "y": 396.8,
+          "w": 31.1,
+          "h": 14.5
+        },
+        {
+          "part": "2526",
+          "code": "TRA2526",
+          "title": "Traxxas Screws, M2.5x12mm countersunk(hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m2-5x12mm-countersunk-hex-drive-6-p24944.html",
+          "x": 405.8,
+          "y": 487.5,
+          "w": 34.1,
+          "h": 14.5
+        },
+        {
+          "part": "3229",
+          "code": "TRA3229",
+          "title": "Traxxas Screws, 2.5x10mm cap-head machine (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x10mm-cap-head-machine-hex-drive-6-p25036.html",
+          "x": 326.5,
+          "y": 320.0,
+          "w": 31.1,
+          "h": 14.5
+        },
+        {
+          "part": "5114",
+          "code": "TRA5114",
+          "title": "Traxxas Ball bearings, blue rubber sealed (5x8x2.5mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-5x8x2-5mm-2-p24250.html",
+          "x": 400.3,
+          "y": 452.9,
+          "w": 28.6,
+          "h": 6.5
+        },
+        {
+          "part": "2545",
+          "code": "TRA2545",
+          "title": "Traxxas Bellcrank bushings (plastic) (5x8x2.5mm) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bellcrank-bushings-plastic-5x8x2-5mm-4-p22859.html",
+          "x": 400.3,
+          "y": 444.9,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "5114",
+          "code": "TRA5114",
+          "title": "Traxxas Ball bearings, blue rubber sealed (5x8x2.5mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-5x8x2-5mm-2-p24250.html",
+          "x": 392.2,
+          "y": 345.3,
+          "w": 27.6,
+          "h": 6.8
+        },
+        {
+          "part": "2545",
+          "code": "TRA2545",
+          "title": "Traxxas Bellcrank bushings (plastic) (5x8x2.5mm) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bellcrank-bushings-plastic-5x8x2-5mm-4-p22859.html",
+          "x": 392.2,
+          "y": 337.6,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "3236",
+          "code": "TRA3236",
+          "title": "Traxxas Screws, 2.5x12mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x12mm-cap-head-machine-6-p25037.html",
+          "x": 261.8,
+          "y": 324.0,
+          "w": 31.1,
+          "h": 15.5
+        },
+        {
+          "part": "3215",
+          "code": "TRA3215",
+          "title": "Traxxas Screws, 2.5x6mm cap-head machine (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x6mm-cap-head-machine-hex-drive-6-p25035.html",
+          "x": 268.9,
+          "y": 295.9,
+          "w": 27.6,
+          "h": 15.5
+        },
+        {
+          "part": "2575",
+          "code": "TRA2575",
+          "title": "Traxxas Screws, M3x6mm button-head (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m3x6mm-button-head-hex-drive-6-p24975.html",
+          "x": 231.2,
+          "y": 258.3,
+          "w": 25.6,
+          "h": 15.5
+        },
+        {
+          "part": "3965",
+          "code": "TRA3965",
+          "title": "Traxxas Screws, M2.5x8mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m2-5x8mm-cap-head-machine-6-p25057.html",
+          "x": 235.7,
+          "y": 358.6,
+          "w": 26.6,
+          "h": 15.5
+        },
+        {
+          "part": "3236",
+          "code": "TRA3236",
+          "title": "Traxxas Screws, 2.5x12mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x12mm-cap-head-machine-6-p25037.html",
+          "x": 448.4,
+          "y": 376.2,
+          "w": 28.6,
+          "h": 15.5
+        },
+        {
+          "part": "3236",
+          "code": "TRA3236",
+          "title": "Traxxas Screws, 2.5x12mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x12mm-cap-head-machine-6-p25037.html",
+          "x": 166.5,
+          "y": 223.2,
+          "w": 28.6,
+          "h": 14.5
+        },
+        {
+          "part": "1834",
+          "code": "TRA1834",
+          "title": "Traxxas Body clips, standard (12)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-body-clips-standard-12-p24067.html",
+          "x": 167.5,
+          "y": 260.3,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "1834",
+          "code": "TRA1834",
+          "title": "Traxxas Body clips, standard (12)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-body-clips-standard-12-p24067.html",
+          "x": 213.7,
+          "y": 278.4,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "3965",
+          "code": "TRA3965",
+          "title": "Traxxas Screws, M2.5x8mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m2-5x8mm-cap-head-machine-6-p25057.html",
+          "x": 117.9,
+          "y": 310.5,
+          "w": 27.6,
+          "h": 15.5
+        },
+        {
+          "part": "3965",
+          "code": "TRA3965",
+          "title": "Traxxas Screws, M2.5x8mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m2-5x8mm-cap-head-machine-6-p25057.html",
+          "x": 116.9,
+          "y": 385.7,
+          "w": 26.6,
+          "h": 15.5
+        },
+        {
+          "part": "3647",
+          "code": "TRA3647",
+          "title": "Traxxas Nuts, 4mm flanged nylon locking (steel, serrated) (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-nuts-4mm-flanged-nylon-locking-steel-serrated-8-p24316.html",
+          "x": 724.8,
+          "y": 363.4,
+          "w": 21.6,
+          "h": 13.3
+        },
+        {
+          "part": "7019",
+          "code": "TRA7019",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x8x3mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x8x3mm-2-p24264.html",
+          "x": 589.4,
+          "y": 423.3,
+          "w": 22.6,
+          "h": 15.5
+        },
+        {
+          "part": "7033",
+          "code": "TRA7033",
+          "title": "Traxxas Pivot balls (4)/ pivot ball caps (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-pivot-balls-4-pivot-ball-caps-4-p23719.html",
+          "x": 623.5,
+          "y": 443.4,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7154",
+          "code": "TRA7154",
+          "title": "Traxxas Wheel hubs, hex (4)/ axle pins (1.5x8mm) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheel-hubs-hex-4-axle-pins-1-5x8mm-4-p24340.html",
+          "x": 672.6,
+          "y": 402.0,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7033",
+          "code": "TRA7033",
+          "title": "Traxxas Pivot balls (4)/ pivot ball caps (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-pivot-balls-4-pivot-ball-caps-4-p23719.html",
+          "x": 642.5,
+          "y": 388.7,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7034",
+          "code": "TRA7034",
+          "title": "Traxxas Traxxas: Axle carriers, front/left (2 each)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-traxxas-axle-carriers-front-left-2-each-p25093.html",
+          "x": 611.9,
+          "y": 370.2,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7020",
+          "code": "TRA7020",
+          "title": "Traxxas Ball bearings, blue rubber sealed (8x12x3.5mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-8x12x3-5mm-2-p24265.html",
+          "x": 204.1,
+          "y": 120.9,
+          "w": 25.6,
+          "h": 15.5
+        },
+        {
+          "part": "7020",
+          "code": "TRA7020",
+          "title": "Traxxas Ball bearings, blue rubber sealed (8x12x3.5mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-8x12x3-5mm-2-p24265.html",
+          "x": 557.8,
+          "y": 410.3,
+          "w": 25.6,
+          "h": 14.5
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 481.5,
+          "y": 311.5,
+          "w": 20.6,
+          "h": 15.5
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 379.7,
+          "y": 203.1,
+          "w": 20.6,
+          "h": 15.5
+        },
+        {
+          "part": "7019",
+          "code": "TRA7019",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x8x3mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x8x3mm-2-p24264.html",
+          "x": 367.2,
+          "y": 218.7,
+          "w": 22.6,
+          "h": 14.5
+        },
+        {
+          "part": "5124",
+          "code": "TRA5124",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x7x2.5mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x7x2-5mm-2-p24258.html",
+          "x": 449.4,
+          "y": 179.3,
+          "w": 28.6,
+          "h": 6.0
+        },
+        {
+          "part": "5123",
+          "code": "TRA5123",
+          "title": "Traxxas Bellcrank bushings (plastic) (4x7x2.5mm) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bellcrank-bushings-plastic-4x7x2-5mm-4-p23320.html",
+          "x": 451.4,
+          "y": 172.3,
+          "w": 16.6,
+          "h": 6.0
+        },
+        {
+          "part": "5124",
+          "code": "TRA5124",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x7x2.5mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x7x2-5mm-2-p24258.html",
+          "x": 509.1,
+          "y": 129.2,
+          "w": 28.6,
+          "h": 6.8
+        },
+        {
+          "part": "5123",
+          "code": "TRA5123",
+          "title": "Traxxas Bellcrank bushings (plastic) (4x7x2.5mm) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bellcrank-bushings-plastic-4x7x2-5mm-4-p23320.html",
+          "x": 509.1,
+          "y": 121.9,
+          "w": 16.6,
+          "h": 6.5
+        },
+        {
+          "part": "7043",
+          "code": "TRA7043",
+          "title": "Traxxas Steering arm (upper & lower)/ steering link/ servo horn/ servo saver",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-steering-arm-upper-lower-steering-link-servo-horn-servo-saver-p23721.html",
+          "x": 427.4,
+          "y": 27.1,
+          "w": 31.1,
+          "h": 15.5
+        },
+        {
+          "part": "3229",
+          "code": "TRA3229",
+          "title": "Traxxas Screws, 2.5x10mm cap-head machine (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x10mm-cap-head-machine-hex-drive-6-p25036.html",
+          "x": 328.5,
+          "y": 34.1,
+          "w": 30.1,
+          "h": 15.5
+        },
+        {
+          "part": "3229",
+          "code": "TRA3229",
+          "title": "Traxxas Screws, 2.5x10mm cap-head machine (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x10mm-cap-head-machine-hex-drive-6-p25036.html",
+          "x": 292.9,
+          "y": 29.1,
+          "w": 30.1,
+          "h": 14.5
+        },
+        {
+          "part": "3229",
+          "code": "TRA3229",
+          "title": "Traxxas Screws, 2.5x10mm cap-head machine (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x10mm-cap-head-machine-hex-drive-6-p25036.html",
+          "x": 449.4,
+          "y": 86.3,
+          "w": 31.1,
+          "h": 14.5
+        },
+        {
+          "part": "2577",
+          "code": "TRA2577",
+          "title": "Traxxas Screws, M3x10mm button-head (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m3x10mm-button-head-hex-drive-6-p24977.html",
+          "x": 382.7,
+          "y": 97.6,
+          "w": 30.1,
+          "h": 14.5
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 224.2,
+          "y": 234.2,
+          "w": 20.6,
+          "h": 14.5
+        },
+        {
+          "part": "5124",
+          "code": "TRA5124",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x7x2.5mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x7x2-5mm-2-p24258.html",
+          "x": 337.8,
+          "y": 60.2,
+          "w": 29.6,
+          "h": 6.8
+        }
+      ]
+    },
+    "rear": {
+      "label": "Rear",
+      "image": "https://www.astramodel.cz/eviews/traxxas-7107-e-revo-vxl-16/rear.jpg?h=f50e741ea3ba97dd01913cec79cf1532",
+      "width": 790,
+      "height": 564,
+      "source": "https://www.astramodel.cz/en/eview/traxxas-7107-e-revo-vxl-16/rear.html",
+      "hotspots": [
+        {
+          "part": "5124",
+          "code": "TRA5124",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x7x2.5mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x7x2-5mm-2-p24258.html",
+          "x": 172.0,
+          "y": 129.7,
+          "w": 28.6,
+          "h": 7.0
+        },
+        {
+          "part": "5123",
+          "code": "TRA5123",
+          "title": "Traxxas Bellcrank bushings (plastic) (4x7x2.5mm) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bellcrank-bushings-plastic-4x7x2-5mm-4-p23320.html",
+          "x": 172.0,
+          "y": 121.9,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "5124",
+          "code": "TRA5124",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x7x2.5mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x7x2-5mm-2-p24258.html",
+          "x": 283.4,
+          "y": 197.4,
+          "w": 27.6,
+          "h": 7.0
+        },
+        {
+          "part": "5123",
+          "code": "TRA5123",
+          "title": "Traxxas Bellcrank bushings (plastic) (4x7x2.5mm) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bellcrank-bushings-plastic-4x7x2-5mm-4-p23320.html",
+          "x": 283.4,
+          "y": 189.3,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "1747R",
+          "code": "TRA1747R",
+          "title": "Traxxas Nuts, M4 aluminum, flanged, serrated (blue) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-nuts-m4-aluminum-flanged-serrated-blue-4-p24310.html",
+          "x": 16.8,
+          "y": 132.2,
+          "w": 32.1,
+          "h": 7.5
+        },
+        {
+          "part": "7151X",
+          "code": "TRA7151X",
+          "title": "Traxxas Driveshaft, 1/16 E-Revo (steel constant-velocity) (assembled) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-driveshaft-1-16-e-revo-steel-constant-velocity-assembled-4-p23744.html",
+          "x": 158.5,
+          "y": 275.6,
+          "w": 32.1,
+          "h": 8.0
+        },
+        {
+          "part": "7154X",
+          "code": "TRA7154X",
+          "title": "Traxxas Wheel hubs, hex, aluminum (blue-anodized) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheel-hubs-hex-aluminum-blue-anodized-4-p24341.html",
+          "x": 18.6,
+          "y": 192.1,
+          "w": 32.1,
+          "h": 6.3
+        },
+        {
+          "part": "7132R",
+          "code": "TRA7132R",
+          "title": "Traxxas Suspension arm set, rear, extended wheelbase (lengthens wheelbase 10mm)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-arm-set-rear-extended-wheelbase-lengthens-wheelbase-10mm-p24751.html",
+          "x": 214.7,
+          "y": 278.6,
+          "w": 32.1,
+          "h": 8.0
+        },
+        {
+          "part": "7118X",
+          "code": "TRA7118X",
+          "title": "Traxxas Push rods, aluminum (red-anodized) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-push-rods-aluminum-red-anodized-4-p24708.html",
+          "x": 497.6,
+          "y": 270.1,
+          "w": 32.1,
+          "h": 6.8
+        },
+        {
+          "part": "7118",
+          "code": "TRA7118",
+          "title": "Traxxas Push rod (molded composite) (red) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-push-rod-molded-composite-red-4-p24707.html",
+          "x": 497.6,
+          "y": 262.1,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7118X",
+          "code": "TRA7118X",
+          "title": "Traxxas Push rods, aluminum (red-anodized) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-push-rods-aluminum-red-anodized-4-p24708.html",
+          "x": 245.8,
+          "y": 129.2,
+          "w": 32.1,
+          "h": 7.3
+        },
+        {
+          "part": "7138X",
+          "code": "TRA7138X",
+          "title": "Traxxas Toe links, aluminum (red-anodized) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-toe-links-aluminum-red-anodized-4-p25172.html",
+          "x": 185.6,
+          "y": 190.1,
+          "w": 32.1,
+          "h": 7.0
+        },
+        {
+          "part": "7154X",
+          "code": "TRA7154X",
+          "title": "Traxxas Wheel hubs, hex, aluminum (blue-anodized) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheel-hubs-hex-aluminum-blue-anodized-4-p24341.html",
+          "x": 659.1,
+          "y": 502.6,
+          "w": 32.1,
+          "h": 6.5
+        },
+        {
+          "part": "1747R",
+          "code": "TRA1747R",
+          "title": "Traxxas Nuts, M4 aluminum, flanged, serrated (blue) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-nuts-m4-aluminum-flanged-serrated-blue-4-p24310.html",
+          "x": 724.8,
+          "y": 488.3,
+          "w": 33.1,
+          "h": 6.5
+        },
+        {
+          "part": "7151X",
+          "code": "TRA7151X",
+          "title": "Traxxas Driveshaft, 1/16 E-Revo (steel constant-velocity) (assembled) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-driveshaft-1-16-e-revo-steel-constant-velocity-assembled-4-p23744.html",
+          "x": 488.0,
+          "y": 455.2,
+          "w": 32.1,
+          "h": 7.0
+        },
+        {
+          "part": "7132R",
+          "code": "TRA7132R",
+          "title": "Traxxas Suspension arm set, rear, extended wheelbase (lengthens wheelbase 10mm)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-arm-set-rear-extended-wheelbase-lengthens-wheelbase-10mm-p24751.html",
+          "x": 424.1,
+          "y": 460.0,
+          "w": 33.1,
+          "h": 7.0
+        },
+        {
+          "part": "7132R",
+          "code": "TRA7132R",
+          "title": "Traxxas Suspension arm set, rear, extended wheelbase (lengthens wheelbase 10mm)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-arm-set-rear-extended-wheelbase-lengthens-wheelbase-10mm-p24751.html",
+          "x": 487.0,
+          "y": 385.5,
+          "w": 32.1,
+          "h": 6.5
+        },
+        {
+          "part": "7138X",
+          "code": "TRA7138X",
+          "title": "Traxxas Toe links, aluminum (red-anodized) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-toe-links-aluminum-red-anodized-4-p25172.html",
+          "x": 519.1,
+          "y": 426.1,
+          "w": 33.1,
+          "h": 7.0
+        },
+        {
+          "part": "7138",
+          "code": "TRA7138",
+          "title": "Traxxas Toe link, front & rear (molded composite) (red) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-toe-link-front-rear-molded-composite-red-4-p25171.html",
+          "x": 575.8,
+          "y": 435.1,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7173",
+          "code": "TRA7173",
+          "title": "Traxxas Tires 2.2",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-tires-2-2-response-pro-foam-inserts-2-p24580.html",
+          "x": 596.4,
+          "y": 328.3,
+          "w": 28.6,
+          "h": 7.0
+        },
+        {
+          "part": "7175",
+          "code": "TRA7175",
+          "title": "Traxxas Tires & wheels 2.2",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-tires-wheels-2-2-dished-white-wheels-response-pro-2-2-tires-2-p24160.html",
+          "x": 674.6,
+          "y": 332.6,
+          "w": 28.6,
+          "h": 8.0
+        },
+        {
+          "part": "7171",
+          "code": "TRA7171",
+          "title": "Traxxas Wheels 2.2",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheels-2-2-dished-white-2-p23902.html",
+          "x": 681.2,
+          "y": 380.7,
+          "w": 28.6,
+          "h": 7.0
+        },
+        {
+          "part": "3965",
+          "code": "TRA3965",
+          "title": "Traxxas Screws, M2.5x8mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m2-5x8mm-cap-head-machine-6-p25057.html",
+          "x": 349.1,
+          "y": 58.4,
+          "w": 12.0,
+          "h": 5.0
+        },
+        {
+          "part": "4976",
+          "code": "TRA4976",
+          "title": "Traxxas Wheels (4)/ Axles (2), for Maxx wheelie bar",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheels-4-axles-2-for-maxx-wheelie-bar-p23862.html",
+          "x": 362.6,
+          "y": 26.6,
+          "w": 21.6,
+          "h": 4.8
+        },
+        {
+          "part": "5186",
+          "code": "TRA5186",
+          "title": "Traxxas Wheels, aluminum (red-anodized) (2)/ 5x8mm ball bearings (4)/ axles (2)/ rubber tires (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheels-aluminum-red-anodized-2-5x8mm-ball-bearings-4-axles-2-rubber-tires-2-p25213.html",
+          "x": 362.6,
+          "y": 32.1,
+          "w": 21.6,
+          "h": 4.5
+        },
+        {
+          "part": "5186A",
+          "code": "TRA5186A",
+          "title": "Traxxas Wheels, aluminum (blue-anodized) (2)/ 5x8mm ball bearings (4)/ axles (2)/ rubber tires (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheels-aluminum-blue-anodized-2-5x8mm-ball-bearings-4-axles-2-rubber-tires-2-p25214.html",
+          "x": 362.6,
+          "y": 37.6,
+          "w": 23.6,
+          "h": 5.0
+        },
+        {
+          "part": "4838",
+          "code": "TRA4838",
+          "title": "Traxxas Suspension screw pin set, hardened steel (hex drive)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-screw-pin-set-hardened-steel-hex-drive-p23817.html",
+          "x": 408.8,
+          "y": 133.7,
+          "w": 12.0,
+          "h": 5.0
+        },
+        {
+          "part": "4976",
+          "code": "TRA4976",
+          "title": "Traxxas Wheels (4)/ Axles (2), for Maxx wheelie bar",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheels-4-axles-2-for-maxx-wheelie-bar-p23862.html",
+          "x": 498.6,
+          "y": 92.3,
+          "w": 20.6,
+          "h": 4.3
+        },
+        {
+          "part": "5186",
+          "code": "TRA5186",
+          "title": "Traxxas Wheels, aluminum (red-anodized) (2)/ 5x8mm ball bearings (4)/ axles (2)/ rubber tires (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheels-aluminum-red-anodized-2-5x8mm-ball-bearings-4-axles-2-rubber-tires-2-p25213.html",
+          "x": 498.6,
+          "y": 97.3,
+          "w": 20.6,
+          "h": 4.8
+        },
+        {
+          "part": "5186A",
+          "code": "TRA5186A",
+          "title": "Traxxas Wheels, aluminum (blue-anodized) (2)/ 5x8mm ball bearings (4)/ axles (2)/ rubber tires (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheels-aluminum-blue-anodized-2-5x8mm-ball-bearings-4-axles-2-rubber-tires-2-p25214.html",
+          "x": 498.6,
+          "y": 102.8,
+          "w": 23.6,
+          "h": 4.0
+        },
+        {
+          "part": "7123",
+          "code": "TRA7123",
+          "title": "Traxxas Wing, 1/16 E-Revo (white)/ decal sheet",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wing-1-16-e-revo-white-decal-sheet-p24197.html",
+          "x": 738.3,
+          "y": 76.2,
+          "w": 30.1,
+          "h": 6.3
+        },
+        {
+          "part": "7122G",
+          "code": "TRA7122G",
+          "title": "Traxxas Wing, 1/16 E-Revo (Exo-carbon finish)/ decal sheet",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wing-1-16-e-revo-exo-carbon-finish-decal-sheet-p24196.html",
+          "x": 738.3,
+          "y": 83.5,
+          "w": 33.1,
+          "h": 7.0
+        },
+        {
+          "part": "7033X",
+          "code": "TRA7033X",
+          "title": "Traxxas Aluminum caps, pivot ball (threaded aluminum, hard-anodized, PTFE-coating) (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-aluminum-caps-pivot-ball-threaded-aluminum-hard-anodized-ptfe-coating-8-p23720.html",
+          "x": 637.0,
+          "y": 536.4,
+          "w": 32.1,
+          "h": 8.0
+        },
+        {
+          "part": "7033X",
+          "code": "TRA7033X",
+          "title": "Traxxas Aluminum caps, pivot ball (threaded aluminum, hard-anodized, PTFE-coating) (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-aluminum-caps-pivot-ball-threaded-aluminum-hard-anodized-ptfe-coating-8-p23720.html",
+          "x": 646.5,
+          "y": 482.3,
+          "w": 32.1,
+          "h": 7.0
+        },
+        {
+          "part": "7033X",
+          "code": "TRA7033X",
+          "title": "Traxxas Aluminum caps, pivot ball (threaded aluminum, hard-anodized, PTFE-coating) (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-aluminum-caps-pivot-ball-threaded-aluminum-hard-anodized-ptfe-coating-8-p23720.html",
+          "x": 27.1,
+          "y": 218.7,
+          "w": 32.1,
+          "h": 8.0
+        },
+        {
+          "part": "7033X",
+          "code": "TRA7033X",
+          "title": "Traxxas Aluminum caps, pivot ball (threaded aluminum, hard-anodized, PTFE-coating) (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-aluminum-caps-pivot-ball-threaded-aluminum-hard-anodized-ptfe-coating-8-p23720.html",
+          "x": 55.2,
+          "y": 135.4,
+          "w": 32.1,
+          "h": 7.0
+        },
+        {
+          "part": "5124",
+          "code": "TRA5124",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x7x2.5mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x7x2-5mm-2-p24258.html",
+          "x": 519.1,
+          "y": 234.0,
+          "w": 27.6,
+          "h": 7.0
+        },
+        {
+          "part": "5123",
+          "code": "TRA5123",
+          "title": "Traxxas Bellcrank bushings (plastic) (4x7x2.5mm) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bellcrank-bushings-plastic-4x7x2-5mm-4-p23320.html",
+          "x": 519.1,
+          "y": 226.2,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "5124",
+          "code": "TRA5124",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x7x2.5mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x7x2-5mm-2-p24258.html",
+          "x": 408.8,
+          "y": 275.1,
+          "w": 28.6,
+          "h": 7.3
+        },
+        {
+          "part": "5123",
+          "code": "TRA5123",
+          "title": "Traxxas Bellcrank bushings (plastic) (4x7x2.5mm) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bellcrank-bushings-plastic-4x7x2-5mm-4-p23320.html",
+          "x": 408.8,
+          "y": 266.6,
+          "w": 16.6,
+          "h": 7.5
+        },
+        {
+          "part": "7184",
+          "code": "TRA7184",
+          "title": "Traxxas Wheelie bar, assembled",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheelie-bar-assembled-p25219.html",
+          "x": 413.8,
+          "y": 150.0,
+          "w": 77.7,
+          "h": 7.0
+        },
+        {
+          "part": "5185",
+          "code": "TRA5185",
+          "title": "Traxxas Tires, rubber (2) (fits Traxxas wheelie bar wheels)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-tires-rubber-2-fits-traxxas-wheelie-bar-wheels-p24557.html",
+          "x": 398.3,
+          "y": 51.7,
+          "w": 21.6,
+          "h": 6.0
+        },
+        {
+          "part": "5185",
+          "code": "TRA5185",
+          "title": "Traxxas Tires, rubber (2) (fits Traxxas wheelie bar wheels)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-tires-rubber-2-fits-traxxas-wheelie-bar-wheels-p24557.html",
+          "x": 453.4,
+          "y": 130.4,
+          "w": 21.6,
+          "h": 5.0
+        },
+        {
+          "part": "7184",
+          "code": "TRA7184",
+          "title": "Traxxas Wheelie bar, assembled",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheelie-bar-assembled-p25219.html",
+          "x": 498.6,
+          "y": 87.3,
+          "w": 12.0,
+          "h": 4.3
+        },
+        {
+          "part": "7184",
+          "code": "TRA7184",
+          "title": "Traxxas Wheelie bar, assembled",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheelie-bar-assembled-p25219.html",
+          "x": 408.8,
+          "y": 127.9,
+          "w": 13.0,
+          "h": 5.0
+        },
+        {
+          "part": "7184",
+          "code": "TRA7184",
+          "title": "Traxxas Wheelie bar, assembled",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheelie-bar-assembled-p25219.html",
+          "x": 377.2,
+          "y": 117.9,
+          "w": 21.6,
+          "h": 10.0
+        },
+        {
+          "part": "7184",
+          "code": "TRA7184",
+          "title": "Traxxas Wheelie bar, assembled",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheelie-bar-assembled-p25219.html",
+          "x": 362.6,
+          "y": 21.6,
+          "w": 13.0,
+          "h": 4.3
+        },
+        {
+          "part": "7184",
+          "code": "TRA7184",
+          "title": "Traxxas Wheelie bar, assembled",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheelie-bar-assembled-p25219.html",
+          "x": 349.1,
+          "y": 52.7,
+          "w": 12.0,
+          "h": 5.0
+        },
+        {
+          "part": "7184",
+          "code": "TRA7184",
+          "title": "Traxxas Wheelie bar, assembled",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheelie-bar-assembled-p25219.html",
+          "x": 454.4,
+          "y": 58.2,
+          "w": 13.0,
+          "h": 5.0
+        },
+        {
+          "part": "7184",
+          "code": "TRA7184",
+          "title": "Traxxas Wheelie bar, assembled",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheelie-bar-assembled-p25219.html",
+          "x": 319.0,
+          "y": 89.3,
+          "w": 13.0,
+          "h": 6.0
+        },
+        {
+          "part": "7019",
+          "code": "TRA7019",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x8x3mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x8x3mm-2-p24264.html",
+          "x": 572.3,
+          "y": 507.1,
+          "w": 21.6,
+          "h": 14.5
+        },
+        {
+          "part": "7020",
+          "code": "TRA7020",
+          "title": "Traxxas Ball bearings, blue rubber sealed (8x12x3.5mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-8x12x3-5mm-2-p24265.html",
+          "x": 535.2,
+          "y": 489.5,
+          "w": 25.6,
+          "h": 15.5
+        },
+        {
+          "part": "3236",
+          "code": "TRA3236",
+          "title": "Traxxas Screws, 2.5x12mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x12mm-cap-head-machine-6-p25037.html",
+          "x": 546.5,
+          "y": 382.7,
+          "w": 31.1,
+          "h": 14.5
+        },
+        {
+          "part": "3229",
+          "code": "TRA3229",
+          "title": "Traxxas Screws, 2.5x10mm cap-head machine (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x10mm-cap-head-machine-hex-drive-6-p25036.html",
+          "x": 448.4,
+          "y": 403.3,
+          "w": 31.1,
+          "h": 15.5
+        },
+        {
+          "part": "3647",
+          "code": "TRA3647",
+          "title": "Traxxas Nuts, 4mm flanged nylon locking (steel, serrated) (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-nuts-4mm-flanged-nylon-locking-steel-serrated-8-p24316.html",
+          "x": 724.8,
+          "y": 473.7,
+          "w": 19.6,
+          "h": 13.5
+        },
+        {
+          "part": "3236",
+          "code": "TRA3236",
+          "title": "Traxxas Screws, 2.5x12mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x12mm-cap-head-machine-6-p25037.html",
+          "x": 570.3,
+          "y": 265.8,
+          "w": 30.1,
+          "h": 15.5
+        },
+        {
+          "part": "3965",
+          "code": "TRA3965",
+          "title": "Traxxas Screws, M2.5x8mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m2-5x8mm-cap-head-machine-6-p25057.html",
+          "x": 728.8,
+          "y": 132.4,
+          "w": 27.6,
+          "h": 14.5
+        },
+        {
+          "part": "3236",
+          "code": "TRA3236",
+          "title": "Traxxas Screws, 2.5x12mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x12mm-cap-head-machine-6-p25037.html",
+          "x": 460.0,
+          "y": 352.1,
+          "w": 31.1,
+          "h": 14.5
+        },
+        {
+          "part": "2577",
+          "code": "TRA2577",
+          "title": "Traxxas Screws, M3x10mm button-head (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m3x10mm-button-head-hex-drive-6-p24977.html",
+          "x": 532.9,
+          "y": 282.4,
+          "w": 28.6,
+          "h": 15.5
+        },
+        {
+          "part": "7019",
+          "code": "TRA7019",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x8x3mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x8x3mm-2-p24264.html",
+          "x": 303.5,
+          "y": 388.0,
+          "w": 22.6,
+          "h": 14.5
+        },
+        {
+          "part": "3965",
+          "code": "TRA3965",
+          "title": "Traxxas Screws, M2.5x8mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m2-5x8mm-cap-head-machine-6-p25057.html",
+          "x": 342.1,
+          "y": 503.6,
+          "w": 26.6,
+          "h": 15.5
+        },
+        {
+          "part": "3965",
+          "code": "TRA3965",
+          "title": "Traxxas Screws, M2.5x8mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m2-5x8mm-cap-head-machine-6-p25057.html",
+          "x": 622.5,
+          "y": 237.8,
+          "w": 27.6,
+          "h": 14.5
+        },
+        {
+          "part": "7121",
+          "code": "TRA7121",
+          "title": "Traxxas Wing mount/ hardware (1/16 E-Revo)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wing-mount-hardware-1-16-e-revo-p24194.html",
+          "x": 656.1,
+          "y": 131.4,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "1834",
+          "code": "TRA1834",
+          "title": "Traxxas Body clips, standard (12)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-body-clips-standard-12-p24067.html",
+          "x": 620.5,
+          "y": 134.4,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "2575",
+          "code": "TRA2575",
+          "title": "Traxxas Screws, M3x6mm button-head (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m3x6mm-button-head-hex-drive-6-p24975.html",
+          "x": 706.2,
+          "y": 27.1,
+          "w": 25.6,
+          "h": 15.5
+        },
+        {
+          "part": "2576",
+          "code": "TRA2576",
+          "title": "Traxxas Screws, M3x8mm button-head (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m3x8mm-button-head-hex-drive-6-p24976.html",
+          "x": 555.8,
+          "y": 185.6,
+          "w": 25.6,
+          "h": 15.5
+        },
+        {
+          "part": "3229",
+          "code": "TRA3229",
+          "title": "Traxxas Screws, 2.5x10mm cap-head machine (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x10mm-cap-head-machine-hex-drive-6-p25036.html",
+          "x": 480.5,
+          "y": 167.5,
+          "w": 30.1,
+          "h": 14.5
+        },
+        {
+          "part": "7121",
+          "code": "TRA7121",
+          "title": "Traxxas Wing mount/ hardware (1/16 E-Revo)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wing-mount-hardware-1-16-e-revo-p24194.html",
+          "x": 736.3,
+          "y": 241.8,
+          "w": 31.1,
+          "h": 15.5
+        },
+        {
+          "part": "7043",
+          "code": "TRA7043",
+          "title": "Traxxas Steering arm (upper & lower)/ steering link/ servo horn/ servo saver",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-steering-arm-upper-lower-steering-link-servo-horn-servo-saver-p23721.html",
+          "x": 414.8,
+          "y": 198.1,
+          "w": 31.1,
+          "h": 15.5
+        },
+        {
+          "part": "2577",
+          "code": "TRA2577",
+          "title": "Traxxas Screws, M3x10mm button-head (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m3x10mm-button-head-hex-drive-6-p24977.html",
+          "x": 388.7,
+          "y": 166.5,
+          "w": 28.6,
+          "h": 14.5
+        },
+        {
+          "part": "2577",
+          "code": "TRA2577",
+          "title": "Traxxas Screws, M3x10mm button-head (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m3x10mm-button-head-hex-drive-6-p24977.html",
+          "x": 333.6,
+          "y": 171.0,
+          "w": 30.1,
+          "h": 14.5
+        },
+        {
+          "part": "3229",
+          "code": "TRA3229",
+          "title": "Traxxas Screws, 2.5x10mm cap-head machine (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x10mm-cap-head-machine-hex-drive-6-p25036.html",
+          "x": 265.8,
+          "y": 291.9,
+          "w": 31.1,
+          "h": 15.5
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 467.0,
+          "y": 503.6,
+          "w": 20.6,
+          "h": 15.5
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 251.3,
+          "y": 365.2,
+          "w": 20.6,
+          "h": 14.5
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 176.1,
+          "y": 214.7,
+          "w": 20.6,
+          "h": 14.5
+        },
+        {
+          "part": "7020",
+          "code": "TRA7020",
+          "title": "Traxxas Ball bearings, blue rubber sealed (8x12x3.5mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-8x12x3-5mm-2-p24265.html",
+          "x": 117.9,
+          "y": 243.8,
+          "w": 25.6,
+          "h": 14.5
+        },
+        {
+          "part": "7029X",
+          "code": "TRA7029X",
+          "title": "Traxxas Bulkhead, rear (left & right halves)/ 3x10mm BCS (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bulkhead-rear-left-right-halves-3x10mm-bcs-4-p23800.html",
+          "x": 415.8,
+          "y": 384.7,
+          "w": 31.1,
+          "h": 15.5
+        },
+        {
+          "part": "7029X",
+          "code": "TRA7029X",
+          "title": "Traxxas Bulkhead, rear (left & right halves)/ 3x10mm BCS (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bulkhead-rear-left-right-halves-3x10mm-bcs-4-p23800.html",
+          "x": 378.7,
+          "y": 337.6,
+          "w": 20.6,
+          "h": 8.0
+        },
+        {
+          "part": "7043",
+          "code": "TRA7043",
+          "title": "Traxxas Steering arm (upper & lower)/ steering link/ servo horn/ servo saver",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-steering-arm-upper-lower-steering-link-servo-horn-servo-saver-p23721.html",
+          "x": 296.9,
+          "y": 162.5,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7029X",
+          "code": "TRA7029X",
+          "title": "Traxxas Bulkhead, rear (left & right halves)/ 3x10mm BCS (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bulkhead-rear-left-right-halves-3x10mm-bcs-4-p23800.html",
+          "x": 303.5,
+          "y": 286.4,
+          "w": 20.6,
+          "h": 8.0
+        },
+        {
+          "part": "7079",
+          "code": "TRA7079",
+          "title": "Traxxas Ring gear, differential/ pinion gear, differential",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ring-gear-differential-pinion-gear-differential-p23735.html",
+          "x": 339.1,
+          "y": 369.2,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7155",
+          "code": "TRA7155",
+          "title": "Traxxas Rocker arm post, steel (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-rocker-arm-post-steel-4-p23747.html",
+          "x": 521.7,
+          "y": 165.5,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7158",
+          "code": "TRA7158",
+          "title": "Traxxas Rocker arm set, progressive-2/ plastic bushings (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-rocker-arm-set-progressive-2-plastic-bushings-8-p25178.html",
+          "x": 465.0,
+          "y": 202.1,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7158",
+          "code": "TRA7158",
+          "title": "Traxxas Rocker arm set, progressive-2/ plastic bushings (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-rocker-arm-set-progressive-2-plastic-bushings-8-p25178.html",
+          "x": 457.9,
+          "y": 289.9,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7023",
+          "code": "TRA7023",
+          "title": "Traxxas Bulkhead tie bars, front & rear (blue-anodized aluminum)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bulkhead-tie-bars-front-rear-blue-anodized-aluminum-p23799.html",
+          "x": 428.4,
+          "y": 318.0,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7021",
+          "code": "TRA7021",
+          "title": "Traxxas Suspension pin set (front or rear), 2x46mm (2), 2x14mm (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-pin-set-front-or-rear-2x46mm-2-2x14mm-4-p23829.html",
+          "x": 403.3,
+          "y": 320.0,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7135",
+          "code": "TRA7135",
+          "title": "Traxxas Bumpers, front (1)/ rear (1)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-bumpers-front-1-rear-1-p24420.html",
+          "x": 747.9,
+          "y": 181.1,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7122",
+          "code": "TRA7122",
+          "title": "Traxxas Wing, 1/16 E-Revo (black)/ decal sheet",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wing-1-16-e-revo-black-decal-sheet-p24195.html",
+          "x": 738.3,
+          "y": 68.2,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7015",
+          "code": "TRA7015",
+          "title": "Traxxas Body mounts, front & rear/ body mount posts, front & rear",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-body-mounts-front-rear-body-mount-posts-front-rear-p23711.html",
+          "x": 545.2,
+          "y": 144.0,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7015",
+          "code": "TRA7015",
+          "title": "Traxxas Body mounts, front & rear/ body mount posts, front & rear",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-body-mounts-front-rear-body-mount-posts-front-rear-p23711.html",
+          "x": 611.9,
+          "y": 268.9,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7078",
+          "code": "TRA7078",
+          "title": "Traxxas Differential assembly, complete",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-differential-assembly-complete-p23734.html",
+          "x": 362.6,
+          "y": 316.0,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7021",
+          "code": "TRA7021",
+          "title": "Traxxas Suspension pin set (front or rear), 2x46mm (2), 2x14mm (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-pin-set-front-or-rear-2x46mm-2-2x14mm-4-p23829.html",
+          "x": 377.2,
+          "y": 294.9,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7021",
+          "code": "TRA7021",
+          "title": "Traxxas Suspension pin set (front or rear), 2x46mm (2), 2x14mm (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-pin-set-front-or-rear-2x46mm-2-2x14mm-4-p23829.html",
+          "x": 315.0,
+          "y": 407.8,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7033",
+          "code": "TRA7033",
+          "title": "Traxxas Pivot balls (4)/ pivot ball caps (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-pivot-balls-4-pivot-ball-caps-4-p23719.html",
+          "x": 615.4,
+          "y": 537.7,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7154",
+          "code": "TRA7154",
+          "title": "Traxxas Wheel hubs, hex (4)/ axle pins (1.5x8mm) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheel-hubs-hex-4-axle-pins-1-5x8mm-4-p24340.html",
+          "x": 659.1,
+          "y": 493.8,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7033",
+          "code": "TRA7033",
+          "title": "Traxxas Pivot balls (4)/ pivot ball caps (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-pivot-balls-4-pivot-ball-caps-4-p23719.html",
+          "x": 633.0,
+          "y": 472.7,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7172A",
+          "code": "TRA7172A",
+          "title": "Traxxas Wheels 2.2",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheels-2-2-gemini-black-chrome-2-p23903.html",
+          "x": 681.2,
+          "y": 373.2,
+          "w": 20.6,
+          "h": 7.0
+        },
+        {
+          "part": "7170",
+          "code": "TRA7170",
+          "title": "Traxxas Tires 2.2",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-tires-2-2-talon-2-foam-inserts-2-p24579.html",
+          "x": 596.4,
+          "y": 319.5,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7174A",
+          "code": "TRA7174A",
+          "title": "Traxxas Tires & wheels 2.2",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-tires-wheels-2-2-gemini-black-chrome-wheels-talon-tires-2-p24159.html",
+          "x": 674.6,
+          "y": 325.0,
+          "w": 20.6,
+          "h": 7.0
+        },
+        {
+          "part": "7034",
+          "code": "TRA7034",
+          "title": "Traxxas Traxxas: Axle carriers, front/left (2 each)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-traxxas-axle-carriers-front-left-2-each-p25093.html",
+          "x": 588.4,
+          "y": 450.4,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7028",
+          "code": "TRA7028",
+          "title": "Traxxas Hollow balls (20)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-hollow-balls-20-p23717.html",
+          "x": 576.1,
+          "y": 427.1,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7138",
+          "code": "TRA7138",
+          "title": "Traxxas Toe link, front & rear (molded composite) (red) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-toe-link-front-rear-molded-composite-red-4-p25171.html",
+          "x": 515.1,
+          "y": 418.1,
+          "w": 18.6,
+          "h": 7.0
+        },
+        {
+          "part": "7037",
+          "code": "TRA7037",
+          "title": "Traxxas Skidplate set, front (1)/ rear (1)/ transmission (1)/ servo guards (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-skidplate-set-front-1-rear-1-transmission-1-servo-guards-2-p24928.html",
+          "x": 392.2,
+          "y": 427.4,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7021",
+          "code": "TRA7021",
+          "title": "Traxxas Suspension pin set (front or rear), 2x46mm (2), 2x14mm (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-pin-set-front-or-rear-2x46mm-2-2x14mm-4-p23829.html",
+          "x": 239.8,
+          "y": 349.1,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7028",
+          "code": "TRA7028",
+          "title": "Traxxas Hollow balls (20)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-hollow-balls-20-p23717.html",
+          "x": 490.1,
+          "y": 241.8,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7028",
+          "code": "TRA7028",
+          "title": "Traxxas Hollow balls (20)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-hollow-balls-20-p23717.html",
+          "x": 514.9,
+          "y": 279.4,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7028",
+          "code": "TRA7028",
+          "title": "Traxxas Hollow balls (20)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-hollow-balls-20-p23717.html",
+          "x": 480.5,
+          "y": 398.3,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7132",
+          "code": "TRA7132",
+          "title": "Traxxas Suspension arm set, rear",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-arm-set-rear-p24750.html",
+          "x": 487.0,
+          "y": 376.7,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7151",
+          "code": "TRA7151",
+          "title": "Traxxas Driveshaft assembly (1) left or right/ 3x10mm screw pin (1)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-driveshaft-assembly-1-left-or-right-3x10mm-screw-pin-1-p23743.html",
+          "x": 488.0,
+          "y": 447.4,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7132",
+          "code": "TRA7132",
+          "title": "Traxxas Suspension arm set, rear",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-arm-set-rear-p24750.html",
+          "x": 424.3,
+          "y": 451.2,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7151",
+          "code": "TRA7151",
+          "title": "Traxxas Driveshaft assembly (1) left or right/ 3x10mm screw pin (1)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-driveshaft-assembly-1-left-or-right-3x10mm-screw-pin-1-p23743.html",
+          "x": 158.5,
+          "y": 267.6,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7132",
+          "code": "TRA7132",
+          "title": "Traxxas Suspension arm set, rear",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-suspension-arm-set-rear-p24750.html",
+          "x": 214.7,
+          "y": 269.6,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7155",
+          "code": "TRA7155",
+          "title": "Traxxas Rocker arm post, steel (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-rocker-arm-post-steel-4-p23747.html",
+          "x": 169.8,
+          "y": 91.5,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7158",
+          "code": "TRA7158",
+          "title": "Traxxas Rocker arm set, progressive-2/ plastic bushings (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-rocker-arm-set-progressive-2-plastic-bushings-8-p25178.html",
+          "x": 234.7,
+          "y": 100.8,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7158",
+          "code": "TRA7158",
+          "title": "Traxxas Rocker arm set, progressive-2/ plastic bushings (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-rocker-arm-set-progressive-2-plastic-bushings-8-p25178.html",
+          "x": 260.8,
+          "y": 175.1,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7118",
+          "code": "TRA7118",
+          "title": "Traxxas Push rod (molded composite) (red) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-push-rod-molded-composite-red-4-p24707.html",
+          "x": 245.8,
+          "y": 120.1,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7138",
+          "code": "TRA7138",
+          "title": "Traxxas Toe link, front & rear (molded composite) (red) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-toe-link-front-rear-molded-composite-red-4-p25171.html",
+          "x": 185.6,
+          "y": 181.6,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7034",
+          "code": "TRA7034",
+          "title": "Traxxas Traxxas: Axle carriers, front/left (2 each)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-traxxas-axle-carriers-front-left-2-each-p25093.html",
+          "x": 130.4,
+          "y": 184.6,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7033",
+          "code": "TRA7033",
+          "title": "Traxxas Pivot balls (4)/ pivot ball caps (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-pivot-balls-4-pivot-ball-caps-4-p23719.html",
+          "x": 54.2,
+          "y": 209.4,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7033",
+          "code": "TRA7033",
+          "title": "Traxxas Pivot balls (4)/ pivot ball caps (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-pivot-balls-4-pivot-ball-caps-4-p23719.html",
+          "x": 78.2,
+          "y": 147.0,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7154",
+          "code": "TRA7154",
+          "title": "Traxxas Wheel hubs, hex (4)/ axle pins (1.5x8mm) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-wheel-hubs-hex-4-axle-pins-1-5x8mm-4-p24340.html",
+          "x": 18.6,
+          "y": 183.8,
+          "w": 17.6,
+          "h": 7.3
+        },
+        {
+          "part": "7019",
+          "code": "TRA7019",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x8x3mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x8x3mm-2-p24264.html",
+          "x": 83.3,
+          "y": 224.2,
+          "w": 21.6,
+          "h": 15.5
+        },
+        {
+          "part": "3647",
+          "code": "TRA3647",
+          "title": "Traxxas Nuts, 4mm flanged nylon locking (steel, serrated) (8)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-nuts-4mm-flanged-nylon-locking-steel-serrated-8-p24316.html",
+          "x": 16.6,
+          "y": 117.9,
+          "w": 19.6,
+          "h": 13.3
+        },
+        {
+          "part": "3229",
+          "code": "TRA3229",
+          "title": "Traxxas Screws, 2.5x10mm cap-head machine (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x10mm-cap-head-machine-hex-drive-6-p25036.html",
+          "x": 184.6,
+          "y": 65.7,
+          "w": 31.1,
+          "h": 15.5
+        },
+        {
+          "part": "3236",
+          "code": "TRA3236",
+          "title": "Traxxas Screws, 2.5x12mm cap-head machine (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x12mm-cap-head-machine-6-p25037.html",
+          "x": 123.9,
+          "y": 160.5,
+          "w": 31.1,
+          "h": 14.5
+        },
+        {
+          "part": "7043",
+          "code": "TRA7043",
+          "title": "Traxxas Steering arm (upper & lower)/ steering link/ servo horn/ servo saver",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-steering-arm-upper-lower-steering-link-servo-horn-servo-saver-p23721.html",
+          "x": 157.5,
+          "y": 147.5,
+          "w": 31.1,
+          "h": 14.5
+        }
+      ]
+    },
+    "driveshaft": {
+      "label": "Driveshaft",
+      "image": "https://www.astramodel.cz/eviews/traxxas-7107-e-revo-vxl-16/driveshaft.jpg?h=bcb077c91d769f870234532c5ddc4d79",
+      "width": 790,
+      "height": 564,
+      "source": "https://www.astramodel.cz/en/eview/traxxas-7107-e-revo-vxl-16/driveshaft.html",
+      "hotspots": [
+        {
+          "part": "7145",
+          "code": "TRA7145",
+          "title": "Traxxas Spring, shock (GTR) (1.76 rate, orange) (1 pair)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-spring-shock-gtr-1-76-rate-orange-1-pair-p24675.html",
+          "x": 185.6,
+          "y": 286.9,
+          "w": 49.7,
+          "h": 6.3
+        },
+        {
+          "part": "7147",
+          "code": "TRA7147",
+          "title": "Traxxas Spring, shock (GTR) (2.06 rate, tan) (1 pair)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-spring-shock-gtr-2-06-rate-tan-1-pair-p24677.html",
+          "x": 185.6,
+          "y": 294.2,
+          "w": 39.1,
+          "h": 6.5
+        },
+        {
+          "part": "7148",
+          "code": "TRA7148",
+          "title": "Traxxas Spring, shock (GTR) (2.22 rate, black) (1 pair)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-spring-shock-gtr-2-22-rate-black-1-pair-p24678.html",
+          "x": 185.6,
+          "y": 301.7,
+          "w": 44.6,
+          "h": 6.0
+        },
+        {
+          "part": "7063T",
+          "code": "TRA7063T",
+          "title": "Traxxas Shaft, GTR shock (TiN-coated) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-shaft-gtr-shock-tin-coated-4-p25146.html",
+          "x": 187.6,
+          "y": 148.7,
+          "w": 32.1,
+          "h": 6.3
+        },
+        {
+          "part": "7066X",
+          "code": "TRA7066X",
+          "title": "Traxxas Body, GTR shock (hard-anodized, PTFE-coated aluminum) (1)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-body-gtr-shock-hard-anodized-ptfe-coated-aluminum-1-p23731.html",
+          "x": 189.6,
+          "y": 201.1,
+          "w": 32.1,
+          "h": 6.8
+        },
+        {
+          "part": "7065",
+          "code": "TRA7065",
+          "title": "Traxxas Caps and spring retainers, GTR shock",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-caps-and-spring-retainers-gtr-shock-p23729.html",
+          "x": 199.1,
+          "y": 45.9,
+          "w": 17.6,
+          "h": 6.3
+        },
+        {
+          "part": "7062",
+          "code": "TRA7062",
+          "title": "Traxxas Rebuild kit, GTR composite shocks (renews 2 shocks)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-rebuild-kit-gtr-composite-shocks-renews-2-shocks-p24765.html",
+          "x": 199.1,
+          "y": 53.2,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7028",
+          "code": "TRA7028",
+          "title": "Traxxas Hollow balls (20)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-hollow-balls-20-p23717.html",
+          "x": 199.1,
+          "y": 38.1,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7065",
+          "code": "TRA7065",
+          "title": "Traxxas Caps and spring retainers, GTR shock",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-caps-and-spring-retainers-gtr-shock-p23729.html",
+          "x": 209.7,
+          "y": 436.6,
+          "w": 16.6,
+          "h": 5.8
+        },
+        {
+          "part": "7062",
+          "code": "TRA7062",
+          "title": "Traxxas Rebuild kit, GTR composite shocks (renews 2 shocks)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-rebuild-kit-gtr-composite-shocks-renews-2-shocks-p24765.html",
+          "x": 209.7,
+          "y": 443.7,
+          "w": 16.3,
+          "h": 6.5
+        },
+        {
+          "part": "7151X",
+          "code": "TRA7151X",
+          "title": "Traxxas Driveshaft, 1/16 E-Revo (steel constant-velocity) (assembled) (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-driveshaft-1-16-e-revo-steel-constant-velocity-assembled-4-p23744.html",
+          "x": 547.7,
+          "y": 117.9,
+          "w": 32.1,
+          "h": 7.0
+        },
+        {
+          "part": "7146",
+          "code": "TRA7146",
+          "title": "Traxxas Spring, shock (GTR) (1.92 rate, green) (1 pair)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-spring-shock-gtr-1-92-rate-green-1-pair-p24676.html",
+          "x": 185.8,
+          "y": 279.6,
+          "w": 34.1,
+          "h": 6.3
+        },
+        {
+          "part": "7056",
+          "code": "TRA7056",
+          "title": "Traxxas Half shafts, center front (1), center rear (1)/ metal u-joints (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-half-shafts-center-front-1-center-rear-1-metal-u-joints-4-p23727.html",
+          "x": 570.8,
+          "y": 438.4,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7056",
+          "code": "TRA7056",
+          "title": "Traxxas Half shafts, center front (1), center rear (1)/ metal u-joints (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-half-shafts-center-front-1-center-rear-1-metal-u-joints-4-p23727.html",
+          "x": 523.7,
+          "y": 411.3,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 273.4,
+          "y": 323.0,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7056",
+          "code": "TRA7056",
+          "title": "Traxxas Half shafts, center front (1), center rear (1)/ metal u-joints (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-half-shafts-center-front-1-center-rear-1-metal-u-joints-4-p23727.html",
+          "x": 448.4,
+          "y": 366.2,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7056",
+          "code": "TRA7056",
+          "title": "Traxxas Half shafts, center front (1), center rear (1)/ metal u-joints (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-half-shafts-center-front-1-center-rear-1-metal-u-joints-4-p23727.html",
+          "x": 380.7,
+          "y": 330.5,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7056",
+          "code": "TRA7056",
+          "title": "Traxxas Half shafts, center front (1), center rear (1)/ metal u-joints (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-half-shafts-center-front-1-center-rear-1-metal-u-joints-4-p23727.html",
+          "x": 438.1,
+          "y": 225.5,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 648.6,
+          "y": 491.6,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 555.8,
+          "y": 322.0,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 275.4,
+          "y": 207.2,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7065",
+          "code": "TRA7065",
+          "title": "Traxxas Caps and spring retainers, GTR shock",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-caps-and-spring-retainers-gtr-shock-p23729.html",
+          "x": 195.1,
+          "y": 400.5,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7063",
+          "code": "TRA7063",
+          "title": "Traxxas Shaft, GTR shock (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-shaft-gtr-shock-2-p25145.html",
+          "x": 187.6,
+          "y": 140.9,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7065",
+          "code": "TRA7065",
+          "title": "Traxxas Caps and spring retainers, GTR shock",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-caps-and-spring-retainers-gtr-shock-p23729.html",
+          "x": 191.6,
+          "y": 245.8,
+          "w": 18.6,
+          "h": 7.0
+        },
+        {
+          "part": "7066",
+          "code": "TRA7066",
+          "title": "Traxxas Body, GTR shock (molded composite) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-body-gtr-shock-molded-composite-2-p23730.html",
+          "x": 189.6,
+          "y": 193.4,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7150",
+          "code": "TRA7150",
+          "title": "Traxxas Half shafts, left or right/ metal u-joints (4)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-half-shafts-left-or-right-metal-u-joints-4-p23742.html",
+          "x": 488.5,
+          "y": 127.9,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7054",
+          "code": "TRA7054",
+          "title": "Traxxas Stub axle, steel (2)/ yokes (2) (assembled)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-stub-axle-steel-2-yokes-2-assembled-p23949.html",
+          "x": 654.3,
+          "y": 234.5,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 279.4,
+          "y": 73.7,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7062",
+          "code": "TRA7062",
+          "title": "Traxxas Rebuild kit, GTR composite shocks (renews 2 shocks)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-rebuild-kit-gtr-composite-shocks-renews-2-shocks-p24765.html",
+          "x": 185.6,
+          "y": 479.0,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7062",
+          "code": "TRA7062",
+          "title": "Traxxas Rebuild kit, GTR composite shocks (renews 2 shocks)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-rebuild-kit-gtr-composite-shocks-renews-2-shocks-p24765.html",
+          "x": 184.6,
+          "y": 352.6,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7062",
+          "code": "TRA7062",
+          "title": "Traxxas Rebuild kit, GTR composite shocks (renews 2 shocks)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-rebuild-kit-gtr-composite-shocks-renews-2-shocks-p24765.html",
+          "x": 185.6,
+          "y": 103.8,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7065",
+          "code": "TRA7065",
+          "title": "Traxxas Caps and spring retainers, GTR shock",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-caps-and-spring-retainers-gtr-shock-p23729.html",
+          "x": 184.6,
+          "y": 69.7,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7028",
+          "code": "TRA7028",
+          "title": "Traxxas Hollow balls (20)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-hollow-balls-20-p23717.html",
+          "x": 209.7,
+          "y": 428.6,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7151",
+          "code": "TRA7151",
+          "title": "Traxxas Driveshaft assembly (1) left or right/ 3x10mm screw pin (1)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-driveshaft-assembly-1-left-or-right-3x10mm-screw-pin-1-p23743.html",
+          "x": 547.7,
+          "y": 108.8,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 532.7,
+          "y": 267.3,
+          "w": 20.6,
+          "h": 14.5
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 630.0,
+          "y": 438.4,
+          "w": 19.6,
+          "h": 14.5
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 358.6,
+          "y": 286.9,
+          "w": 19.6,
+          "h": 15.5
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 356.6,
+          "y": 158.5,
+          "w": 20.6,
+          "h": 14.5
+        },
+        {
+          "part": "7057",
+          "code": "TRA7057",
+          "title": "Traxxas Yokes, differential and transmission (2)/ 3x10mm screw pin (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-yokes-differential-and-transmission-2-3x10mm-screw-pin-2-p24611.html",
+          "x": 361.6,
+          "y": 21.3,
+          "w": 20.6,
+          "h": 14.5
+        }
+      ]
+    },
+    "transmission": {
+      "label": "Transmission",
+      "image": "https://www.astramodel.cz/eviews/traxxas-7107-e-revo-vxl-16/transmission.jpg?h=5f16cb4c286c024a87c0979c27d5f4cf",
+      "width": 790,
+      "height": 564,
+      "source": "https://www.astramodel.cz/en/eview/traxxas-7107-e-revo-vxl-16/transmission.html",
+      "hotspots": [
+        {
+          "part": "2743",
+          "code": "TRA2743",
+          "title": "Traxxas Set (grub) screws, 3mm hardened (12)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-set-grub-screws-3mm-hardened-12-p25008.html",
+          "x": 331.8,
+          "y": 201.6,
+          "w": 21.1,
+          "h": 14.5
+        },
+        {
+          "part": "2554",
+          "code": "TRA2554",
+          "title": "Traxxas Screws, M3x6mm cap-head (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m3x6mm-cap-head-hex-drive-6-p24956.html",
+          "x": 291.9,
+          "y": 100.3,
+          "w": 22.8,
+          "h": 15.0
+        },
+        {
+          "part": "2576",
+          "code": "TRA2576",
+          "title": "Traxxas Screws, M3x8mm button-head (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m3x8mm-button-head-hex-drive-6-p24976.html",
+          "x": 73.7,
+          "y": 308.0,
+          "w": 29.8,
+          "h": 15.3
+        },
+        {
+          "part": "7046R",
+          "code": "TRA7046R",
+          "title": "Traxxas Spur gear, 50T 48DP",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-spur-gear-50t-48dp-p25839.html",
+          "x": 609.9,
+          "y": 251.5,
+          "w": 32.1,
+          "h": 7.0
+        },
+        {
+          "part": "7047R",
+          "code": "TRA7047R",
+          "title": "Traxxas Spur gear, 55T 48DP",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-spur-gear-55t-48dp-p25840.html",
+          "x": 609.9,
+          "y": 259.3,
+          "w": 50.2,
+          "h": 8.0
+        },
+        {
+          "part": "2745",
+          "code": "TRA2745",
+          "title": "Traxxas Nuts, M3 nylon locking (12)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-nuts-m3-nylon-locking-12-p24314.html",
+          "x": 689.2,
+          "y": 167.5,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7091",
+          "code": "TRA7091",
+          "title": "Traxxas Gearbox halves, front & rear",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-gearbox-halves-front-rear-p23739.html",
+          "x": 290.9,
+          "y": 502.1,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7045R",
+          "code": "TRA7045R",
+          "title": "Traxxas Spur gear, 45T 48DP",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-spur-gear-45t-48dp-p25838.html",
+          "x": 609.9,
+          "y": 244.0,
+          "w": 41.1,
+          "h": 6.8
+        },
+        {
+          "part": "2526",
+          "code": "TRA2526",
+          "title": "Traxxas Screws, M2.5x12mm countersunk(hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m2-5x12mm-countersunk-hex-drive-6-p24944.html",
+          "x": 622.5,
+          "y": 289.9,
+          "w": 35.1,
+          "h": 15.5
+        },
+        {
+          "part": "7152",
+          "code": "TRA7152",
+          "title": "Traxxas Slipper clutch, complete",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-slipper-clutch-complete-p23745.html",
+          "x": 394.2,
+          "y": 279.4,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7092",
+          "code": "TRA7092",
+          "title": "Traxxas Input shaft/ output shaft",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-input-shaft-output-shaft-p23740.html",
+          "x": 467.0,
+          "y": 494.8,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "7092",
+          "code": "TRA7092",
+          "title": "Traxxas Input shaft/ output shaft",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-input-shaft-output-shaft-p23740.html",
+          "x": 372.2,
+          "y": 308.5,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7093",
+          "code": "TRA7093",
+          "title": "Traxxas Gear set, transmission",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-gear-set-transmission-p23741.html",
+          "x": 527.7,
+          "y": 471.5,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7152",
+          "code": "TRA7152",
+          "title": "Traxxas Slipper clutch, complete",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-slipper-clutch-complete-p23745.html",
+          "x": 669.6,
+          "y": 202.1,
+          "w": 16.6,
+          "h": 7.0
+        },
+        {
+          "part": "7152",
+          "code": "TRA7152",
+          "title": "Traxxas Slipper clutch, complete",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-slipper-clutch-complete-p23745.html",
+          "x": 537.2,
+          "y": 293.9,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7091",
+          "code": "TRA7091",
+          "title": "Traxxas Gearbox halves, front & rear",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-gearbox-halves-front-rear-p23739.html",
+          "x": 563.3,
+          "y": 398.8,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7093",
+          "code": "TRA7093",
+          "title": "Traxxas Gear set, transmission",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-gear-set-transmission-p23741.html",
+          "x": 400.3,
+          "y": 371.2,
+          "w": 16.6,
+          "h": 8.0
+        },
+        {
+          "part": "7019",
+          "code": "TRA7019",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x8x3mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x8x3mm-2-p24264.html",
+          "x": 584.9,
+          "y": 175.1,
+          "w": 21.6,
+          "h": 14.5
+        },
+        {
+          "part": "7019",
+          "code": "TRA7019",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x8x3mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x8x3mm-2-p24264.html",
+          "x": 435.9,
+          "y": 346.1,
+          "w": 21.6,
+          "h": 14.5
+        },
+        {
+          "part": "7019",
+          "code": "TRA7019",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x8x3mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x8x3mm-2-p24264.html",
+          "x": 537.2,
+          "y": 435.9,
+          "w": 21.6,
+          "h": 15.5
+        },
+        {
+          "part": "7019",
+          "code": "TRA7019",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x8x3mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x8x3mm-2-p24264.html",
+          "x": 419.3,
+          "y": 508.1,
+          "w": 21.6,
+          "h": 14.5
+        },
+        {
+          "part": "7019",
+          "code": "TRA7019",
+          "title": "Traxxas Ball bearings, blue rubber sealed (4x8x3mm) (2)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-ball-bearings-blue-rubber-sealed-4x8x3mm-2-p24264.html",
+          "x": 373.2,
+          "y": 383.7,
+          "w": 21.6,
+          "h": 15.5
+        },
+        {
+          "part": "7093",
+          "code": "TRA7093",
+          "title": "Traxxas Gear set, transmission",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-gear-set-transmission-p23741.html",
+          "x": 528.7,
+          "y": 401.8,
+          "w": 20.6,
+          "h": 15.5
+        },
+        {
+          "part": "7152",
+          "code": "TRA7152",
+          "title": "Traxxas Slipper clutch, complete",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-slipper-clutch-complete-p23745.html",
+          "x": 689.2,
+          "y": 159.5,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "4728",
+          "code": "TRA4728",
+          "title": "Traxxas Gear, pinion 28T 48DP/ set screw",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-gear-pinion-28t-48dp-set-screw-p24517.html",
+          "x": 277.4,
+          "y": 160.5,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "3371",
+          "code": "TRA3371",
+          "title": "Traxxas Motor, Velineon Mini Maxx 380, brushless",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-motor-velineon-mini-maxx-380-brushless-p23919.html",
+          "x": 292.9,
+          "y": 93.3,
+          "w": 16.6,
+          "h": 6.3
+        },
+        {
+          "part": "4728",
+          "code": "TRA4728",
+          "title": "Traxxas Gear, pinion 28T 48DP/ set screw",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-gear-pinion-28t-48dp-set-screw-p24517.html",
+          "x": 331.5,
+          "y": 193.6,
+          "w": 20.6,
+          "h": 7.3
+        },
+        {
+          "part": "2526",
+          "code": "TRA2526",
+          "title": "Traxxas Screws, M2.5x12mm countersunk(hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-m2-5x12mm-countersunk-hex-drive-6-p24944.html",
+          "x": 281.4,
+          "y": 217.7,
+          "w": 35.1,
+          "h": 15.5
+        },
+        {
+          "part": "3371",
+          "code": "TRA3371",
+          "title": "Traxxas Motor, Velineon Mini Maxx 380, brushless",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-motor-velineon-mini-maxx-380-brushless-p23919.html",
+          "x": 484.0,
+          "y": 89.3,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7060",
+          "code": "TRA7060",
+          "title": "Traxxas Motor mount, finned aluminum",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-motor-mount-finned-aluminum-p23728.html",
+          "x": 356.6,
+          "y": 57.7,
+          "w": 17.6,
+          "h": 7.0
+        },
+        {
+          "part": "7077R",
+          "code": "TRA7077R",
+          "title": "Traxxas Cover, gear/ motor mount hinge post/ hardware",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-cover-gear-motor-mount-hinge-post-hardware-p26949.html",
+          "x": 193.4,
+          "y": 160.3,
+          "w": 22.3,
+          "h": 7.0
+        },
+        {
+          "part": "7090",
+          "code": "TRA7090",
+          "title": "Traxxas Plate, motor",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-plate-motor-p23738.html",
+          "x": 202.1,
+          "y": 315.0,
+          "w": 17.6,
+          "h": 8.0
+        },
+        {
+          "part": "3215",
+          "code": "TRA3215",
+          "title": "Traxxas Screws, 2.5x6mm cap-head machine (hex drive) (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-2-5x6mm-cap-head-machine-hex-drive-6-p25035.html",
+          "x": 145.0,
+          "y": 291.9,
+          "w": 26.6,
+          "h": 15.5
+        },
+        {
+          "part": "7077R",
+          "code": "TRA7077R",
+          "title": "Traxxas Cover, gear/ motor mount hinge post/ hardware",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-cover-gear-motor-mount-hinge-post-hardware-p26949.html",
+          "x": 73.7,
+          "y": 299.7,
+          "w": 21.6,
+          "h": 7.0
+        },
+        {
+          "part": "3159",
+          "code": "TRA3159",
+          "title": "Traxxas Screws, 3x10mm caphead machine (hex drive) (6)/ lockwashers (6)",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-screws-3x10mm-caphead-machine-hex-drive-6-lockwashers-6-p25010.html",
+          "x": 88.3,
+          "y": 207.7,
+          "w": 28.8,
+          "h": 14.8
+        },
+        {
+          "part": "7077R",
+          "code": "TRA7077R",
+          "title": "Traxxas Cover, gear/ motor mount hinge post/ hardware",
+          "href": "https://www.astramodel.cz/en/catalog/traxxas/traxxas-cover-gear-motor-mount-hinge-post-hardware-p26949.html",
+          "x": 88.3,
+          "y": 199.6,
+          "w": 22.8,
+          "h": 6.5
+        }
+      ]
+    }
+  }
+}

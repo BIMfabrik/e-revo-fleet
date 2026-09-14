@@ -8,9 +8,7 @@ const IMG = {
   side: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_04.webp',
   rear: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_02.webp',
   chassis: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_05.webp',
-  top: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_06.webp',
-  frontAssembly: 'https://www.rcscrapyard.net/manuals/traxxas/71074-1/71074-1-001.jpg',
-  rearAssembly: 'https://www.rcscrapyard.net/manuals/traxxas/71074-1/71074-1-004.jpg'
+  top: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_06.webp'
 };
 const REFERENCE_FILTER = {blue:'none', red:'hue-rotate(142deg) saturate(1.15)', violet:'hue-rotate(58deg) saturate(1.1)'};
 
@@ -49,21 +47,17 @@ const HOTSPOTS = {
   ],
   top: [
     ['motor',49,38], ['esc',59,46], ['receiver',39,46], ['servo',62,58], ['chassis',50,52], ['shock',47,61], ['diff',69,54]
-  ],
-  frontAssembly: [
-    ['frontArms',34,42], ['frontArms',49,72], ['carrier',20,29], ['carrier',80,60],
-    ['pushrod',40,17], ['rocker',47,18], ['toeLink',57,72], ['frontBulkhead',47,50], ['suspensionPins',37,52], ['driveshaft',27,38]
-  ],
-  rearAssembly: [
-    ['rearArms',31,51], ['rearArms',56,78], ['carrier',17,31], ['carrier',81,76],
-    ['pushrod',40,17], ['rocker',48,18], ['toeLink',52,72], ['rearBulkhead',45,56], ['suspensionPins',36,58], ['driveshaft',27,48]
   ]
 };
 
 const VIEWS = [
   {id:'body', label:'3/4'}, {id:'front', label:'Front'}, {id:'side', label:'Side'},
   {id:'rear', label:'Rear'}, {id:'chassis', label:'Chassis'}, {id:'top', label:'Top'},
-  {id:'frontAssembly', label:'Front assy'}, {id:'rearAssembly', label:'Rear assy'}
+  {id:'xChassis', label:'EXP Chassis', exploded:'chassis'},
+  {id:'xFront', label:'EXP Front', exploded:'front'},
+  {id:'xRear', label:'EXP Rear', exploded:'rear'},
+  {id:'xDrive', label:'EXP Drive', exploded:'driveshaft'},
+  {id:'xTransmission', label:'EXP Trans', exploded:'transmission'}
 ];
 
 const fallbackFleet = {cars:[
@@ -76,6 +70,7 @@ const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 let fleet = fallbackFleet;
 let workflows = [];
+let exploded = {views:{}};
 let carId = 'blue';
 let view = 'body';
 
@@ -89,20 +84,32 @@ function issuesForPart(car,key,part){
   return (car.issues||[]).filter(x=>x.component===key || (x.part && String(x.part)===String(part?.n)));
 }
 function bestViewForComponent(key){
-  const preferred={frontArms:'frontAssembly',rearArms:'rearAssembly',pushrod:'frontAssembly',rocker:'frontAssembly',toeLink:'rearAssembly',pivotBall:'frontAssembly',frontBulkhead:'frontAssembly',rearBulkhead:'rearAssembly',suspensionPins:'frontAssembly'};
+  const preferred={frontArms:'xFront',rearArms:'xRear',pushrod:'xFront',rocker:'xFront',toeLink:'xRear',pivotBall:'xFront',frontBulkhead:'xFront',rearBulkhead:'xRear',suspensionPins:'xFront',driveshaft:'xDrive',diff:'xTransmission'};
   if(preferred[key]) return preferred[key];
   return VIEWS.find(v=>(HOTSPOTS[v.id]||[]).some(([partKey])=>partKey===key))?.id || 'chassis';
+}
+function viewDef(id=view){ return VIEWS.find(v=>v.id===id); }
+function explodedDef(id=view){ const v=viewDef(id); return v?.exploded ? exploded.views?.[v.exploded] : null; }
+function syncHotspotFrame(){
+  const img=$('#carImage'), stage=$('#imageStage'), layer=$('#hotspots');
+  if(!img || !stage || !layer || !img.complete) return;
+  const r=img.getBoundingClientRect(), sr=stage.getBoundingClientRect();
+  layer.style.left=`${r.left-sr.left}px`; layer.style.top=`${r.top-sr.top}px`;
+  layer.style.width=`${r.width}px`; layer.style.height=`${r.height}px`;
+  layer.style.right='auto'; layer.style.bottom='auto';
 }
 function planetLink(n){ return `https://planet-rc.ch/search?sSearch=${encodeURIComponent(n)}`; }
 
 async function loadFleet(){
   try{
-    const [fleetRes, workflowRes] = await Promise.all([
+    const [fleetRes, workflowRes, explodedRes] = await Promise.all([
       fetch(`data/fleet.json?v=${Date.now()}`,{cache:'no-store'}),
-      fetch(`data/workflows.json?v=${Date.now()}`,{cache:'no-store'})
+      fetch(`data/workflows.json?v=${Date.now()}`,{cache:'no-store'}),
+      fetch(`data/exploded.json?v=${Date.now()}`,{cache:'no-store'})
     ]);
     if(fleetRes.ok) fleet = await fleetRes.json();
     if(workflowRes.ok) workflows = (await workflowRes.json()).workflows || [];
+    if(explodedRes.ok) exploded = await explodedRes.json();
   }catch(e){ console.warn('Using fallback data',e); }
   render();
 }
@@ -123,31 +130,40 @@ function render(){
   $('#workflowCount').textContent=workflows.length || '';
   document.querySelector('[data-panel="issues"]').classList.toggle('has-items',hasIssues);
   $('#viewSwitch').innerHTML=VIEWS.map(v=>{
-    const thumb=v.id==='body'?IMG.body[carId]:IMG[v.id];
-    const filter=(['front','side','rear'].includes(v.id) || (v.id==='body' && carId==='red'))?REFERENCE_FILTER[carId]:'none';
-    return `<button class="view-btn ${v.id===view?'active':''}" data-view="${v.id}"><img src="${thumb}" alt="" style="filter:${filter}"><span>${v.label}</span></button>`;
+    const exp=v.exploded ? exploded.views?.[v.exploded] : null;
+    const thumb=exp?.image || (v.id==='body'?IMG.body[carId]:IMG[v.id]);
+    const filter=exp?'none':((['front','side','rear'].includes(v.id) || (v.id==='body' && carId==='red'))?REFERENCE_FILTER[carId]:'none');
+    return `<button class="view-btn ${v.id===view?'active':''} ${exp?'exploded-tab':''}" data-view="${v.id}"><img src="${thumb}" alt="" style="filter:${filter}"><span>${v.label}</span></button>`;
   }).join('');
   renderImage();
 }
 
 function renderImage(){
-  const img=$('#carImage'), stage=$('#imageStage');
+  const img=$('#carImage'), stage=$('#imageStage'), exp=explodedDef();
   stage.classList.add('loading');
-  const src=view==='body'?IMG.body[carId]:IMG[view];
-  const technical=['frontAssembly','rearAssembly'].includes(view);
-  stage.classList.toggle('technical-view',technical);
-  img.style.filter=(['front','side','rear'].includes(view) || (view==='body' && carId==='red'))?REFERENCE_FILTER[carId]:'none';
-  img.onload=()=>stage.classList.remove('loading');
+  stage.classList.toggle('technical-view',!!exp);
+  stage.classList.toggle('exploded-view',!!exp);
+  const src=exp?.image || (view==='body'?IMG.body[carId]:IMG[view]);
+  img.style.filter=exp?'none':((['front','side','rear'].includes(view) || (view==='body' && carId==='red'))?REFERENCE_FILTER[carId]:'none');
+  img.onload=()=>{ stage.classList.remove('loading'); syncHotspotFrame(); };
   img.onerror=()=>stage.classList.remove('loading');
   img.src=src;
-  img.alt=`${currentCar().name} Traxxas 1/16 E-Revo — ${view} view`;
+  img.alt=exp?`Traxxas 1/16 E-Revo VXL — ${exp.label} exploded view`:`${currentCar().name} Traxxas 1/16 E-Revo — ${view} view`;
   const car=currentCar();
-  $('#hotspots').innerHTML=(HOTSPOTS[view]||[]).map(([key,x,y])=>{
-    const p=PARTS[key], partIssues=issuesForPart(car,key,p), hasIssue=partIssues.length>0;
-    return `<button class="hotspot ${hasIssue?'issue-hotspot':''}" data-part="${key}" style="left:${x}%;top:${y}%" aria-label="${esc(p.name)}${hasIssue?' — open issue':''}"><span class="hotspot-dot"></span>${hasIssue?'<span class="issue-badge">!</span>':''}<span class="hotspot-label">${esc(p.name)}${hasIssue?' · issue':''}</span></button>`;
-  }).join('');
+  if(exp){
+    $('#hotspots').innerHTML=(exp.hotspots||[]).map((spot,i)=>{
+      const left=spot.x/exp.width*100, top=spot.y/exp.height*100, w=spot.w/exp.width*100, h=spot.h/exp.height*100;
+      const issue=(car.issues||[]).some(x=>x.part && String(x.part)===String(spot.part));
+      return `<button class="exploded-hit ${issue?'issue-exploded':''}" data-exp-index="${i}" style="left:${left}%;top:${top}%;width:${w}%;height:${h}%" aria-label="Part ${esc(spot.part)} ${esc(spot.title)}"><span>${esc(spot.part)}</span></button>`;
+    }).join('');
+  } else {
+    $('#hotspots').innerHTML=(HOTSPOTS[view]||[]).map(([key,x,y])=>{
+      const p=PARTS[key], partIssues=issuesForPart(car,key,p), hasIssue=partIssues.length>0;
+      return `<button class="hotspot ${hasIssue?'issue-hotspot':''}" data-part="${key}" style="left:${x}%;top:${y}%" aria-label="${esc(p.name)}${hasIssue?' — open issue':''}"><span class="hotspot-dot"></span>${hasIssue?'<span class="issue-badge">!</span>':''}<span class="hotspot-label">${esc(p.name)}${hasIssue?' · issue':''}</span></button>`;
+    }).join('');
+  }
+  requestAnimationFrame(syncHotspotFrame);
 }
-
 function openDrawer(title, eyebrow, html){
   $('#drawerTitle').textContent=title;
   $('#drawerEyebrow').textContent=eyebrow;
@@ -187,6 +203,17 @@ function panelPart(key){
     <div class="drawer-section"><h3>ChatGPT command</h3><div class="chat-command">“${esc(car.name)} car: ${esc(p.name)} (${esc(p.n)}) is broken.”</div></div>`);
 }
 
+function panelExplodedPart(index){
+  const exp=explodedDef(); if(!exp) return;
+  const spot=exp.hotspots?.[Number(index)]; if(!spot) return;
+  const car=currentCar(), qty=stockFor(car,spot.part);
+  const issues=(car.issues||[]).filter(x=>x.part && String(x.part)===String(spot.part));
+  const issueHtml=issues.length?`<div class="component-issues">${issues.map(x=>`<div class="component-issue"><span>OPEN ISSUE</span><strong>${esc(x.name||'Issue')}</strong><p>${esc(x.details||x.note||'')}</p></div>`).join('')}</div>`:'';
+  openDrawer(`Part ${spot.part}`,`${exp.label} exploded view`,`
+    <div class="drawer-section"><div class="part-number">TRAXXAS ${esc(spot.part)}</div><h3 class="part-title">${esc(spot.title||`Part ${spot.part}`)}</h3><div class="part-meta"><span class="tag ${qty?'good':''}">${qty?`${qty} in stock`:'No spare recorded'}</span>${issues.length?'<span class="tag bad">Open issue</span>':''}</div>${issueHtml}<div class="drawer-actions"><a class="action primary" href="${planetLink(spot.part)}" target="_blank" rel="noopener">Find at Planet‑RC</a><a class="action" href="${esc(spot.href)}" target="_blank" rel="noopener">Part reference</a><a class="action" href="${esc(exp.source)}" target="_blank" rel="noopener">Full exploded view</a></div></div>
+    <div class="drawer-section"><h3>ChatGPT command</h3><div class="chat-command">“${esc(car.name)} car: part ${esc(spot.part)} is broken.”</div></div>`);
+}
+
 function panelWorkflows(){
   if(!workflows.length){ openDrawer('Workflows','garage procedures','<div class="empty">No workflows loaded.</div>'); return; }
   const rows=workflows.map(w=>`<button class="workflow-row" data-workflow="${esc(w.id)}"><div><span>${esc(w.category||'Procedure')}</span><strong>${esc(w.title)}</strong><p>${esc(w.summary||'')}</p></div><b>→</b></button>`).join('');
@@ -211,6 +238,7 @@ document.addEventListener('click',e=>{
   const car=e.target.closest('[data-car]'); if(car){carId=car.dataset.car;view='body';render();closeDrawer();return;}
   const locate=e.target.closest('[data-show-component]'); if(locate){const key=locate.dataset.showComponent;view=bestViewForComponent(key);render();closeDrawer();setTimeout(()=>panelPart(key),280);return;}
   const wf=e.target.closest('[data-workflow]'); if(wf){openWorkflow(wf.dataset.workflow);return;}
+  const expHit=e.target.closest('[data-exp-index]'); if(expHit){panelExplodedPart(expHit.dataset.expIndex);return;}
   const v=e.target.closest('[data-view]'); if(v){view=v.dataset.view;render();return;}
   const h=e.target.closest('[data-part]'); if(h){panelPart(h.dataset.part);return;}
   const p=e.target.closest('[data-panel]'); if(p){({issues:panelIssues,spares:panelSpares,upgrades:panelUpgrades,gear:panelGear,workflows:panelWorkflows})[p.dataset.panel]?.();return;}
@@ -219,4 +247,5 @@ $('#menuBtn').addEventListener('click',panelAbout);
 $('#closeDrawer').addEventListener('click',closeDrawer);
 $('#scrim').addEventListener('click',closeDrawer);
 document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeDrawer(); });
+window.addEventListener('resize',syncHotspotFrame,{passive:true});
 loadFleet();

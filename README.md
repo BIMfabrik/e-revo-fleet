@@ -31,3 +31,7 @@ All three cars are configured as the older Traxxas 1/16 E‑Revo VXL / 71076‑3
 ## Next deployment
 
 GitHub Pages is only the prototype host. The same static front end can later be deployed on BlackBerg with a small authenticated API/database for persistent edits, stock changes, maintenance history, and live shop-price refreshes.
+
+## Complete exploded views
+
+The garage includes the full older 1/16 E-Revo VXL exploded-view family: chassis, front, rear, driveshaft and transmission. The clickable regions are imported from the source exploded-view maps and normalized to the rendered image, so they remain aligned across desktop and mobile layouts. The current dataset contains 366 mapped part locations.
