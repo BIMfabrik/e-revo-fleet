@@ -56,6 +56,12 @@ function countGear(car){ return Object.values(car.gear||{}).reduce((n,a)=>n+(Arr
 function stockFor(car, partNo){
   return (car.spares||[]).filter(x=>String(x.part||x.number||'')===String(partNo)).reduce((n,x)=>n+Number(x.qty||1),0);
 }
+function issuesForPart(car,key,part){
+  return (car.issues||[]).filter(x=>x.component===key || (x.part && String(x.part)===String(part?.n)));
+}
+function bestViewForComponent(key){
+  return VIEWS.find(v=>(HOTSPOTS[v.id]||[]).some(([partKey])=>partKey===key))?.id || 'chassis';
+}
 function planetLink(n){ return `https://planet-rc.ch/search?sSearch=${encodeURIComponent(n)}`; }
 
 async function loadFleet(){
@@ -69,7 +75,7 @@ async function loadFleet(){
 function render(){
   const car=currentCar();
   document.documentElement.style.setProperty('--accent',car.accent||'#1667d9');
-  $('#carSwitch').innerHTML=fleet.cars.map((c,i)=>`<button class="car-pill ${c.id===carId?'active':''}" data-car="${c.id}" style="--pill-accent:${c.accent}"><i></i>${String(i+1).padStart(2,'0')} ${esc(c.name)}</button>`).join('');
+  $('#carSwitch').innerHTML=fleet.cars.map((c,i)=>`<button class="car-pill ${c.id===carId?'active':''}" data-car="${c.id}" style="--pill-accent:${c.accent}"><i></i>${String(i+1).padStart(2,'0')} ${esc(c.name)}${(c.issues||[]).length?'<span class="attention-dot" aria-label="Open issue"></span>':''}</button>`).join('');
   $('#carName').textContent=car.name;
   $('#carIndex').textContent=String(fleet.cars.findIndex(c=>c.id===carId)+1).padStart(2,'0');
   const hasIssues=(car.issues||[]).length>0;
@@ -92,9 +98,10 @@ function renderImage(){
   img.onerror=()=>stage.classList.remove('loading');
   img.src=src;
   img.alt=`${currentCar().name} Traxxas 1/16 E-Revo — ${view} view`;
+  const car=currentCar();
   $('#hotspots').innerHTML=(HOTSPOTS[view]||[]).map(([key,x,y])=>{
-    const p=PARTS[key];
-    return `<button class="hotspot" data-part="${key}" style="left:${x}%;top:${y}%" aria-label="${esc(p.name)}"><span class="hotspot-dot"></span><span class="hotspot-label">${esc(p.name)}</span></button>`;
+    const p=PARTS[key], partIssues=issuesForPart(car,key,p), hasIssue=partIssues.length>0;
+    return `<button class="hotspot ${hasIssue?'issue-hotspot':''}" data-part="${key}" style="left:${x}%;top:${y}%" aria-label="${esc(p.name)}${hasIssue?' — open issue':''}"><span class="hotspot-dot"></span>${hasIssue?'<span class="issue-badge">!</span>':''}<span class="hotspot-label">${esc(p.name)}${hasIssue?' · issue':''}</span></button>`;
   }).join('');
 }
 
@@ -119,7 +126,7 @@ function itemRows(items, kind){
 
 function panelIssues(){
   const car=currentCar(), items=car.issues||[];
-  const body=items.length?itemRows(items,'Issue'):`<div class="clean-state"><span class="clean-check">✓</span><div>No open damage recorded.</div></div>`;
+  const body=items.length?`<div class="issue-list">${items.map(x=>`<button class="issue-row" ${x.component?`data-show-component="${esc(x.component)}"`:''}><div><span class="issue-state">OPEN</span><strong>${esc(x.name||'Issue')}</strong><p>${esc(x.details||x.note||'')}</p><small>${esc(x.area||'Maintenance')}${x.reported?` · ${esc(x.reported)}`:''}</small></div>${x.component?'<span class="locate">Show on car →</span>':''}</button>`).join('')}</div>`:`<div class="clean-state"><span class="clean-check">✓</span><div>No open damage recorded.</div></div>`;
   openDrawer('Issues',`${car.name} · maintenance`,`${body}<div class="drawer-section"><h3>Update through ChatGPT</h3><div class="chat-command">“${esc(car.name)} car: the front-right axle carrier is broken. Add it as an open issue.”</div></div>`);
 }
 function panelSpares(){ const c=currentCar(); openDrawer('Spares',`${c.name} · inventory`,`${itemRows(c.spares,'Spare part')}<div class="drawer-section"><h3>Update through ChatGPT</h3><div class="chat-command">“Add 2× Traxxas 7151 driveshafts to my garage stock.”</div></div>`); }
@@ -130,10 +137,10 @@ function panelGear(){
   openDrawer('Gear',`${c.name} · batteries & radio`,sections+`<div class="drawer-section"><h3>Update through ChatGPT</h3><div class="chat-command">“${esc(c.name)} car uses battery … and transmitter …”</div></div>`);
 }
 function panelPart(key){
-  const car=currentCar(), p=PARTS[key], qty=stockFor(car,p.n);
-  const issue=(car.issues||[]).find(x=>String(x.part||'')===String(p.n));
+  const car=currentCar(), p=PARTS[key], qty=stockFor(car,p.n), partIssues=issuesForPart(car,key,p);
+  const issueHtml=partIssues.length?`<div class="component-issues">${partIssues.map(x=>`<div class="component-issue"><span>OPEN ISSUE</span><strong>${esc(x.name||'Issue')}</strong><p>${esc(x.details||x.note||'')}</p></div>`).join('')}</div>`:'';
   openDrawer(p.name,`${car.name} · part`,`
-    <div class="drawer-section"><div class="part-number">TRAXXAS ${esc(p.n)}</div><h3 class="part-title">${esc(p.name)}</h3><p class="empty">${esc(p.note)}</p><div class="part-meta"><span class="tag ${qty?'good':''}">${qty?`${qty} in stock`:'No spare recorded'}</span>${issue?'<span class="tag bad">Open issue</span>':''}</div><div class="drawer-actions"><a class="action primary" href="${planetLink(p.n)}" target="_blank" rel="noopener">Find at Planet‑RC</a><a class="action" href="https://traxxas.com/media/productattach/C-71054-8/3/71054-8_parts.pdf" target="_blank" rel="noopener">Parts PDF</a></div></div>
+    <div class="drawer-section"><div class="part-number">TRAXXAS ${esc(p.n)}</div><h3 class="part-title">${esc(p.name)}</h3><p class="empty">${esc(p.note)}</p><div class="part-meta"><span class="tag ${qty?'good':''}">${qty?`${qty} in stock`:'No spare recorded'}</span>${partIssues.length?'<span class="tag bad">Open issue</span>':''}</div>${issueHtml}<div class="drawer-actions"><a class="action primary" href="${planetLink(p.n)}" target="_blank" rel="noopener">Find at Planet‑RC</a><a class="action" href="https://traxxas.com/media/productattach/C-71054-8/3/71054-8_parts.pdf" target="_blank" rel="noopener">Parts PDF</a></div></div>
     <div class="drawer-section"><h3>ChatGPT command</h3><div class="chat-command">“${esc(car.name)} car: ${esc(p.name)} (${esc(p.n)}) is broken.”</div></div>`);
 }
 function panelAbout(){
@@ -144,6 +151,7 @@ function panelAbout(){
 
 document.addEventListener('click',e=>{
   const car=e.target.closest('[data-car]'); if(car){carId=car.dataset.car;view='body';render();closeDrawer();return;}
+  const locate=e.target.closest('[data-show-component]'); if(locate){const key=locate.dataset.showComponent;view=bestViewForComponent(key);render();closeDrawer();setTimeout(()=>panelPart(key),280);return;}
   const v=e.target.closest('[data-view]'); if(v){view=v.dataset.view;render();return;}
   const h=e.target.closest('[data-part]'); if(h){panelPart(h.dataset.part);return;}
   const p=e.target.closest('[data-panel]'); if(p){({issues:panelIssues,spares:panelSpares,upgrades:panelUpgrades,gear:panelGear})[p.dataset.panel]?.();return;}

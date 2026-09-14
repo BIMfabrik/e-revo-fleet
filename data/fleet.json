@@ -8,17 +8,38 @@
       "issues": [],
       "upgrades": [],
       "spares": [],
-      "gear": {"batteries": [], "transmitters": [], "chargers": [], "other": []}
+      "gear": {
+        "batteries": [],
+        "transmitters": [],
+        "chargers": [],
+        "other": []
+      }
     },
     {
       "id": "red",
       "name": "Red",
       "accent": "#d51f2f",
-      "status": "ready",
-      "issues": [],
+      "status": "attention",
+      "issues": [
+        {
+          "id": "red-power-connector-2026-09-14",
+          "name": "Loose power connector",
+          "component": "esc",
+          "area": "Powertrain / wiring",
+          "status": "open",
+          "severity": "medium",
+          "reported": "2026-09-14",
+          "details": "Connector in the power path between the motor and battery is weak and slides out. Inspect the motor/ESC/battery connection, secure it properly, and replace the connector or terminal if it cannot hold firmly."
+        }
+      ],
       "upgrades": [],
       "spares": [],
-      "gear": {"batteries": [], "transmitters": [], "chargers": [], "other": []}
+      "gear": {
+        "batteries": [],
+        "transmitters": [],
+        "chargers": [],
+        "other": []
+      }
     },
     {
       "id": "violet",
@@ -28,7 +49,12 @@
       "issues": [],
       "upgrades": [],
       "spares": [],
-      "gear": {"batteries": [], "transmitters": [], "chargers": [], "other": []}
+      "gear": {
+        "batteries": [],
+        "transmitters": [],
+        "chargers": [],
+        "other": []
+      }
     }
   ]
 }
