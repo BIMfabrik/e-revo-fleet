@@ -1,0 +1,9 @@
+services:
+  e-revo-garage:
+    build: .
+    container_name: e-revo-garage
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9560:9560"
+    volumes:
+      - /opt/e-revo-garage/data:/data
