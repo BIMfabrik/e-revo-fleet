@@ -258,11 +258,6 @@ function openWorkflow(id){
   openDrawer(w.title,`${w.category||'Procedure'} · ${w.scope||'1/16 E-Revo'}`,`${warning}<div class="workflow-steps">${steps}</div>${result}${source}`);
 }
 
-function panelAbout(){
-  openDrawer('Garage','E‑Revo fleet',`
-    <div class="drawer-section"><h3>How this is managed</h3><p class="empty">The visible garage stays deliberately minimal. Car issues/upgrades stay with each vehicle; shared spares, batteries, chargers, radio gear and procedures live in the Garage tab and <b>data/fleet.json</b>. Tell ChatGPT what changed and it can update that file and commit it.</p></div>
-    <div class="drawer-section"><h3>Vehicle reference</h3><p class="source-note">The fleet is configured as the older Traxxas 1/16 E‑Revo VXL / 71076‑3 generation: Velineon 380, VXL‑3m, TQi and TSM. Part numbers are based on the 71076‑3 parts list. Product imagery is loaded from existing retailer product media and is not stored in this repository. The violet hero image is a purple 1/16 E‑Revo product view used as a visual stand‑in until your own photo is added.</p></div>`);
-}
 
 document.addEventListener('click',e=>{
   const car=e.target.closest('[data-car]'); if(car){topMode='car';carId=car.dataset.car;view='body';render();closeDrawer();return;}
@@ -275,7 +270,6 @@ document.addEventListener('click',e=>{
   const h=e.target.closest('[data-part]'); if(h){panelPart(h.dataset.part);return;}
   const p=e.target.closest('[data-panel]'); if(p){({issues:panelIssues,spares:panelSpares,upgrades:panelUpgrades,service:panelService,gear:()=>panelGear(),workflows:panelWorkflows})[p.dataset.panel]?.();return;}
 });
-$('#menuBtn').addEventListener('click',panelAbout);
 $('#closeDrawer').addEventListener('click',closeDrawer);
 $('#scrim').addEventListener('click',closeDrawer);
 document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeDrawer(); });
