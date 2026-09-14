@@ -83,6 +83,27 @@
       "warning": "Turn TSM completely off before adjusting steering trim. TSM is automatically inactive while driving or braking in reverse.",
       "result": "12:00 = recommended baseline; clockwise = more assistance; fully counterclockwise = TSM off.",
       "source": "https://www.astramodel.cz/manualy/7/71076-3-OM-EN-R04.pdf"
+    },
+    {
+      "id": "wheel-alignment",
+      "title": "Wheel alignment: toe + camber",
+      "category": "Suspension setup",
+      "scope": "1/16 E-Revo VXL · 2 mm hex",
+      "summary": "Make the wheels point straight from above and set their vertical lean from the front/rear.",
+      "warning": "Toe and camber interact on this suspension. Make small adjustments, keep left/right settings symmetrical, and always re-check toe after changing camber. Factory camber is -2° front and rear, so the wheel tops normally lean slightly inward; perfectly vertical (0°) is not the factory setting.",
+      "steps": [
+        "Install a battery and place the car at normal ride height on a flat surface. Turn TSM fully off and set steering trim to neutral before judging the front wheels.",
+        "TOE = viewed from above. If both front wheels point left or right together, correct steering trim first. If their front edges point toward each other, that is toe-in; if they point apart, that is toe-out.",
+        "Use the supplied 2 mm hex wrench in the suspension pivot balls at the axle carrier. For toe, adjust the UPPER and LOWER pivot balls by the same amount so camber changes as little as possible.",
+        "Turn both pivot balls CLOCKWISE into the suspension arm to increase toe-in. Turn both COUNTERCLOCKWISE out of the arm to reduce toe-in. For a visually straight neutral setup, aim for the wheels to be parallel when viewed from above.",
+        "Rear toe is adjusted the same way. Avoid rear toe-out; a little rear toe-in improves stability.",
+        "CAMBER = viewed from the front or rear. Negative camber means the tops of the tires lean inward. Positive camber means the tops lean outward.",
+        "To move from the factory -2° camber toward a more vertical 0° wheel, unthread the UPPER pivot ball slightly with the 2 mm hex. To increase negative camber, unthread the LOWER pivot ball. Work in small equal increments left and right.",
+        "Set the car back down at normal ride height after every adjustment. Use a small square against the wheel if you want to check 0° vertical camber accurately.",
+        "Finally look from above again and re-check toe, because changing camber also changes toe on the E-Revo pivot-ball suspension."
+      ],
+      "result": "Above: wheels can be set parallel for a neutral 0° toe reference. Front/rear: factory camber is -2° each side; 0° looks perfectly vertical but is not the factory setup.",
+      "source": "https://www.astramodel.cz/manualy/7/71076-3-OM-EN-R04.pdf"
     }
   ]
 }
