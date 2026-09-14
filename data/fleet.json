@@ -7,17 +7,6 @@
       "status": "attention",
       "issues": [
         {
-          "id": "blue-broken-axle-carrier-2026-09-14",
-          "name": "Broken axle carrier / wheel hub",
-          "component": "carrier",
-          "part": "7034",
-          "area": "Wheel hub / suspension",
-          "status": "open",
-          "severity": "medium",
-          "reported": "2026-09-14",
-          "details": "One axle carrier / wheel hub (described as the “cursor”) is broken and needs replacement. Exact corner is still to confirm before ordering."
-        },
-        {
           "id": "blue-broken-rear-wing-2026-09-14",
           "name": "Rear wing broken",
           "component": "wing",
@@ -66,12 +55,80 @@
           "area": "Front suspension",
           "note": "Non-stock front suspension arms. Brand/model to identify from photos before recording the exact replacement part.",
           "needsConfirmation": true
+        },
+        {
+          "id": "blue-red-pushrods",
+          "name": "Red aluminum push rods",
+          "area": "Suspension front + rear",
+          "part": "7118X",
+          "note": "All short red suspension push rods fitted.",
+          "needsConfirmation": false
+        },
+        {
+          "id": "blue-rear-red-toelinks",
+          "name": "Red aluminum rear toe links",
+          "area": "Rear suspension",
+          "part": "7138X",
+          "note": "Long red rear toe links fitted.",
+          "needsConfirmation": false
+        },
+        {
+          "id": "blue-red-metal-carrier",
+          "name": "Red metal axle carrier / hub",
+          "area": "Wheel hub / suspension",
+          "note": "Broken carrier replaced with red metal aftermarket carrier. Exact manufacturer/part number to confirm from photo.",
+          "needsConfirmation": true
         }
       ],
       "model": "1/16 E-Revo VXL (71076-3 generation)",
       "powerSystem": "Velineon 380 / VXL-3m",
       "radio": "TQi / TSM",
-      "serviceHistory": [],
+      "serviceHistory": [
+        {
+          "id": "blue-pushrods-2026-09-15",
+          "date": "2026-09-15",
+          "part": "7118X",
+          "partName": "Aluminum push rods",
+          "title": "Aluminum push rods replaced",
+          "status": "completed",
+          "details": "All short red suspension push rods replaced."
+        },
+        {
+          "id": "blue-rear-toelinks-2026-09-15",
+          "date": "2026-09-15",
+          "part": "7138X",
+          "partName": "Aluminum rear toe links",
+          "title": "Rear toe links replaced",
+          "status": "completed",
+          "details": "Long red rear toe links/connectors replaced."
+        },
+        {
+          "id": "blue-metal-carrier-2026-09-15",
+          "date": "2026-09-15",
+          "part": "—",
+          "partName": "Red metal axle carrier / hub",
+          "title": "Axle carrier replaced",
+          "status": "completed",
+          "needsConfirmation": true,
+          "details": "Broken axle carrier/hub replaced with red metal aftermarket carrier. Exact part number to confirm."
+        },
+        {
+          "id": "blue-bearing-7019-2026-09-15",
+          "date": "2026-09-15",
+          "part": "7019",
+          "partName": "Ball bearing 4×8×3 mm",
+          "title": "Small hub bearing replaced",
+          "status": "completed"
+        },
+        {
+          "id": "blue-bearing-7020-2026-09-15",
+          "date": "2026-09-15",
+          "part": "7020",
+          "partName": "Ball bearing 8×12×3.5 mm",
+          "title": "Large hub bearing replaced",
+          "status": "completed"
+        }
+      ],
       "configuration": {
         "servo": "Stock steering servo",
         "lighting": "Aftermarket lighting installed but currently broken",
