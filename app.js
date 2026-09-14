@@ -146,6 +146,7 @@ function render(){
   $('#carStatus').innerHTML=`<span class="status-dot"></span><span>${hasIssues?`${car.issues.length} open issue${car.issues.length===1?'':'s'}`:'Ready'}</span>`;
   $('#issueCount').textContent=(car.issues||[]).length;
   $('#upgradeCount').textContent=(car.upgrades||[]).length;
+  $('#serviceCount').textContent=(car.serviceHistory||[]).length;
   document.querySelector('[data-panel="issues"]').classList.toggle('has-items',hasIssues);
   $('#viewSwitch').innerHTML=VIEWS.map(v=>{
     const exp=v.exploded ? exploded.views?.[v.exploded] : null;
@@ -209,6 +210,13 @@ function panelSpares(){
   const shared=sharedGarage();
   openDrawer('Spares','Shared garage · inventory',`${itemRows(shared.spares,'Spare part')}<div class="drawer-section"><h3>Update through ChatGPT</h3><div class="chat-command">“Add 2× Traxxas 7151 driveshafts to shared spare stock.”</div></div>`);
 }
+
+function panelService(){
+  const c=currentCar(), items=[...(c.serviceHistory||[])].sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
+  const body=items.length?`<div class="list">${items.map(x=>`<div class="list-row service-row"><div><strong>${esc(x.title||'Service')}</strong><p>${esc(x.details||'')}</p><small>${esc(x.date||'')}${x.part?` · Part ${esc(x.part)}`:''}${x.needsConfirmation?' · TO CONFIRM':''}</small></div></div>`).join('')}</div>`:`<div class="empty">No completed maintenance recorded for this car yet.</div>`;
+  openDrawer('Service history',`${c.name} · completed work`,body);
+}
+
 function panelUpgrades(){ const c=currentCar(); openDrawer('Upgrades',`${c.name} · setup`,`${itemRows(c.upgrades,'Upgrade')}<div class="drawer-section"><h3>Update through ChatGPT</h3><div class="chat-command">“${esc(c.name)} car now has aluminum push rods 7118X.”</div></div>`); }
 function panelGear(filterKey=null){
   const g=sharedGarage().gear||{};
@@ -265,7 +273,7 @@ document.addEventListener('click',e=>{
   const expHit=e.target.closest('[data-exp-index]'); if(expHit){panelExplodedPart(expHit.dataset.expIndex);return;}
   const v=e.target.closest('[data-view]'); if(v){view=v.dataset.view;render();return;}
   const h=e.target.closest('[data-part]'); if(h){panelPart(h.dataset.part);return;}
-  const p=e.target.closest('[data-panel]'); if(p){({issues:panelIssues,spares:panelSpares,upgrades:panelUpgrades,gear:()=>panelGear(),workflows:panelWorkflows})[p.dataset.panel]?.();return;}
+  const p=e.target.closest('[data-panel]'); if(p){({issues:panelIssues,spares:panelSpares,upgrades:panelUpgrades,service:panelService,gear:()=>panelGear(),workflows:panelWorkflows})[p.dataset.panel]?.();return;}
 });
 $('#menuBtn').addEventListener('click',panelAbout);
 $('#closeDrawer').addEventListener('click',closeDrawer);

@@ -50,3 +50,5 @@ button,a{font:inherit}button{color:inherit}.app{min-height:100vh;overflow:hidden
 .shared-card-wide>span,.shared-card-wide em{color:#8e9298}.shared-card-wide:hover{background:#181a1d;border-color:#181a1d}
 @media(max-width:900px){.shared-grid{grid-template-columns:repeat(2,minmax(130px,1fr))}.shared-card-wide{grid-column:span 2}}
 @media(max-width:600px){.shared-hub{padding:36px 18px 90px}.shared-intro h1{font-size:56px}.shared-intro p{font-size:12px}.shared-grid{gap:8px}.shared-card{min-height:128px;padding:16px;border-radius:16px}.shared-card strong{font-size:17px}}
+
+.service-row small{display:block;margin-top:8px;color:#9a9da2;font-size:9px;font-weight:700;letter-spacing:.05em}.service-row{align-items:start}

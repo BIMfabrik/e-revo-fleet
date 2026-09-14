@@ -20,7 +20,8 @@
       "upgrades": [],
       "model": "1/16 E-Revo VXL (71076-3 generation)",
       "powerSystem": "Velineon 380 / VXL-3m",
-      "radio": "TQi / TSM"
+      "radio": "TQi / TSM",
+      "serviceHistory": []
     },
     {
       "id": "red",
@@ -52,7 +53,28 @@
       "upgrades": [],
       "model": "1/16 E-Revo VXL (71076-3 generation)",
       "powerSystem": "Velineon 380 / VXL-3m",
-      "radio": "TQi / TSM"
+      "radio": "TQi / TSM",
+      "serviceHistory": [
+        {
+          "id": "red-front-arms-2026-09-13",
+          "date": "2026-09-13",
+          "area": "Front suspension",
+          "title": "Front suspension arms replaced",
+          "part": "7131",
+          "details": "Replaced both lower front suspension arms and the upper front arm on the vehicle-right side (right side when sitting in the car; appears left when viewed head-on). Black composite arms.",
+          "status": "completed"
+        },
+        {
+          "id": "red-rear-long-red-link-2026-09-13",
+          "date": "2026-09-13",
+          "area": "Rear suspension",
+          "title": "Rear long red link replaced",
+          "part": "7138?",
+          "details": "Replaced one of the two red rear suspension links, believed to be the longer link / toe link. Exact part and whether composite 7138 or aluminum 7138X still to confirm.",
+          "status": "completed",
+          "needsConfirmation": true
+        }
+      ]
     },
     {
       "id": "violet",
@@ -63,7 +85,8 @@
       "upgrades": [],
       "model": "1/16 E-Revo VXL (71076-3 generation)",
       "powerSystem": "Velineon 380 / VXL-3m",
-      "radio": "TQi / TSM"
+      "radio": "TQi / TSM",
+      "serviceHistory": []
     }
   ],
   "shared": {
