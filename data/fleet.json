@@ -261,7 +261,64 @@
     }
   ],
   "shared": {
-    "spares": [],
+    "spares": [
+      {
+        "part": "7131",
+        "name": "Front suspension arm set",
+        "qty": 1,
+        "unit": "pack",
+        "note": "Traxxas pack; upper + lower, left + right front arms. Photo batch 1."
+      },
+      {
+        "part": "7034",
+        "name": "Axle carriers, left & right",
+        "qty": 2,
+        "unit": "pack",
+        "note": "Two separate Traxxas packs in photo batch 1."
+      },
+      {
+        "part": "7033",
+        "name": "Pivot balls & pivot ball caps",
+        "qty": 1,
+        "unit": "pack",
+        "note": "Traxxas pack; 4 pivot balls + 4 caps. Photo batch 1."
+      },
+      {
+        "part": "7132",
+        "name": "Rear suspension arm set",
+        "qty": 1,
+        "unit": "pack",
+        "note": "Traxxas pack; upper + lower, left + right rear arms. Photo batch 1."
+      },
+      {
+        "part": "7080",
+        "name": "Differential cover plates / gaskets / O-rings",
+        "qty": 2,
+        "unit": "pack",
+        "note": "Two separate Traxxas packs in photo batch 1."
+      },
+      {
+        "part": "7118",
+        "name": "Red composite push rods",
+        "qty": 1,
+        "unit": "pack",
+        "note": "Traxxas pack; 4 push rods + 8 hollow balls. Photo batch 1."
+      },
+      {
+        "part": "7154",
+        "name": "Wheel hubs / hexes + axle pins",
+        "qty": 1,
+        "unit": "pack",
+        "note": "Traxxas pack; 4 wheel hubs/hexes + 4 axle pins. Photo batch 1."
+      },
+      {
+        "part": "7138",
+        "name": "Red composite toe links",
+        "qty": 1,
+        "unit": "pack",
+        "note": "Traxxas pack; 4 toe links + 8 hollow balls. Photo batch 1."
+      }
+    ],
     "gear": {
       "batteries": [],
       "transmitters": [],
