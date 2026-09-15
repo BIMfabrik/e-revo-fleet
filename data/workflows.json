@@ -103,6 +103,27 @@
       "result": "Toe: both pivot balls together. Camber: one pivot ball. Factory camber: -2° front/rear.",
       "source": "https://www.astramodel.cz/manualy/7/71076-3-OM-EN-R04.pdf",
       "sourcePage": 24
+    },
+    {
+      "id": "xt60h-wiring",
+      "title": "Wire XT60H connectors",
+      "category": "Electrical / connectors",
+      "scope": "Battery · ESC · charger",
+      "summary": "Which XT60H side goes on the battery vs ESC, where red/black wires go, and how to verify polarity before plugging in.",
+      "warning": "Never guess polarity. Red is positive (+), black is negative (−). Reverse polarity can destroy the ESC. Work on one battery wire at a time and insulate it before touching the second wire.",
+      "steps": [
+        "Identify the connector by HOUSING and CONTACTS: the battery normally uses the small XT60/XT60H male housing with recessed female bullet contacts. The ESC or charger uses the larger female housing with exposed male bullet contacts.",
+        "On the BATTERY connector, solder RED to the + terminal and BLACK to the − terminal. The XT60H shell is marked + and −; follow those moulded marks, not left/right orientation in your hand.",
+        "On the ESC connector, again solder RED ESC wire to + and BLACK ESC wire to −. When plugged together, + must meet + and − must meet −.",
+        "For the charger lead use the same convention as the ESC: connector that mates with the battery, red to + and black to −.",
+        "Before soldering, slide the XT60H rear cover / strain-relief parts onto the wires. Tin both wire and cup, then solder without overheating the housing.",
+        "If soldering a battery connector, disconnect the pack if possible. If not, cut/strip/solder only ONE lead at a time; fully insulate that joint before working on the second lead.",
+        "After soldering, fit the XT60H rear housing so no bare conductor or solder cup is exposed and the cable is strain-relieved.",
+        "Before the first connection, check the battery connector with a multimeter on DC volts: red probe on the connector + and black probe on −. The meter must show a positive voltage, not a minus sign.",
+        "Only after polarity is confirmed should you connect the battery to the ESC or charger."
+      ],
+      "result": "Battery side: male housing / female bullets. ESC & charger side: female housing / male bullets. Red = +, black = −, verified with a multimeter.",
+      "source": "https://www.progressiverc.com/en-gb/products/xt60-connectors"
     }
   ]
 }

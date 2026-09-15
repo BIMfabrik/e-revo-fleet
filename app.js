@@ -379,6 +379,15 @@ function wheelAlignmentVisuals(){
   </div>`;
 }
 
+
+function xt60WiringVisuals(){
+  return `<div class="xt60-guide">
+    <section class="xt60-card"><span class="rule-kicker">BATTERY SIDE</span><h4>XT60H male housing · female contacts</h4><div class="xt60-plug battery"><div class="xt60-wire red">RED · +</div><div class="xt60-shape"><b>+</b><b>−</b></div><div class="xt60-wire black">BLACK · −</div></div><small>Use the + / − marks moulded into the connector. This is the safer battery side because the live contacts are recessed.</small></section>
+    <section class="xt60-card"><span class="rule-kicker">ESC / CHARGER SIDE</span><h4>XT60H female housing · male contacts</h4><div class="xt60-plug esc"><div class="xt60-wire red">RED · +</div><div class="xt60-shape"><b>+</b><b>−</b></div><div class="xt60-wire black">BLACK · −</div></div><small>The mating side goes on the ESC and charger lead. Red must meet red/+; black must meet black/−.</small></section>
+    <div class="pivot-note"><b>Final check</b><span>Multimeter on battery connector: red probe to +, black probe to − → positive voltage. A minus sign means polarity is reversed.</span></div>
+  </div>`;
+}
+
 function panelManuals(){
   const owner='https://www.astramodel.cz/manualy/7/71076-3-OM-EN-R04.pdf';
   const parts='https://www.astramodel.cz/manualy/7/71076-3_parts.pdf';
@@ -391,9 +400,9 @@ function openWorkflow(id){
   const warning=w.warning?`<div class="workflow-warning"><strong>Important</strong><p>${esc(w.warning)}</p></div>`:'';
   const result=w.result?`<div class="workflow-result"><span>Expected result</span><strong>${esc(w.result)}</strong></div>`:'';
   const source=w.source?`<div class="drawer-actions"><a class="action" href="${esc(w.source)}" target="_blank" rel="noopener">Open Traxxas manual${w.sourcePage?` · page ${esc(w.sourcePage)}`:''}</a></div>`:'';
-  const visuals=id==='wheel-alignment'?wheelAlignmentVisuals():'';
+  const visuals=id==='wheel-alignment'?wheelAlignmentVisuals():(id==='xt60h-wiring'?xt60WiringVisuals():'');
   openDrawer(w.title,`${w.category||'Procedure'} · ${w.scope||'1/16 E-Revo'}`,`${visuals}${warning}<div class="workflow-steps">${steps}</div>${result}${source}`);
-  $('#drawer').classList.toggle('workflow-wide',id==='wheel-alignment');
+  $('#drawer').classList.toggle('workflow-wide',['wheel-alignment','xt60h-wiring'].includes(id));
 }
 
 
