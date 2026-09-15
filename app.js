@@ -357,19 +357,32 @@ function panelWorkflows(){
   openDrawer('Workflows','garage procedures',`${managerBar('workflows','workflow')}<div class="workflow-list">${rows}</div>`);
 }
 function wheelAlignmentVisuals(){
-  const frontExploded=exploded.views?.front?.image;
-  return `<div class="alignment-visuals">
-    <figure class="alignment-card"><div class="alignment-image-wrap"><img src="${esc(IMG.top)}" alt="E-Revo viewed from above"><div class="alignment-guide toe-guide"><span>TOE</span><b>view from above</b></div></div><figcaption><strong>Toe</strong><span>Front edges together = toe-in. Front edges apart = toe-out. Parallel = neutral visual reference.</span></figcaption></figure>
-    <figure class="alignment-card"><div class="alignment-image-wrap"><img src="${esc(IMG.front)}" alt="E-Revo viewed from front"><div class="alignment-guide camber-guide"><span>CAMBER</span><b>view from front</b></div></div><figcaption><strong>Camber</strong><span>Wheel tops inward = negative camber. Factory reference is about −2°, not perfectly vertical.</span></figcaption></figure>
-    ${frontExploded?`<figure class="alignment-card alignment-card-wide"><div class="alignment-image-wrap"><img src="${esc(frontExploded)}" alt="Front suspension exploded view"><div class="alignment-guide adjust-guide"><span>ADJUST HERE</span><b>pivot balls at axle carrier · 2 mm hex</b></div></div><figcaption><strong>Adjustment point</strong><span>Use the upper/lower pivot balls at the axle carrier. Make small equal changes and re-check toe after camber.</span></figcaption></figure>`:''}
+  return `<div class="pivot-guide">
+    <div class="pivot-photo-wrap" data-lightbox-src="api/images/manual-pivot-ball-adjustment.png">
+      <img src="api/images/manual-pivot-ball-adjustment.png" alt="71076-3 manual close-up of upper and lower suspension pivot balls">
+      <span class="pivot-pin pivot-pin-upper"><b>UPPER</b><small>pivot ball</small></span>
+      <span class="pivot-pin pivot-pin-lower"><b>LOWER</b><small>pivot ball</small></span>
+    </div>
+    <div class="pivot-rules">
+      <section><span class="rule-kicker">TOE · USE BOTH</span><h4>Upper + lower move together</h4><div class="turn-row"><b>↻ CLOCKWISE · tighten/thread in BOTH</b><span>More toe-in</span></div><div class="turn-row"><b>↺ COUNTER-CLOCKWISE · loosen/thread out BOTH</b><span>Less toe-in / toward toe-out</span></div></section>
+      <section><span class="rule-kicker">CAMBER · USE ONE</span><h4>Choose upper or lower</h4><div class="turn-row"><b>UPPER ↺ COUNTER-CLOCKWISE · thread out</b><span>Toward 0° / more vertical</span></div><div class="turn-row"><b>LOWER ↺ COUNTER-CLOCKWISE · thread out</b><span>More negative camber · wheel top inward</span></div><small class="reverse-note">To reverse either camber change, thread that same pivot ball back in clockwise.</small></section>
+    </div>
+    <div class="pivot-note"><b>2 mm hex</b><span>Insert it into the pivot ball itself — not the outer pivot-ball cap. Manual page 24.</span></div>
   </div>`;
 }
+
+function panelManuals(){
+  const owner='https://www.astramodel.cz/manualy/7/71076-3-OM-EN-R04.pdf';
+  const parts='https://www.astramodel.cz/manualy/7/71076-3_parts.pdf';
+  openDrawer('Manuals','Shared garage · PDF',`<div class="manual-list"><a class="manual-card" href="${owner}" target="_blank" rel="noopener"><span>OWNER’S MANUAL</span><strong>1/16 E‑Revo VXL · 71076‑3</strong><em>PDF · tuning, setup, maintenance</em></a><a class="manual-card" href="${parts}" target="_blank" rel="noopener"><span>PARTS LIST</span><strong>71076‑3 exploded parts reference</strong><em>PDF · part numbers and assemblies</em></a></div>`);
+}
+
 function openWorkflow(id){
   const w=workflows.find(x=>x.id===id); if(!w) return;
   const steps=(w.steps||[]).map((step,i)=>`<div class="workflow-step"><i>${i+1}</i><div>${esc(step)}</div></div>`).join('');
   const warning=w.warning?`<div class="workflow-warning"><strong>Important</strong><p>${esc(w.warning)}</p></div>`:'';
   const result=w.result?`<div class="workflow-result"><span>Expected result</span><strong>${esc(w.result)}</strong></div>`:'';
-  const source=w.source?`<div class="drawer-actions"><a class="action" href="${esc(w.source)}" target="_blank" rel="noopener">Open Traxxas manual</a></div>`:'';
+  const source=w.source?`<div class="drawer-actions"><a class="action" href="${esc(w.source)}" target="_blank" rel="noopener">Open Traxxas manual${w.sourcePage?` · page ${esc(w.sourcePage)}`:''}</a></div>`:'';
   const visuals=id==='wheel-alignment'?wheelAlignmentVisuals():'';
   openDrawer(w.title,`${w.category||'Procedure'} · ${w.scope||'1/16 E-Revo'}`,`${visuals}${warning}<div class="workflow-steps">${steps}</div>${result}${source}`);
   $('#drawer').classList.toggle('workflow-wide',id==='wheel-alignment');
@@ -390,7 +403,7 @@ document.addEventListener('click',e=>{
   const expHit=e.target.closest('[data-exp-index]'); if(expHit){panelExplodedPart(expHit.dataset.expIndex);return;}
   const v=e.target.closest('[data-view]'); if(v){view=v.dataset.view;render();return;}
   const h=e.target.closest('[data-part]'); if(h){panelPart(h.dataset.part);return;}
-  const p=e.target.closest('[data-panel]'); if(p){({issues:panelIssues,spares:panelSpares,upgrades:panelUpgrades,service:panelService,gear:()=>panelGear(),workflows:panelWorkflows})[p.dataset.panel]?.();return;}
+  const p=e.target.closest('[data-panel]'); if(p){({issues:panelIssues,spares:panelSpares,upgrades:panelUpgrades,service:panelService,gear:()=>panelGear(),workflows:panelWorkflows,manuals:panelManuals})[p.dataset.panel]?.();return;}
 });
 $('#closeDrawer').addEventListener('click',closeDrawer);
 $('#scrim').addEventListener('click',closeDrawer);

@@ -89,21 +89,20 @@
       "title": "Wheel alignment: toe + camber",
       "category": "Suspension setup",
       "scope": "1/16 E-Revo VXL · 2 mm hex",
-      "summary": "Make the wheels point straight from above and set their vertical lean from the front/rear.",
-      "warning": "Toe and camber interact on this suspension. Make small adjustments, keep left/right settings symmetrical, and always re-check toe after changing camber. Factory camber is -2° front and rear, so the wheel tops normally lean slightly inward; perfectly vertical (0°) is not the factory setting.",
+      "summary": "Use the two pivot balls at each axle carrier to set toe and camber. The workflow shows exactly which one to turn.",
+      "warning": "Use a 2 mm hex in the pivot ball itself. Do not adjust the outer pivot-ball cap. Toe and camber interact, so re-check toe after every camber change.",
       "steps": [
-        "Install a battery and place the car at normal ride height on a flat surface. Turn TSM fully off and set steering trim to neutral before judging the front wheels.",
-        "TOE = viewed from above. If both front wheels point left or right together, correct steering trim first. If their front edges point toward each other, that is toe-in; if they point apart, that is toe-out.",
-        "Use the supplied 2 mm hex wrench in the suspension pivot balls at the axle carrier. For toe, adjust the UPPER and LOWER pivot balls by the same amount so camber changes as little as possible.",
-        "Turn both pivot balls CLOCKWISE into the suspension arm to increase toe-in. Turn both COUNTERCLOCKWISE out of the arm to reduce toe-in. For a visually straight neutral setup, aim for the wheels to be parallel when viewed from above.",
-        "Rear toe is adjusted the same way. Avoid rear toe-out; a little rear toe-in improves stability.",
-        "CAMBER = viewed from the front or rear. Negative camber means the tops of the tires lean inward. Positive camber means the tops lean outward.",
-        "To move from the factory -2° camber toward a more vertical 0° wheel, unthread the UPPER pivot ball slightly with the 2 mm hex. To increase negative camber, unthread the LOWER pivot ball. Work in small equal increments left and right.",
-        "Set the car back down at normal ride height after every adjustment. Use a small square against the wheel if you want to check 0° vertical camber accurately.",
-        "Finally look from above again and re-check toe, because changing camber also changes toe on the E-Revo pivot-ball suspension."
+        "Put the car at normal ride height on a flat surface. Turn TSM fully off and center steering trim.",
+        "At each wheel there are TWO adjustment points at the axle carrier: UPPER pivot ball and LOWER pivot ball. Insert the 2 mm hex into the pivot ball itself.",
+        "TOE — viewed from above: turn BOTH upper and lower pivot balls by the same amount. CLOCKWISE (thread both into the arms) = MORE TOE-IN. COUNTER-CLOCKWISE (thread both out) = LESS TOE-IN / toward toe-out.",
+        "CAMBER — viewed from front/rear: use ONE pivot ball. COUNTER-CLOCKWISE on the LOWER pivot ball = MORE NEGATIVE CAMBER (top of wheel moves inward).",
+        "CAMBER toward vertical: COUNTER-CLOCKWISE on the UPPER pivot ball = LESS NEGATIVE CAMBER, toward 0° / positive camber. To undo that change, thread the same pivot ball back in clockwise.",
+        "Factory static camber for this 71076-3 manual is -2° front and -2° rear. A perfectly vertical wheel is 0° and is not the factory setting.",
+        "After any camber adjustment, set the car back at ride height and re-check toe from above because camber adjustment also changes toe."
       ],
-      "result": "Above: wheels can be set parallel for a neutral 0° toe reference. Front/rear: factory camber is -2° each side; 0° looks perfectly vertical but is not the factory setup.",
-      "source": "https://www.astramodel.cz/manualy/7/71076-3-OM-EN-R04.pdf"
+      "result": "Toe: both pivot balls together. Camber: one pivot ball. Factory camber: -2° front/rear.",
+      "source": "https://www.astramodel.cz/manualy/7/71076-3-OM-EN-R04.pdf",
+      "sourcePage": 24
     }
   ]
 }
