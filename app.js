@@ -211,6 +211,25 @@ function openDrawer(title, eyebrow, html){
   $('#drawer').classList.add('open');
   $('#drawer').setAttribute('aria-hidden','false');
 }
+
+function openImagePopup(src,alt='Garage image'){
+  let box=document.querySelector('#imageLightbox');
+  if(!box){
+    box=document.createElement('div');
+    box.id='imageLightbox';
+    box.className='image-lightbox';
+    box.innerHTML='<button class="image-lightbox-close" type="button" aria-label="Close image">×</button><img alt="">';
+    document.body.appendChild(box);
+    box.addEventListener('click',e=>{if(e.target===box || e.target.closest('.image-lightbox-close')) closeImagePopup();});
+  }
+  const img=box.querySelector('img'); img.src=src; img.alt=alt;
+  box.classList.add('open'); document.body.classList.add('lightbox-open');
+}
+function closeImagePopup(){
+  const box=document.querySelector('#imageLightbox'); if(!box) return;
+  box.classList.remove('open'); document.body.classList.remove('lightbox-open');
+}
+
 function closeDrawer(){
   $('#drawer').classList.remove('open'); $('#drawer').setAttribute('aria-hidden','true');
   $('#scrim').classList.remove('show'); setTimeout(()=>$('#scrim').hidden=true,250);
@@ -245,7 +264,7 @@ function itemRows(items, kind, scope=''){
   if(!items?.some(x=>!x.archived)) return `<div class="empty">Nothing recorded yet.</div>`;
   return `<div class="list">${items.map((x,i)=>{
     if(x.archived) return '';
-    const photos=(x.images||[]).map(src=>`<a class="stock-photo" href="${esc(src)}" target="_blank" rel="noopener"><img src="${esc(src)}" alt="${esc(x.name||x.part||kind)}"></a>`).join('');
+    const photos=(x.images||[]).map(src=>`<button class="stock-photo" type="button" data-lightbox-src="${esc(src)}" aria-label="Open image"><img src="${esc(src)}" alt="${esc(x.name||x.part||kind)}"></button>`).join('');
     const part=x.part?`<span class="stock-part">${esc(x.part)}</span>`:'';
     return `<div class="list-row stock-row">${photos?`<div class="stock-photos">${photos}</div>`:'<div class="stock-photo-placeholder"></div>'}<div class="stock-copy"><strong>${esc(x.name||x.part||x.title||kind)}</strong><p>${part}${part&&x.note?' · ':''}${esc(x.note||x.details||'')}</p>${x.needsConfirmation?'<small class="stock-confirm">TO CONFIRM</small>':''}</div>${x.qty?`<div class="qty">×${esc(x.qty)}</div>`:''}${scope?crudButtons(scope,i):''}</div>`;
   }).join('')}</div>`;
@@ -351,6 +370,8 @@ function openWorkflow(id){
 document.addEventListener('submit',e=>{const form=e.target.closest('#quickSpareForm');if(form){e.preventDefault();saveQuickSpare(form);}});
 
 document.addEventListener('click',e=>{
+  const photo=e.target.closest('[data-lightbox-src]'); if(photo){e.preventDefault();openImagePopup(photo.dataset.lightboxSrc,photo.querySelector('img')?.alt||'Garage image');return;}
+  if(e.target.id==='carImage'){openImagePopup(e.target.src,e.target.alt||'Vehicle image');return;}
   const car=e.target.closest('[data-car]'); if(car){topMode='car';carId=car.dataset.car;view='body';render();closeDrawer();return;}
   const sharedHome=e.target.closest('[data-shared-home]'); if(sharedHome){topMode='shared';render();closeDrawer();return;}
   const sharedGear=e.target.closest('[data-shared-gear]'); if(sharedGear){panelGear(sharedGear.dataset.sharedGear);return;}
@@ -364,6 +385,6 @@ document.addEventListener('click',e=>{
 });
 $('#closeDrawer').addEventListener('click',closeDrawer);
 $('#scrim').addEventListener('click',closeDrawer);
-document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeDrawer(); });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){closeImagePopup();closeDrawer();} });
 window.addEventListener('resize',syncHotspotFrame,{passive:true});
 loadFleet();
