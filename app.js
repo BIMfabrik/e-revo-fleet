@@ -154,7 +154,6 @@ function render(){
   $('#sharedSpareCount').textContent=`${spares.filter(x=>!x.archived).reduce((n,x)=>n+Number(x.qty||1),0)} parts`;
   $('#batteryCount').textContent=`${(gear.batteries||[]).filter(x=>!x.archived).reduce((n,x)=>n+Number(x.qty||1),0)} packs`;
   $('#chargerCount').textContent=`${(gear.chargers||[]).filter(x=>!x.archived).reduce((n,x)=>n+Number(x.qty||1),0)} units`;
-  $('#sharedGearCount').textContent=`${countGear()} items`;
   $('#sharedWorkflowCount').textContent=`${workflows.length} procedures`;
   if(isShared) return;
 
@@ -231,7 +230,7 @@ function closeImagePopup(){
 }
 
 function closeDrawer(){
-  $('#drawer').classList.remove('open'); $('#drawer').setAttribute('aria-hidden','true');
+  $('#drawer').classList.remove('open','workflow-wide'); $('#drawer').setAttribute('aria-hidden','true');
   $('#scrim').classList.remove('show'); setTimeout(()=>$('#scrim').hidden=true,250);
 }
 
@@ -266,7 +265,7 @@ function itemRows(items, kind, scope=''){
     if(x.archived) return '';
     const photos=(x.images||[]).map(src=>`<button class="stock-photo" type="button" data-lightbox-src="${esc(src)}" aria-label="Open image"><img src="${esc(src)}" alt="${esc(x.name||x.part||kind)}"></button>`).join('');
     const part=x.part?`<span class="stock-part">${esc(x.part)}</span>`:'';
-    return `<div class="list-row stock-row">${photos?`<div class="stock-photos">${photos}</div>`:'<div class="stock-photo-placeholder"></div>'}<div class="stock-copy"><strong>${esc(x.name||x.part||x.title||kind)}</strong><p>${part}${part&&x.note?' · ':''}${esc(x.note||x.details||'')}</p>${x.needsConfirmation?'<small class="stock-confirm">TO CONFIRM</small>':''}</div>${x.qty?`<div class="qty">×${esc(x.qty)}</div>`:''}${scope?crudButtons(scope,i):''}</div>`;
+    return `<div class="list-row stock-row ${x.needsConfirmation?'stock-row-unidentified':''}">${photos?`<div class="stock-photos">${photos}</div>`:'<div class="stock-photo-placeholder"></div>'}<div class="stock-copy"><strong>${esc(x.name||x.part||x.title||kind)}</strong><p>${part}${part&&x.note?' · ':''}${esc(x.note||x.details||'')}</p>${x.needsConfirmation?'<small class="stock-confirm">TO CONFIRM · use photo to identify</small>':''}</div>${x.qty?`<div class="qty">×${esc(x.qty)}</div>`:''}${scope?crudButtons(scope,i):''}</div>`;
   }).join('')}</div>`;
 }
 function reopenScope(scope){
@@ -357,13 +356,23 @@ function panelWorkflows(){
   const rows=active.map(([w,i])=>`<div class="workflow-row-wrap"><button class="workflow-row" data-workflow="${esc(w.id)}"><div><span>${esc(w.category||'Procedure')}</span><strong>${esc(w.title)}</strong><p>${esc(w.summary||'')}</p></div><b>→</b></button>${crudButtons('workflows',i)}</div>`).join('');
   openDrawer('Workflows','garage procedures',`${managerBar('workflows','workflow')}<div class="workflow-list">${rows}</div>`);
 }
+function wheelAlignmentVisuals(){
+  const frontExploded=exploded.views?.front?.image;
+  return `<div class="alignment-visuals">
+    <figure class="alignment-card"><div class="alignment-image-wrap"><img src="${esc(IMG.top)}" alt="E-Revo viewed from above"><div class="alignment-guide toe-guide"><span>TOE</span><b>view from above</b></div></div><figcaption><strong>Toe</strong><span>Front edges together = toe-in. Front edges apart = toe-out. Parallel = neutral visual reference.</span></figcaption></figure>
+    <figure class="alignment-card"><div class="alignment-image-wrap"><img src="${esc(IMG.front)}" alt="E-Revo viewed from front"><div class="alignment-guide camber-guide"><span>CAMBER</span><b>view from front</b></div></div><figcaption><strong>Camber</strong><span>Wheel tops inward = negative camber. Factory reference is about −2°, not perfectly vertical.</span></figcaption></figure>
+    ${frontExploded?`<figure class="alignment-card alignment-card-wide"><div class="alignment-image-wrap"><img src="${esc(frontExploded)}" alt="Front suspension exploded view"><div class="alignment-guide adjust-guide"><span>ADJUST HERE</span><b>pivot balls at axle carrier · 2 mm hex</b></div></div><figcaption><strong>Adjustment point</strong><span>Use the upper/lower pivot balls at the axle carrier. Make small equal changes and re-check toe after camber.</span></figcaption></figure>`:''}
+  </div>`;
+}
 function openWorkflow(id){
   const w=workflows.find(x=>x.id===id); if(!w) return;
   const steps=(w.steps||[]).map((step,i)=>`<div class="workflow-step"><i>${i+1}</i><div>${esc(step)}</div></div>`).join('');
   const warning=w.warning?`<div class="workflow-warning"><strong>Important</strong><p>${esc(w.warning)}</p></div>`:'';
   const result=w.result?`<div class="workflow-result"><span>Expected result</span><strong>${esc(w.result)}</strong></div>`:'';
   const source=w.source?`<div class="drawer-actions"><a class="action" href="${esc(w.source)}" target="_blank" rel="noopener">Open Traxxas manual</a></div>`:'';
-  openDrawer(w.title,`${w.category||'Procedure'} · ${w.scope||'1/16 E-Revo'}`,`${warning}<div class="workflow-steps">${steps}</div>${result}${source}`);
+  const visuals=id==='wheel-alignment'?wheelAlignmentVisuals():'';
+  openDrawer(w.title,`${w.category||'Procedure'} · ${w.scope||'1/16 E-Revo'}`,`${visuals}${warning}<div class="workflow-steps">${steps}</div>${result}${source}`);
+  $('#drawer').classList.toggle('workflow-wide',id==='wheel-alignment');
 }
 
 
