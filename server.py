@@ -15,6 +15,7 @@ def init_db():
     with connect() as con:
         con.execute("CREATE TABLE IF NOT EXISTS state (key TEXT PRIMARY KEY,value TEXT NOT NULL,updated_at TEXT NOT NULL)")
         con.execute("CREATE TABLE IF NOT EXISTS images (id TEXT PRIMARY KEY,part TEXT,filename TEXT NOT NULL,original_name TEXT,created_at TEXT NOT NULL)")
+        con.execute("CREATE TABLE IF NOT EXISTS state_history (id INTEGER PRIMARY KEY AUTOINCREMENT,key TEXT NOT NULL,value TEXT NOT NULL,saved_at TEXT NOT NULL)")
         if not con.execute("SELECT 1 FROM state WHERE key='fleet'").fetchone():
             seed=json.loads((WEB/'data'/'fleet.json').read_text())
             con.execute("INSERT INTO state VALUES(?,?,?)",('fleet',json.dumps(seed),now()))
@@ -25,7 +26,12 @@ def get_state(key):
 def set_state(key,value):
     raw=json.dumps(value,ensure_ascii=False)
     with connect() as con:
-        con.execute("INSERT INTO state VALUES(?,?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value,updated_at=excluded.updated_at",(key,raw,now())); con.commit()
+        old=con.execute("SELECT value FROM state WHERE key=?",(key,)).fetchone()
+        if old:
+            con.execute("INSERT INTO state_history(key,value,saved_at) VALUES(?,?,?)",(key,old['value'],now()))
+            con.execute("DELETE FROM state_history WHERE key=? AND id NOT IN (SELECT id FROM state_history WHERE key=? ORDER BY id DESC LIMIT 100)",(key,key))
+        con.execute("INSERT INTO state VALUES(?,?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value,updated_at=excluded.updated_at",(key,raw,now()))
+        con.commit()
 def save_data_url(part,data_url,original_name=None):
     if not data_url or not data_url.startswith('data:image/'): return None
     header,encoded=data_url.split(',',1); mime=header.split(';',1)[0].split(':',1)[1]
