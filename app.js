@@ -1,7 +1,7 @@
 const IMG = {
   body: {
     blue: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_01.webp',
-    red: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_01.webp',
+    red: 'https://traxxas.com/media/catalog/product/7/1/71076-3-116-e-revo-purple-o-3qtr-high_1_2.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=&width=',
     violet: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_01.webp'
   },
   front: 'https://i0.wp.com/discountrcparts.com/wp-content/uploads/2026/09/TRA-71076-3-BLUEX_03.webp',
@@ -80,7 +80,7 @@ const fallbackFleet = {
     {id:'red',name:'Red',accent:'#d51f2f',status:'ready',issues:[],upgrades:[]},
     {id:'violet',name:'Violet',accent:'#7047d7',status:'ready',issues:[],upgrades:[]}
   ],
-  shared:{spares:[],gear:{batteries:[],transmitters:[],chargers:[],other:[]}}
+  shared:{spares:[],partsToBuy:[],gear:{batteries:[],transmitters:[],chargers:[],other:[]}}
 };
 
 const $ = s => document.querySelector(s);
@@ -95,7 +95,7 @@ let view = 'body';
 
 function currentCar(){ return fleet.cars.find(c=>c.id===carId) || fleet.cars[0]; }
 function esc(s=''){ return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c])); }
-function sharedGarage(){ return fleet.shared || {spares:[],gear:{batteries:[],transmitters:[],chargers:[],other:[]}}; }
+function sharedGarage(){ return fleet.shared || {spares:[],partsToBuy:[],gear:{batteries:[],transmitters:[],chargers:[],other:[]}}; }
 function countGear(){ return Object.values(sharedGarage().gear||{}).reduce((n,a)=>n+(Array.isArray(a)?a.filter(x=>!x.archived).reduce((s,x)=>s+Number(x.qty||1),0):0),0); }
 function stockFor(partNo){
   return (sharedGarage().spares||[]).filter(x=>!x.archived && String(x.part||x.number||'')===String(partNo)).reduce((n,x)=>n+Number(x.qty||1),0);
@@ -155,6 +155,7 @@ function render(){
   $('#batteryCount').textContent=`${(gear.batteries||[]).filter(x=>!x.archived).reduce((n,x)=>n+Number(x.qty||1),0)} packs`;
   $('#chargerCount').textContent=`${(gear.chargers||[]).filter(x=>!x.archived).reduce((n,x)=>n+Number(x.qty||1),0)} units`;
   $('#sharedWorkflowCount').textContent=`${workflows.length} procedures`;
+  $('#buyCount').textContent=`${(shared.partsToBuy||[]).filter(x=>!x.archived).reduce((n,x)=>n+Number(x.qty||1),0)} items`;
   if(isShared) return;
 
   $('#carName').textContent=car.name;
@@ -170,7 +171,7 @@ function render(){
   $('#viewSwitch').innerHTML=VIEWS.map(v=>{
     const exp=v.exploded ? exploded.views?.[v.exploded] : null;
     const thumb=exp?.image || (v.id==='body'?IMG.body[carId]:IMG[v.id]);
-    const filter=exp?'none':((['front','side','rear'].includes(v.id) || (v.id==='body' && carId==='red'))?REFERENCE_FILTER[carId]:'none');
+    const filter=exp?'none':((['front','side','rear'].includes(v.id))?REFERENCE_FILTER[carId]:'none');
     return `<button class="view-btn ${v.id===view?'active':''} ${exp?'exploded-tab':''}" data-view="${v.id}"><img src="${thumb}" alt="" style="filter:${filter}"><span>${v.label}</span></button>`;
   }).join('');
   renderImage();
@@ -181,7 +182,7 @@ function renderImage(){
   stage.classList.toggle('technical-view',!!exp);
   stage.classList.toggle('exploded-view',!!exp);
   const src=exp?.image || (view==='body'?IMG.body[carId]:IMG[view]);
-  img.style.filter=exp?'none':((['front','side','rear'].includes(view) || (view==='body' && carId==='red'))?REFERENCE_FILTER[carId]:'none');
+  img.style.filter=exp?'none':((['front','side','rear'].includes(view))?REFERENCE_FILTER[carId]:'none');
   img.onload=()=>{ stage.classList.remove('loading'); syncHotspotFrame(); };
   img.onerror=()=>stage.classList.remove('loading');
   img.src=src;
@@ -246,6 +247,7 @@ function scopeArray(scope){
   if(scope==='upgrades') return c.upgrades||(c.upgrades=[]);
   if(scope==='service') return c.serviceHistory||(c.serviceHistory=[]);
   if(scope==='spares') return sharedGarage().spares||(fleet.shared.spares=[]);
+  if(scope==='buy') return sharedGarage().partsToBuy||(fleet.shared.partsToBuy=[]);
   if(scope==='workflows') return fleet.shared.workflows||(fleet.shared.workflows=workflows);
   if(scope.startsWith('gear:')){ const k=scope.split(':')[1]; return g[k]||(g[k]=[]); }
   return [];
@@ -265,11 +267,12 @@ function itemRows(items, kind, scope=''){
     if(x.archived) return '';
     const photos=(x.images||[]).map(src=>`<button class="stock-photo" type="button" data-lightbox-src="${esc(src)}" aria-label="Open image"><img src="${esc(src)}" alt="${esc(x.name||x.part||kind)}"></button>`).join('');
     const part=x.part?`<span class="stock-part">${esc(x.part)}</span>`:'';
-    return `<div class="list-row stock-row ${x.needsConfirmation?'stock-row-unidentified':''}">${photos?`<div class="stock-photos">${photos}</div>`:'<div class="stock-photo-placeholder"></div>'}<div class="stock-copy"><strong>${esc(x.name||x.part||x.title||kind)}</strong><p>${part}${part&&x.note?' · ':''}${esc(x.note||x.details||'')}</p>${x.needsConfirmation?'<small class="stock-confirm">TO CONFIRM · use photo to identify</small>':''}</div>${x.qty?`<div class="qty">×${esc(x.qty)}</div>`:''}${scope?crudButtons(scope,i):''}</div>`;
+    const link=x.url?`<a class="stock-link" href="${esc(x.url)}" target="_blank" rel="noopener">Open part →</a>`:'';
+    return `<div class="list-row stock-row ${x.needsConfirmation?'stock-row-unidentified':''}">${photos?`<div class="stock-photos">${photos}</div>`:'<div class="stock-photo-placeholder"></div>'}<div class="stock-copy"><strong>${esc(x.name||x.part||x.title||kind)}</strong><p>${part}${part&&x.note?' · ':''}${esc(x.note||x.details||'')}</p>${link}${x.needsConfirmation?'<small class="stock-confirm">TO CONFIRM · use photo to identify</small>':''}</div>${x.qty?`<div class="qty">×${esc(x.qty)}</div>`:''}${scope?crudButtons(scope,i):''}</div>`;
   }).join('')}</div>`;
 }
 function reopenScope(scope){
-  if(scope==='issues') return panelIssues(); if(scope==='upgrades') return panelUpgrades(); if(scope==='service') return panelService(); if(scope==='spares') return panelSpares();
+  if(scope==='issues') return panelIssues(); if(scope==='upgrades') return panelUpgrades(); if(scope==='service') return panelService(); if(scope==='spares') return panelSpares(); if(scope==='buy') return panelBuy();
   if(scope.startsWith('gear:')) return panelGear(scope.split(':')[1]); if(scope==='workflows') return panelWorkflows();
 }
 function editFields(scope,x={}){
@@ -277,8 +280,9 @@ function editFields(scope,x={}){
   const out={...x};
   if(scope==='service') out.partName=name; else if(scope==='workflows') out.title=name; else out.name=name;
   if(scope==='workflows'){ const cat=prompt('Category',x.category||'Procedure'); if(cat===null)return null; out.category=cat; const summary=prompt('Summary',x.summary||''); if(summary===null)return null; out.summary=summary; out.id=out.id||('workflow-'+Date.now()); out.steps=out.steps||[]; return out; }
-  if(['spares','service'].includes(scope)){ const part=prompt('Part number',x.part||''); if(part===null)return null; out.part=part.trim(); }
-  if(scope==='spares'||scope.startsWith('gear:')){ const q=prompt('Quantity',String(x.qty||1)); if(q===null)return null; out.qty=Math.max(1,Number(q)||1); }
+  if(['spares','service','buy'].includes(scope)){ const part=prompt('Part number',x.part||''); if(part===null)return null; out.part=part.trim(); }
+  if(scope==='spares'||scope==='buy'||scope.startsWith('gear:')){ const q=prompt('Quantity',String(x.qty||1)); if(q===null)return null; out.qty=Math.max(1,Number(q)||1); }
+  if(scope==='buy'){ const url=prompt('Product URL',x.url||''); if(url===null)return null; out.url=url.trim(); const note=prompt('Note',x.note||''); if(note===null)return null; out.note=note; }
   if(scope==='issues'||scope==='upgrades'){ const d=prompt('Details / note',x.details||x.note||''); if(d===null)return null; out.details=d; }
   if(scope==='service'){ const d=prompt('Date (YYYY-MM-DD)',x.date||new Date().toISOString().slice(0,10)); if(d===null)return null; out.date=d; }
   return out;
@@ -317,6 +321,10 @@ function panelIssues(){
 function panelSpares(){
   const shared=sharedGarage();
   openDrawer('Spares','Shared garage · inventory',`${managerBar('spares','spare')}<div class="drawer-section"><h3>Quick add from photo</h3>${quickSpareForm()}</div><div class="drawer-section"><h3>Stock</h3>${itemRows(shared.spares,'Spare part','spares')}</div>`);
+}
+function panelBuy(){
+  const shared=sharedGarage();
+  openDrawer('Parts to buy','Shared garage · shopping list',`${managerBar('buy','part')}<div class="drawer-section"><h3>Shopping list</h3>${itemRows(shared.partsToBuy||[],'Part to buy','buy')}</div>`);
 }
 function panelService(){
   const c=currentCar(), items=c.serviceHistory||[], active=items.map((x,i)=>[x,i]).filter(([x])=>!x.archived).sort((a,b)=>String(b[0].date||'').localeCompare(String(a[0].date||'')));
@@ -403,7 +411,7 @@ document.addEventListener('click',e=>{
   const expHit=e.target.closest('[data-exp-index]'); if(expHit){panelExplodedPart(expHit.dataset.expIndex);return;}
   const v=e.target.closest('[data-view]'); if(v){view=v.dataset.view;render();return;}
   const h=e.target.closest('[data-part]'); if(h){panelPart(h.dataset.part);return;}
-  const p=e.target.closest('[data-panel]'); if(p){({issues:panelIssues,spares:panelSpares,upgrades:panelUpgrades,service:panelService,gear:()=>panelGear(),workflows:panelWorkflows,manuals:panelManuals})[p.dataset.panel]?.();return;}
+  const p=e.target.closest('[data-panel]'); if(p){({issues:panelIssues,spares:panelSpares,buy:panelBuy,upgrades:panelUpgrades,service:panelService,gear:()=>panelGear(),workflows:panelWorkflows,manuals:panelManuals})[p.dataset.panel]?.();return;}
 });
 $('#closeDrawer').addEventListener('click',closeDrawer);
 $('#scrim').addEventListener('click',closeDrawer);

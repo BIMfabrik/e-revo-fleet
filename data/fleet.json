@@ -423,6 +423,15 @@
       "transmitters": [],
       "chargers": [],
       "other": []
-    }
+    },
+    "partsToBuy": [
+      {
+        "part": "7021",
+        "name": "Suspension Pin Set",
+        "qty": 1,
+        "note": "Front or rear: 2×46 mm (2), 2×14 mm (4).",
+        "url": "https://traxxas.com/7021-suspension-pin-set"
+      }
+    ]
   }
 }
