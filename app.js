@@ -96,7 +96,7 @@ let view = 'body';
 function currentCar(){ return fleet.cars.find(c=>c.id===carId) || fleet.cars[0]; }
 function esc(s=''){ return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c])); }
 function sharedGarage(){ return fleet.shared || {spares:[],gear:{batteries:[],transmitters:[],chargers:[],other:[]}}; }
-function countGear(){ return Object.values(sharedGarage().gear||{}).reduce((n,a)=>n+(Array.isArray(a)?a.length:0),0); }
+function countGear(){ return Object.values(sharedGarage().gear||{}).reduce((n,a)=>n+(Array.isArray(a)?a.reduce((s,x)=>s+Number(x.qty||1),0):0),0); }
 function stockFor(partNo){
   return (sharedGarage().spares||[]).filter(x=>String(x.part||x.number||'')===String(partNo)).reduce((n,x)=>n+Number(x.qty||1),0);
 }
@@ -151,7 +151,7 @@ function render(){
 
   const spares=shared.spares||[], gear=shared.gear||{};
   $('#sharedSpareCount').textContent=`${spares.reduce((n,x)=>n+Number(x.qty||1),0)} parts`;
-  $('#batteryCount').textContent=`${(gear.batteries||[]).length} packs`;
+  $('#batteryCount').textContent=`${(gear.batteries||[]).reduce((n,x)=>n+Number(x.qty||1),0)} packs`;
   $('#chargerCount').textContent=`${(gear.chargers||[]).length} units`;
   $('#sharedGearCount').textContent=`${countGear()} items`;
   $('#sharedWorkflowCount').textContent=`${workflows.length} procedures`;
